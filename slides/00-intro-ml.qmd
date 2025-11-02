@@ -52,7 +52,7 @@ auto-stretch: false
 ## Course website
 
 ::: {.large style="text-align: center;"}
-[vizdata.org](https://chefs-kiss.github.io/ML_J2026/)
+[ML_J2026](https://chefs-kiss.github.io/ML_J2026/)
 :::
 
 ::: {.hand style="text-align: center;"}
