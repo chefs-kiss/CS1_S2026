@@ -3,8 +3,7 @@ Due: Monday, Feb 17th at start of class <br>
 Complete the following exercises. Remember to explain your answers.<br>
 
 ## Looking at Data
-1.  For this exercise, you will use the titanic dataset $\href{https://www.kaggle.com/competitions/titanic}{(see:https://www.kaggle.com/competitions/titanic)}$. 
-You may have to sign-in using your Google account to view the data. Use the train.csv dataset on the Data tab to inform your answers below. You can also find the csv [here](../data/titanic_train.csv)
+1.  For this exercise, you will use the titanic dataset $\href{https://www.kaggle.com/competitions/titanic}{(see:https://www.kaggle.com/competitions/titanic)}$. You may have to sign-in using your Google account to view the data. Use the train.csv dataset on the Data tab to inform your answers below. You can also find the csv [here](../data/titanic_train.csv) 
     a. Give an example of a record. What does it represent? <br>
     b. Suppose you are using this dataset to train a model that will use a passenger class, sex, age, and fare to predict whether or not they will survive. <br>
         i. Is this a classification task or a regression task? Explain your answer. <br>
