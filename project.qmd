@@ -1,0 +1,10 @@
+# Semester Project
+
+# Overview
+
+# Project Check-ins (PCs)
+### [PC1](project/PC1.qmd)
+
+# Schedule
+
+# Rubric

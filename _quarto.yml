@@ -29,12 +29,8 @@ website:
       text: Homework
     - href: labs.qmd
       text: Labs
-    - section: "Semester Project"
-      contents:
-        - href: project/project_overview.qmd
-          text: Overview
-        - href: project/PC1.qmd
-          text: PC1
+    - href: project.qmd
+      text: Semester Project
 
 format:
   html:

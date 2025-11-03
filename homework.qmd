@@ -5,5 +5,4 @@ title: "Homework"
 ## Overview
 Stuff about homework
 
-## List
-[HW 1](homework/hw1.qmd) 
+### [HW 1](homework/hw1.qmd) 
