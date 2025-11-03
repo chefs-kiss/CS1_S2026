@@ -2,7 +2,7 @@
 
 # Overview
 
-# Project Check-ins (PCs)
+# Project Check-ins
 ### [PC1](project/PC1.qmd)
 
 # Schedule

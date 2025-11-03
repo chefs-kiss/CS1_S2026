@@ -6,3 +6,4 @@ title: "Homework"
 Stuff about homework
 
 ### [HW 1](homework/hw1.qmd) 
+### [HW 2](homework/hw2.qmd) 
