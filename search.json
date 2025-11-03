@@ -49,34 +49,109 @@
     "text": "✏ Question 7: Continued evaluation\nEven if a model has high accuracy, it may not be the best choice for our given situation.\n\nDescribe why this may be.\nWhat would be a solution for this problem?\n\n#Task 3: Evaluation Metrics\nIn this task, we will evaluate the performance of the models using different evaluation metrics such as accuracy, precision, recall, and F1 score.\n\nfrom sklearn.metrics import precision_score, recall_score, f1_score\n\n# Train and evaluate model\nmodels = [(null_model, \"null model\"), (basic_model, \"basic model\"), (complex_model, \"complex model\")]\nfor model_type in models:\n  y_pred = model_type[0].predict(X_test)\n  # Evaluate\n  print(f\"{model_type[1]}: {model_type[0]}\")\n  print(\"Accuracy:\", round(accuracy_score(y_test, y_pred),3))\n  print(\"Precision:\", round(precision_score(y_test, y_pred),3))\n  print(\"Recall:\", round(recall_score(y_test, y_pred),3))\n  print(\"F1 Score:\", round(f1_score(y_test, y_pred),3), \"\\n\")\n\n##Questions 8-11: Interpret Metrics\nFor each model, interpret the following evaluation metrics:\n##✏ Question 8: Accuracy\nNull model:\nBasic model:\nComplex model:\n##✏ Question 9: Precision\nNull model:\nBasic model:\nComplex model:\n##✏ Question 10: Recall\nNull model:\nBasic model:\nComplex model:\n##✏ Question 11: Which is the best Once you have interpreted all of metrics, we’d like to choose which model is the best given the problem. You’ll need to consider the trade-offs between precision, recall, and accuracy and how that impacts the model’s suitability for real-world application, especially in a healthcare context.\n\nDiscuss which of the models is the best performing.\n\n#Task 4: Ethical Matrix and Audit\nIn this task, you will create an ethical matrix to audit the algorithms you have been working with. The goal is to analyze the broader implications of your machine learning model and how it might affect different stakeholders. Following the guidelines outlined in class, your ethical audit should include key questions that explore the potential harms, benefits, fairness, and accountability of the algorithm.\n##✏ Question 12: Define the key stakeholders\nIn any algorithmic system, there are various stakeholders who will be affected by the decisions made by the model. For example, one stakeholder is the patient being screened for breast cancer.\n\nAdd at least three more stakeholders:\n\n##Questions 13-15: Identify the ethical dimensions\nFor each stakeholder, consider the potential benefits and harms of using the model. Also, think about the ethical principles of fairness and accountability.\nThe main issues we’ve covered in class are listed below: * Benefits: What positive outcomes might each stakeholder experience if the model is deployed? * Harms: What potential negative consequences might arise for each stakeholder? Could the model cause harm or lead to incorrect conclusions? * Fairness: Is the model equally fair to all stakeholders, especially those from under-represented or vulnerable groups? Does the model avoid reinforcing bias? * Accountability: Who is responsible if the model makes a mistake? What steps should be taken if the model’s predictions are inaccurate or harmful?\nIf you decide to consider different issues, make sure to update the text boxes below to account for that. For example, if you want to consider something like medical advances you might replace the issue fairness with medical advances.\n##✏ Question 13:\nStakeholder1:\nBenefits:\nHarms:\nFairness:\nAccountability:\n##✏ Question 14:\nStakeholder2:\nBenefits:\nHarms:\nFairness:\nAccountability:\n##✏ Question 15:\nStakeholder3:\nBenefits:\nHarms:\nFairness:\nAccountability:\n##✏ Question 16: Mitigating Harm\nBased on your matrix, come up with two concrete actions that can be taken to mitigate potential harms. Example action: we’d like to ensure the model is interpretable for healthcare providers so they can understand and trust its predictions. This means we’d need to choose a model that is less complex but still robust enough to give good results.\n\nFirst option:\nSecond option:"
   },
   {
-    "objectID": "homework.html",
-    "href": "homework.html",
-    "title": "Homework",
-    "section": "",
-    "text": "Stuff about homework",
-    "crumbs": [
-      "Homework"
-    ]
+    "objectID": "slides/00-intro-ml.html#daily-structure",
+    "href": "slides/00-intro-ml.html#daily-structure",
+    "title": "Welcome to ML!",
+    "section": "Daily Structure",
+    "text": "Daily Structure\n\nA Days:\n\ntwo morning lectures\nafternoon homework and project check\n\nB Days:\n\none morning lecture\none morning Lab\nafternoon standard quiz"
   },
   {
-    "objectID": "homework.html#overview",
-    "href": "homework.html#overview",
-    "title": "Homework",
-    "section": "",
-    "text": "Stuff about homework",
-    "crumbs": [
-      "Homework"
-    ]
+    "objectID": "slides/00-intro-ml.html#themes-what-why-and-how",
+    "href": "slides/00-intro-ml.html#themes-what-why-and-how",
+    "title": "Welcome to ML!",
+    "section": "Themes: what, why, and how",
+    "text": "Themes: what, why, and how\n\nWhat: the plot\n\nblah\n\n\n\n\nHow: the process\n\nblah\n\n\n\n\n\nWhy: the theory\n\nTie together “how” and “what”"
   },
   {
-    "objectID": "homework.html#list",
-    "href": "homework.html#list",
-    "title": "Homework",
-    "section": "List",
-    "text": "List\nHW 1",
-    "crumbs": [
-      "Homework"
-    ]
+    "objectID": "slides/00-intro-ml.html#show-and-tell",
+    "href": "slides/00-intro-ml.html#show-and-tell",
+    "title": "Welcome to ML!",
+    "section": "Show and tell",
+    "text": "Show and tell\n\n\nForm a small group (2-4 people) with people sitting around you\nFirst, introduce yourselves to each other – name (and proper pronunciation of name), year, major, where are you from, etc."
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#course-website",
+    "href": "slides/00-intro-ml.html#course-website",
+    "title": "Welcome to ML!",
+    "section": "Course website",
+    "text": "Course website\n\nML_J2026\n\n\naka “the one link to rule them all”"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#lectures",
+    "href": "slides/00-intro-ml.html#lectures",
+    "title": "Welcome to ML!",
+    "section": "Lectures",
+    "text": "Lectures\n\nIn person\nAttendance is required\nA little bit of everything:\n\nTraditional lecture\nLive coding + demos\nShort exercises\nDiscussions"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#labs",
+    "href": "slides/00-intro-ml.html#labs",
+    "title": "Welcome to ML!",
+    "section": "Labs",
+    "text": "Labs\n\nOccurs every other day in the morning (check schedule for 💻)"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#quizzes",
+    "href": "slides/00-intro-ml.html#quizzes",
+    "title": "Welcome to ML!",
+    "section": "Quizzes",
+    "text": "Quizzes\n\nOccurs every other day in the afternoon (check schedule for 📄)"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#announcements",
+    "href": "slides/00-intro-ml.html#announcements",
+    "title": "Welcome to ML!",
+    "section": "Announcements",
+    "text": "Announcements\n\nSent via email"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#this-weeks-tasks",
+    "href": "slides/00-intro-ml.html#this-weeks-tasks",
+    "title": "Welcome to ML!",
+    "section": "This week’s tasks",
+    "text": "This week’s tasks\n\nCreate a GitHub account if you don’t have one\nRead the syllabus\nPost on Discussion board\nComplete the readings"
+  },
+  {
+    "objectID": "PA5_Trees_with_BreastCancer.html",
+    "href": "PA5_Trees_with_BreastCancer.html",
+    "title": "Task 1: Evaluation for multiple random testing-training splits",
+    "section": "",
+    "text": "Name:\nWho you worked with:"
+  },
+  {
+    "objectID": "PA5_Trees_with_BreastCancer.html#objectives",
+    "href": "PA5_Trees_with_BreastCancer.html#objectives",
+    "title": "Task 1: Evaluation for multiple random testing-training splits",
+    "section": "Objectives",
+    "text": "Objectives\nThe goals of this project are to: - Implement multiple tree-based models - Tune models to find the best combination of hyperparameters"
+  },
+  {
+    "objectID": "PA5_Trees_with_BreastCancer.html#overview",
+    "href": "PA5_Trees_with_BreastCancer.html#overview",
+    "title": "Task 1: Evaluation for multiple random testing-training splits",
+    "section": "Overview",
+    "text": "Overview\nFor this programming assignment, you will be working with the Wisconsin Breast Cancer dataset. This dataset contains various measurements of the size and shape of tumors, along with the diagnosis of the tumor as benign or malignant. Further information on this dataset can be found here: https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(diagnostic). Our goal is to train a tree-based model that can use the measurements of a tumor to diagnosis it as benign or malignant."
+  },
+  {
+    "objectID": "PA5_Trees_with_BreastCancer.html#schedule",
+    "href": "PA5_Trees_with_BreastCancer.html#schedule",
+    "title": "Task 1: Evaluation for multiple random testing-training splits",
+    "section": "Schedule",
+    "text": "Schedule\nHere is the suggested schedule for working on this project: - Weekend: Read through project instructions, run code for Task 0. - Tuesday: Complete Tasks 1-2. - Wednesday: Complete Tasks 3. - Thursday: Complete Task 4.\nThis project is due on Thursday, 3/20, by 11:59pm.\n#Task 0: Data\nWe start by loading the dataset into a pandas dataframe.\n\nimport pandas as pd\n\ncancer_df = pd.read_csv(\"https://github.com/lynn0032/MLCamp2021/raw/main/breast_cancer.csv\")\n\nNext, we look at a summary of the data. Note that not every column is shown in this summary.\n\ncancer_df.describe(include = \"all\")\n\nWe can use shape to check the size of the data. Here, we see that we have 569 samples (for 569 tumors), and 33 attributes.\n\ncancer_df.shape\n\nNormally, we’d do exploratory data analysis here to understand the distribution of the dataset. For this programming assignment, however, we’re going to focus on evaluation for a classifier, so we will neglect to do that here.\nThere are two columns that we won’t use for prediction, so we drop those columns.\n\ncancer_df.drop([\"id\", \"Unnamed: 32\"], axis=1, inplace = True)\n\ncancer_df.describe(include=\"all\")\n\nNext, we separate the dataset into features and target. Remember that the diagnosis is the target, and it takes values “M” (for malignant) and “B” for benign.\n\nfeatures = list(cancer_df.columns)\nfeatures.remove(\"diagnosis\")\n\nX = cancer_df[features].values\ny = cancer_df[\"diagnosis\"].values"
+  },
+  {
+    "objectID": "PA5_Trees_with_BreastCancer.html#tuning-max_depth",
+    "href": "PA5_Trees_with_BreastCancer.html#tuning-max_depth",
+    "title": "Task 1: Evaluation for multiple random testing-training splits",
+    "section": "Tuning max_depth",
+    "text": "Tuning max_depth\nNow, we will use the evaluate function to tune the parameter max_depth, with the default value for min_samples_leaf (which is 1).\nThe code is provided for you, but you will need to interpret the results.\n\ntest_accuracies = []\ntrain_accuracies = []\n\nfor max_depth in range(1,20):\n  test_acc, train_acc = evaluate(max_depth, 1)\n  test_accuracies.append(test_acc)\n  train_accuracies.append(train_acc)\n\n  print(\"Max depth\", max_depth)\n  print(\"\\tTesting Accuracy:\", test_acc)\n  print(\"\\tTraining Accuracy:\", train_acc)\n\n\nimport matplotlib.pyplot as plt\n\ntest = plt.plot(range(1,20), test_accuracies, label = \"Testing\")\ntrain = plt.plot(range(1,20), train_accuracies, label = \"Training\")\nplt.ylim(0, 1)      # to \"zoom in\", you can delete this line\nplt.xlabel('max_depth')\nplt.ylabel('accuracy')\nplt.legend()\nplt.show()\n\n##✏ Q4: describe max_depth results.\nBe sure to discuss overfitting vs. underfitting, as well as which value for max_depth you think is best and why.\nyour answer here"
+  },
+  {
+    "objectID": "PA5_Trees_with_BreastCancer.html#tuning-min_samples_leaf",
+    "href": "PA5_Trees_with_BreastCancer.html#tuning-min_samples_leaf",
+    "title": "Task 1: Evaluation for multiple random testing-training splits",
+    "section": "Tuning min_samples_leaf",
+    "text": "Tuning min_samples_leaf\nNext, we will use the evaluate function to tune the parameter min_samples_leaf, with the default value for max_depth (which is None). The code is provided for you, but you will need to interpret the results.\n\ntest_accuracies = []\ntrain_accuracies = []\n\nfor min_samples_leaf in range(1,100):\n  test_acc, train_acc = evaluate(None, min_samples_leaf)\n  test_accuracies.append(test_acc)\n  train_accuracies.append(train_acc)\n\n  print(\"Min samples leaf\", min_samples_leaf)\n  print(\"\\tTesting Accuracy:\", test_acc)\n  print(\"\\tTraining Accuracy:\", train_acc)\n\n\nimport matplotlib.pyplot as plt\n\ntest = plt.plot(range(1,100), test_accuracies, label = \"Testing\")\ntrain = plt.plot(range(1,100), train_accuracies, label = \"Training\")\nplt.ylim(0, 1)      # to \"zoom in\", you can delete this line\nplt.xlabel('min_samples_leaf')\nplt.ylabel('accuracy')\nplt.legend()\nplt.show()\n\n##✏Q5: Describe min_samples_leaf results\nBe sure to discuss overfitting vs. underfitting, as well as which value for min_samples_leaf you think is best and why.\nyour answer here\n##💻Q6: Best Combination\nWhen tuning parameters, it typically takes more effort than just tuning parameters individually. Really, we want the best combination of parameters, so we want to explore them together.\nOne way to do this is with a grid search, where we explore a grid of possible parameter values. In the cell below, you will conduct a grid search to find the best combination of max_depth and min_samples_leaf.\n\nUsing nested for loops, use the function evaluate to test all combinations of max_depth and min_samples_leaf, where max_depth ranges from 1 through 10, and min_samples_leaf ranges from 1 through 50 (can you see how I chose these ranges from the results for the individual parameters above?).\nRemember that the function evaluate returns both the testing accuracy and training accuracy. For simplicity, we will just look for the parameters with the best testing accuracy.\nFor the parameters with the best testing accuracy, store their values in the tuple parameters (with max_depth first, followed by min_samples_leaf). Store their testing accuracy and training accuracy (as found by by evaluate), in the tuple best_metrics.\n\nThe grid search should take a couple of minutes to run. Because it can be time consuming, it is not always possible to run a grid search for big datasets with complex models.\n\nfrom tables.array import Leaf\nbest_metrics = (0,0)\nparameters = (0,0)\n\n# your code here\n\n\nprint(\"Best max_depth:\", parameters[0])\nprint(\"Best min_samples_leaf:\", parameters[1])\nprint(\"Testing Accuracy:\", best_metrics[0])\nprint(\"Training Accuracy:\", best_metrics[1])\n\n\n# TEST CELL - DO NOT CHANGE - RUN THIS CELL TO CHECK YOUR WORK\n# Note: passing this cell doesn't guarantee your code is correct or that you will get full credit,\n# but should be used to help you check your work\nassert(best_metrics == (0.9315013196708584, 0.9578214767688452))\nprint(\"Tests passed, but be sure to test your own code as well!\")\n\n#Task 4: Final Model + Reflection\n##Training a final model\nNow that we have identified the optimal parameter values, we will train a final model on all of the data, using those parameters values. The idea is that this final model would be used to diagnose tumors.\nAlthough we were able to find the optimal parameter values for decision trees, there are other machine learning models that can have even better performance on this dataset. Unfortunately, we don’t have time to cover more in this course.\n\nfrom sklearn.tree import DecisionTreeClassifier\n\nclf = DecisionTreeClassifier(max_depth=parameters[0], min_samples_leaf=parameters[1], random_state = 0)\nclf.fit(X, y)\n\nNext, we visualize the decision tree that we produced, so that we can see how it makes decisions.\n\nfrom sklearn.tree import plot_tree\nimport matplotlib.pyplot as plt\n\nplt.figure(figsize=(20, 10))\nplot_tree(clf, feature_names = features, class_names = [\"Benign\", \"Malignant\"])\nplt.show()\n\n##✏Q7: New record 1\nSuppose we encounter a new tumor, with values: * area_se = 35.021 * concave_points_worst = 0.100 * concavity_worst = .238 * radius_worst = 17.106 * texture_mean = 15.987 * texture_worst = 26.832\nHow would the decision tree model classify this tumor? Explain your answer by describing the path this datapoint takes through the tree.\nyour answer here\n##✏Q8: New record 2\nSuppose we encounter a new tumor, with values: * area_se = 39.542 * concave_points_worst = 0.154 * concavity_worst = .221 * radius_worst = 16.234 * texture_mean = 16.785 * texture_worst = 25.979\nHow would the decision tree model classify this tumor? Explain your answer by describing the path this datapoint takes through the tree.\nyour answer here\n##✏ Q9: Reflection\nWhat did you like about it? What could be improved? Your answers will not affect your overall grade. This feedback will be used to improve future programming assignments.\n#Grading\nFor each of the following accomplishments, there is a breakdown of points which total to 20. The fraction of points earned out of 20 will be multiplied by 5 to get your final score (e.g. 17 points earned will be 17/20 * 5 → 4.25) * (1pt) Task1 Q1: Uses correct cross validation * (1pt) Task1 Q1: Trains and fits the data on a decision tree * (1pt) Task1 Q1: Predicts on correct set * (1pt) Task1 Q1: Finds all three evaluation metrics and appends to list * (2pt) Task1 Q2: Correctly interprets accuracy and recall results * (1pt) Task2 Q3: Uses stratified fold correctly * (1pt) Task2 Q3: Finds test and training sets * (1pt) Task2 Q3: Trains and fits a decision tree * (1pt) Task2 Q3: Makes predictions * (1pt) Task3 Q4: Describes max_depth results including over/under fitting and best value * (1pt) Task3 Q5: Describes min_samples_leaf results including over/under fitting and best value * (2pt) Task3 Q6 : Correctly used for loops to loop through hyperparameters * (1pt) Task3 Q6 : Using evaluate function from Task 2 * (2pt) Task3 Q6 : Updates best model appropriately * (1pt) Task4 Q7: Correctly classifies new tumor using decision tree path * (1pt) Task4 Q8: Correctly classifies new tumor using decision tree path * (1pt) Task4 Q9: Thoughtfully reflected on the assignment"
   },
   {
     "objectID": "labs/lab0.html",
@@ -350,130 +425,34 @@
     ]
   },
   {
-    "objectID": "slides/00-intro-ml.html#daily-structure",
-    "href": "slides/00-intro-ml.html#daily-structure",
-    "title": "Welcome to ML!",
-    "section": "Daily Structure",
-    "text": "Daily Structure\n\nA Days:\n\ntwo morning lectures\nafternoon homework and project check\n\nB Days:\n\none morning lecture\none morning Lab\nafternoon standard quiz"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#themes-what-why-and-how",
-    "href": "slides/00-intro-ml.html#themes-what-why-and-how",
-    "title": "Welcome to ML!",
-    "section": "Themes: what, why, and how",
-    "text": "Themes: what, why, and how\n\nWhat: the plot\n\nblah\n\n\n\n\nHow: the process\n\nblah\n\n\n\n\n\nWhy: the theory\n\nTie together “how” and “what”"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#show-and-tell",
-    "href": "slides/00-intro-ml.html#show-and-tell",
-    "title": "Welcome to ML!",
-    "section": "Show and tell",
-    "text": "Show and tell\n\n\nForm a small group (2-4 people) with people sitting around you\nFirst, introduce yourselves to each other – name (and proper pronunciation of name), year, major, where are you from, etc."
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#course-website",
-    "href": "slides/00-intro-ml.html#course-website",
-    "title": "Welcome to ML!",
-    "section": "Course website",
-    "text": "Course website\n\nML_J2026\n\n\naka “the one link to rule them all”"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#lectures",
-    "href": "slides/00-intro-ml.html#lectures",
-    "title": "Welcome to ML!",
-    "section": "Lectures",
-    "text": "Lectures\n\nIn person\nAttendance is required\nA little bit of everything:\n\nTraditional lecture\nLive coding + demos\nShort exercises\nDiscussions"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#labs",
-    "href": "slides/00-intro-ml.html#labs",
-    "title": "Welcome to ML!",
-    "section": "Labs",
-    "text": "Labs\n\nOccurs every other day in the morning (check schedule for 💻)"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#quizzes",
-    "href": "slides/00-intro-ml.html#quizzes",
-    "title": "Welcome to ML!",
-    "section": "Quizzes",
-    "text": "Quizzes\n\nOccurs every other day in the afternoon (check schedule for 📄)"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#announcements",
-    "href": "slides/00-intro-ml.html#announcements",
-    "title": "Welcome to ML!",
-    "section": "Announcements",
-    "text": "Announcements\n\nSent via email"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#this-weeks-tasks",
-    "href": "slides/00-intro-ml.html#this-weeks-tasks",
-    "title": "Welcome to ML!",
-    "section": "This week’s tasks",
-    "text": "This week’s tasks\n\nCreate a GitHub account if you don’t have one\nRead the syllabus\nPost on Discussion board\nComplete the readings"
-  },
-  {
-    "objectID": "PA3_Classification_with_Fashion_MNIST.html",
-    "href": "PA3_Classification_with_Fashion_MNIST.html",
-    "title": "Task 0: Data Exploration",
+    "objectID": "homework.html",
+    "href": "homework.html",
+    "title": "Homework",
     "section": "",
-    "text": "Name:\nWho you worked with:"
+    "text": "Stuff about homework",
+    "crumbs": [
+      "Homework"
+    ]
   },
   {
-    "objectID": "PA3_Classification_with_Fashion_MNIST.html#objectives",
-    "href": "PA3_Classification_with_Fashion_MNIST.html#objectives",
-    "title": "Task 0: Data Exploration",
-    "section": "Objectives",
-    "text": "Objectives\nThe goals of this project are to: - Perform EDA, PCA, and visualize the data - Implement K-means clustering - Evaluate the clustering results against the true labels - Thoughtfully interpret and discuss the results"
+    "objectID": "homework.html#overview",
+    "href": "homework.html#overview",
+    "title": "Homework",
+    "section": "",
+    "text": "Stuff about homework",
+    "crumbs": [
+      "Homework"
+    ]
   },
   {
-    "objectID": "PA3_Classification_with_Fashion_MNIST.html#overview",
-    "href": "PA3_Classification_with_Fashion_MNIST.html#overview",
-    "title": "Task 0: Data Exploration",
-    "section": "Overview",
-    "text": "Overview\nIn this assignment, you will explore the Fashion MNIST dataset, which contains grayscale images of 10 different clothing items. You will focus on applying unsupervised learning techniques, specifically K-means clustering, to see if the algorithm can naturally identify patterns that correspond to different clothing categories. You will also critically evaluate the performance of clustering against the ground truth labels and reflect on the limitations of the algorithm."
-  },
-  {
-    "objectID": "PA3_Classification_with_Fashion_MNIST.html#schedule",
-    "href": "PA3_Classification_with_Fashion_MNIST.html#schedule",
-    "title": "Task 0: Data Exploration",
-    "section": "Schedule",
-    "text": "Schedule\nHere is the suggested schedule for working on this project: - Weekend: Read through project instructions, complete Task 0. - Tuesday: Complete Tasks 1-2. - Wednesday: Complete Tasks 3-4. - Thursday: Complete Task 5.\nThis project is due on Thursday, 3/6, by 11:59pm."
-  },
-  {
-    "objectID": "PA3_Classification_with_Fashion_MNIST.html#explore-the-data",
-    "href": "PA3_Classification_with_Fashion_MNIST.html#explore-the-data",
-    "title": "Task 0: Data Exploration",
-    "section": "Explore the data",
-    "text": "Explore the data\nLet’s explore the format of the dataset before training the model. The following shows there are 60,000 images, with each image represented as 28 x 28 pixels:\n\nX.shape\n\nLikewise, there are 60,000 labels:\n\nlen(y)\n\n###💻 Question1: Is The Data Balanced?\nLet’s take a look at how many of each type of clothing article we have.\nBelow is the dataframe of our target.\nAdd a new line of code that takes y_df and finds the counts of each class.\nIs our dataset balanced?\n\ny_df = pd.DataFrame(y)\n#add code here\n\n###✏ Question2: Image Flattening\nOur images are flattened from a 28×28 image to 784 features. What spatial information might be lost in this process? How could this impact our clustering results?\n##PCA\nIt would take a very long time to generate pairplots for 700+ features. Instead, we’ll use principal component analysis (PCA) for dimensionality reduction, so that we can visualize a projection of the data. Here, we reduce the data to a few dimensions.\n\nfrom sklearn.decomposition import PCA\n\npca = PCA(n_components=9)\npca.fit(X)\nprojection = pca.transform(X)\nprojection_df = pd.DataFrame(projection)\n\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nplt.figure()\nsns.pairplot(projection_df)\nplt.show()\n\n###✏ Question3: PCA plots How do the different shapes of these plots (such as nugget-shaped, normal, or multi-modal) help us understand the characteristics of clothing categories? For example, do they show variations in style within a category, or do they highlight differences between categories?"
-  },
-  {
-    "objectID": "PA3_Classification_with_Fashion_MNIST.html#task-1-closest-centroid",
-    "href": "PA3_Classification_with_Fashion_MNIST.html#task-1-closest-centroid",
-    "title": "Task 0: Data Exploration",
-    "section": "Task 1: Closest Centroid",
-    "text": "Task 1: Closest Centroid\nFirst, you’ll implement a function that takes an array of data points and an array of centroids, and returns an array giving the index of the closest centroid to each data point. Note that the shapes should be:\n\ndata has shape \\((N, D)\\), where \\(N\\) is the number of datapoints and \\(D\\) is the dimensionality of each datapoint.\ncentroids has shape \\((k, D)\\), where \\(k\\) is the number of centroids, and \\(D\\) is the dimensionality of each datapoint.\nclosest_centroids (the return value) has shape \\((N,)\\), where \\(N\\) is the number of datapoints.\n\nThe code below has been outlined in such a way that only basic programming logic needs to be used. You may find that using numpy methods helpful when calculating the Euclidean.\nHint: since we have high-dimensional data you can use np.sum((point - centroid) ** 2) to find the sum of squared differences when you do the distance calculation.\n\nimport numpy as np\n\ndef closest_centroid(data, centroids):\n    # init to store the closest centroid index for each data point\n    closest_centroids = []\n\n    # looping through each data point\n    for point in data:\n        min_distance = float('inf')  #init min distance to huge number like infinity\n        closest_centroid_index = -1\n\n        # counter for centroid index\n        i = 0\n\n        # looping through each centroid to compute the distance to the data point\n\n            # calculate the Euclidean distance\n\n\n            # if the distance is smaller than the minimum (min_distance) found so far, update the closest centroid (closest_centroid_index)\n\n\n            # increment the counter by 1\n\n        # appending the index of the closest centroid to the result list\n        closest_centroids.append(closest_centroid_index)\n\n    # return the list of closest centroid indices\n    return np.array(closest_centroids)\n\nThe code chunks below will test your functions. If you run both and no errors occur, your function works as expected.\n\n# testing your function\ndata = np.array([[-2,2], [-1, 2], [-1,1], [1,1], [1,2], [2,2]])\ncentroids = np.array([[-3,3], [3,3]])\nassert(np.array_equal(closest_centroid(data, centroids), np.array([0,0,0,1,1,1])))\n\n\ndata = train_data[:10]  # First 10 images\ncentroids = train_data[121:123]  # Images at index 121 and 123 as centroids\nclosest_centroid(data, centroids)\n#assert(np.array_equal(closest_centroid(data, centroids), np.array([1, 1, 0, 0, 0, 1, 0, 1, 0, 0])))\n\n###✏ Question4: Dimensionality and Distances\nIn high-dimensional spaces like our 784-dimensional images, how does distance calculation become problematic? (This is related to what we call the “curse of dimensionality”)\n###✏ Question5: Computational Costs\nIf we apply this function to all 60,000 images, it will be computationally expensive. How might you modify the approach to make it more efficient for large datasets? For example, we may consider only a subset of the data rather than all 60k images.\n###✏ Question6: Dealing with Ties\nWhat would happen if two centroids were equally distant from a data point? How does your function handle this case, and is this approach appropriate?"
-  },
-  {
-    "objectID": "PA3_Classification_with_Fashion_MNIST.html#task-2-recompute-centroids",
-    "href": "PA3_Classification_with_Fashion_MNIST.html#task-2-recompute-centroids",
-    "title": "Task 0: Data Exploration",
-    "section": "Task 2: Recompute Centroids",
-    "text": "Task 2: Recompute Centroids\nNext, you’ll define a function that recomputes centroids once each data point has been assigned to a cluster. This function takes an array of datapoints and an array giving the cluster assignments. The index of each centroid should correspond to its cluster number. Note that the shapes should be:\n\ndata has shape \\((N, D)\\), where \\(N\\) is the number of datapoints and \\(D\\) is the dimensionality of each datapoint.\nlabels has shape \\((N,)\\), where \\(N\\) is the number of datapoints.\ncentroids (the return value) has shape \\((k, D)\\), where \\(k\\) is the number of centroids, and \\(D\\) is the dimensionality of each datapoint.\n\n\nimport numpy as np\n\ndef compute_centroids(data, labels):\n    # getting the number of clusters\n    k = np.max(labels) + 1 #adding one since we start counting at 0 not 1\n\n    # init to store the new centroids\n    new_centroids = []\n\n    # looping through each cluster\n    for i in range(k):\n        # get the data points(data) assigned to cluster i (check if labels are equal to i)\n        cluster_points = #\n\n        # compute the mean (use np.mean) of the data points in the cluster (cluster_points)\n        new_centroid = #\n\n        # append the new centroid to our new centroid list\n        new_centroids.append(new_centroid)\n\n    # convert new_centroids into a numpy array and return\n    return #\n\nThe code chunks below will test your functions. If you run both and no errors occur, your function works as expected.\n\n# testing your function\ndata = np.array([[-2,2], [-1, 2], [-1,1], [1,1], [1,2], [2,2]])\nlabels = np.array([0,0,0,0,1,1])\nassert(np.array_equal(compute_centroids(data, labels), np.array([[-.75, 1.5], [1.5, 2]])))\n\n\ndata = train_data[:10]  # Take the first 10 images for testing\nlabels = np.array([1, 0, 1, 1, 1, 0, 1, 0, 1, 1])  # Example labels (clusters)\nassert(np.array_equal(compute_centroids(data, labels)[0][5:7], np.array([0.6666667 , 0.33333334], dtype='float32')))\n\n###✏ Question7: Centroid as an Image\nA centroid is the mean of all points in a cluster. For image data, what does this “average image” actually represent visually? Would it still look like a recognizable piece of clothing?\n###✏ Question8: Mean vs Median\nThe mean minimizes the sum of squared distances to all points. What if we used the median instead? How might this change our clusters and when might this be beneficial?"
-  },
-  {
-    "objectID": "PA3_Classification_with_Fashion_MNIST.html#task-3-implement-k-means",
-    "href": "PA3_Classification_with_Fashion_MNIST.html#task-3-implement-k-means",
-    "title": "Task 0: Data Exploration",
-    "section": "Task 3: Implement \\(k\\)-Means",
-    "text": "Task 3: Implement \\(k\\)-Means\nNow, that you’ve seen how the various components of the algorithm are created, we’re going to switch gears and create a model.\nUsually when we have a ton of data, we have methods to make it easier on our algorithms (and machines) to create the clusters. For our purposes, we’re going to take only three of the types of clothing and do k-means on this subset of data. This will help us as we eventually want to also investigate the clusters to see what is going on.\nWith large data, that also means that the process of choosing the actual best k take a bit of time. Instead, we’re going to use some domain knowledge (we’re choosing 3 articles of clothing in our subset) and use that to pick our k value.\n\ndataset = np.column_stack((X, y))\narticles = [y_names.index(\"Coat\"), y_names.index(\"Bag\"), y_names.index(\"Sneaker\")]\nsubset = dataset[np.isin(dataset[:, -1], articles)]\nX_subset = subset[:, :-1]\ny_subset = subset[:,-1:]\n\n\nfrom sklearn.cluster import KMeans\nfrom sklearn.metrics import silhouette_score\n\nkmeans = KMeans(n_clusters=3, random_state = 42)\nkmeans.fit(X_subset)\nsilhouette_score(X_subset, kmeans.labels_)\n\n###✏ Question9: Subset Article Choices Our subset currently cointains Coat, Bag, and Sneaker. What if instead we had selected only footwear items: Sandal, Sneaker, Ankle boot? What clustering challenges might arise when items are similar? How might this affect our silhouette score compared to clustering with an unrelated subset?\n###✏ Question10: Silhouette Score\nThe silhouette score measures how well-separated clusters are. What would a perfect silhouette score be, and what does our current score suggest about our clusters?"
-  },
-  {
-    "objectID": "PA3_Classification_with_Fashion_MNIST.html#finding-particular-images",
-    "href": "PA3_Classification_with_Fashion_MNIST.html#finding-particular-images",
-    "title": "Task 0: Data Exploration",
-    "section": "Finding particular images",
-    "text": "Finding particular images\nYou can further invesitgate by using the function below find_pic which will take the class label (items from row_0 in the matrix above) and the cluster label (items from col_0 in the matrix above) and return the first image that meets that criteria.\n\ndef find_pic(article_type, cluster_label):\n  \"\"\"This function takes in y label (article_type) and the cluster it belongs\n  to (cluster_label) and will show that image\"\"\"\n  valid_indices = np.where((y_subset.flatten() == article_type) & (kmeans.labels_ == cluster_label))[0]\n  chosen_index = np.random.choice(valid_indices)\n  print(chosen_index)\n  plt.figure(figsize=(3, 3))\n  plt.imshow(X_subset[chosen_index].reshape(28, 28), cmap='gray')\n  plt.title(f'Label: {article_type}, Cluster: {cluster_label}')\n  plt.show()\n\n\nfind_pic(4,0)\n\n\nfind_pic(4,1)\n\n\nfind_pic(4,2)\n\n###✏ Question11: Labels\nWhat does the row values 4, 7, 8 mean in the context of our data?\n###💻 Question12: Identifying Clothing\nIs the model generally grouping items according to their true class? Which clothing article type seems easiest for the algorithm to identify? Which is most confused? You can use the find_pic function above if that is helpful.\n###💻 Question13: Visual Inspection\nConsider the shapes of our articles of clothing. What visual features might cause the algorithm to group certain articles together despite having different labels? Use the function above to find at least two pieces of evidence in the data to support your claim. Add your code below.\n###✏ Question14: Clusters\nFor each cluster: * which of the labels appear in the cluster? * is there a label that occurs significantly more frequently than the others?\nWhere does the algorithm have difficulty? Why do you think this is happening?\n#Reflection\nTake a moment to reflect on the assingment\n##✏ Question 15: Reflection\nWhat did you like about it? What could be improved? Your answers will not affect your overall grade. This feedback will be used to improve future programming assignments.\n#Grading For each of the following accomplishments, there is a breakdown of points which total to 21. The fraction of points earned out of 21 will be multiplied by 5 to get your final score (e.g. 17 points earned will be 17/21 * 5 → 4.05) * (1pt) Task0 q1: Identified counts and discussed if balanced. * (1pt) Task0 q2: Identified at least one concern of flattening images * (1pt) Task0 q3: Discussed distributions of features * (2pt) Task1: Function closest_centroid runs as expected * (1pt) Task1 q4: Correctly states why dimensions matter when calculating distances * (1pt) Task1 q5: At least one approach to save on computational costs is discussed. * (1pt) Task1 q6: Discusses ties and offers a solution * (2pt) Task2: Function recompute_centroid runs as expected * (1pt) Task2 q7: Correctly explains what “average image” means * (1pt) Task2 q8: Discusses mean vs median appropriately * (1pt) Task3 q9: Discusses subsets and their influence on the accuracy of the model * (1pt) Task3 q10: Interprets the silhouette score * (1pt) Task4 q11: Indentifies what each label means in the context of the dataset * (2pt) Task4 q12: Interprets the confusion matrix for articles of clothing (rows) * (1pt) Task4 q13: Used the function find_pic to support the claims * (2pt) Task4 q14: Interprets the confusion matrix for clusters (columns) * (1pt) Task5 q15: You have reflected on the assignment"
+    "objectID": "homework.html#list",
+    "href": "homework.html#list",
+    "title": "Homework",
+    "section": "List",
+    "text": "List\nHW 1",
+    "crumbs": [
+      "Homework"
+    ]
   },
   {
     "objectID": "labs.html",
