@@ -21,34 +21,95 @@
     "text": "Example schedule:\n\n\n\n\n\n\n\n\n\nMorning\nAfternoon\n\n\n\n\nL\nIntro + Data manipulation\ngit / GitHub\n\n\nM\nGeneralised Linear Models\nData visualisation\n\n\nX\nMixed models / GAM / Bayes\nFunctional programming + Students work\n\n\nJ\nMultivariate analyses\nReproducible workflows\n\n\nV\nUsing R as GIS + Students work\nProject presentations"
   },
   {
-    "objectID": "homework.html",
-    "href": "homework.html",
-    "title": "Homework",
+    "objectID": "PA2_Evaluation_with_BreastCancer.html",
+    "href": "PA2_Evaluation_with_BreastCancer.html",
+    "title": "Task 5: Reflection",
     "section": "",
-    "text": "Stuff about homework",
-    "crumbs": [
-      "Homework"
-    ]
+    "text": "Name:\nWho you worked with:\n##Objectives The goals of this project are to: * Implement different cross-validation techniques to evaluate model performance * Audit a model to discuss the ethical considerations in model selection and performance evaluation\n##Overview In this assignment, you will explore the Wisconsin Breast Cancer dataset and focus on key aspects of model evaluation and resampling techniques. You will comment on the complexity of chosen models in a developed workflow, discuss resampling techniques, as well as the implications on various evaluation metrics. You will also be asked to audit the algorithms using the ethical matrix framework discussed in class.\n##Schedule Here is the suggested schedule for working on this project: * Over the weekend, read through the project instructions and complete Task 0. * By Sunday, 2/23, complete Tasks 1-2 of the project, and start Task 3 of the project. * By Tuesday, 2/25, complete Tasks 3-4 of the project, and start Task 5. * By Wednesday, 2/26, complete Task 5 and check your solutions against the grading rubric (included at the end of this workbook), and submit your workbook url through moodle.\nThis project is due on Thursday, 2/27, by 11:59pm.\n#Task 0: Breast Cancer Workflow\nYou will use the Breast Cancer dataset from sklearn.datasets. It contains features of cell nuclei obtained from breast cancer biopsies, and the target variable indicates whether the tumor is malignant or benign.\nfrom sklearn.datasets import load_breast_cancer\nimport pandas as pd\n\n# Load the dataset\ndata = load_breast_cancer()\nX = pd.DataFrame(data.data, columns=data.feature_names)\ny = pd.Series(data.target, name=\"target\")"
   },
   {
-    "objectID": "homework.html#overview",
-    "href": "homework.html#overview",
-    "title": "Homework",
-    "section": "",
-    "text": "Stuff about homework",
-    "crumbs": [
-      "Homework"
-    ]
+    "objectID": "PA2_Evaluation_with_BreastCancer.html#question-1-describe-dataset",
+    "href": "PA2_Evaluation_with_BreastCancer.html#question-1-describe-dataset",
+    "title": "Task 5: Reflection",
+    "section": "✏ Question 1: Describe dataset",
+    "text": "✏ Question 1: Describe dataset\n\nDescribe the type of data in our dataset.\nWhat is our target?\nWhat does our feature set contain?\n\n##✏ Question 2: The who behind the data To answer the following questions, you may have to search the internet with search like “wisconsin breast cancer dataset who is in the data” or something similar * Can you find who curated this dataset? * Include a url to cite this information. * Can you find the demographics of the individuals in the dataset? * In your opinion, why would these types of questions be important to know when dealing with the data?\n#Task 1: Model Complexity\nBefore jumping into evaluation and cross-validation, we’re going to start by performing basic preprocessing and setting up three models for comparison: a null model (also called a baseline model), a basic model, and a complex model.\nNull Model: This will predict the majority class from our target variable.\nBasic Model: This will be a Logistic Regression classifier.\nComplex Model:This will be a Random Forest classifier.\n\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.dummy import DummyClassifier\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.metrics import accuracy_score, confusion_matrix\n\n\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n\n\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n\n\nnull_model = DummyClassifier(strategy='most_frequent', random_state=42)\nbasic_model = LogisticRegression(solver='liblinear', random_state=42)\ncomplex_model = RandomForestClassifier(random_state=42)\n\n\nnull_model.fit(X_train, y_train)\nbasic_model.fit(X_train, y_train)\ncomplex_model.fit(X_train, y_train)\n\n\nnull_pred = null_model.predict(X_test)\nbasic_pred = basic_model.predict(X_test)\ncomplex_pred = complex_model.predict(X_test)\n\n\nprint(\"Null Model Accuracy:\", accuracy_score(y_test, null_pred))\nprint(\"Basic Model Accuracy:\", accuracy_score(y_test, basic_pred))\nprint(\"Complex Model Accuracy:\", accuracy_score(y_test, complex_pred))\n\n\nprint(\"Null Model Confusion Matrix:\", confusion_matrix(y_test, null_pred))\nprint(\"Basic Model Confusion Matrix:\", confusion_matrix(y_test, basic_pred))\nprint(\"Complex Model Confusion Matrix:\", confusion_matrix(y_test, complex_pred))\n\n##💻 Question 3: Comments\n\nAdd comments to the code above that describe what each section of code is doing (to the best of your ability). You may want to consult our workbook on cross-validation (EVL2)."
   },
   {
-    "objectID": "homework.html#list",
-    "href": "homework.html#list",
-    "title": "Homework",
-    "section": "List",
-    "text": "List\nHW 1",
-    "crumbs": [
-      "Homework"
-    ]
+    "objectID": "PA2_Evaluation_with_BreastCancer.html#question-4-accuracy-discussion",
+    "href": "PA2_Evaluation_with_BreastCancer.html#question-4-accuracy-discussion",
+    "title": "Task 5: Reflection",
+    "section": "✏ Question 4: Accuracy Discussion",
+    "text": "✏ Question 4: Accuracy Discussion\n\nCompare the accuracy metric for each of the three models. Does increasing model complexity drastically change the accuracy of the models? How well does the null (baseline) model compare to the simple and complex?\n\n#Task 2: Resampling\nFor this task, we’re going to use different cross-validation techniques to evaluate the models’ performance more robustly.\n\nStratified K-Fold Cross-Validation (to maintain class distribution) using scikit-learn StratifiedKFold\nRepeated Cross-Validation (to get more robust performance metrics) using scikit-learn RepeatedStratifiedKFold\nBootstrapping (random sampling with replacement) using scikit-learn resample\n\n\nfrom sklearn.utils import resample\nfrom sklearn.model_selection import cross_val_score, StratifiedKFold, RepeatedStratifiedKFold\nimport numpy as np\n\n\n# Stratified K-Fold Cross-Validation\nstratified_cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\nstratified_scores = cross_val_score(basic_model, X_train, y_train, cv=stratified_cv)\nprint(\"Stratified K-Fold Cross-Validation Scores:\", stratified_scores)\nprint(\"Mean Accuracy:\", np.mean(stratified_scores))\n\n\n# Repeated Cross-Validation\nrepeated_cv = RepeatedStratifiedKFold(n_splits=5, n_repeats=3, random_state=42)\nrepeated_scores = cross_val_score(basic_model, X_train, y_train, cv=repeated_cv)\nprint(\"Repeated Cross-Validation Scores:\", repeated_scores)\nprint(\"Mean Accuracy:\", np.mean(repeated_scores))\n\n\n# Bootstrapping (Resampling)\nbootstrap_scores = []\nfor _ in range(50):\n    X_resampled, y_resampled = resample(X_train, y_train, random_state=42)\n    basic_model.fit(X_resampled, y_resampled)\n    score = basic_model.score(X_test, y_test)\n    bootstrap_scores.append(score)\n\nprint(\"Bootstrapping Accuracy (100 resamples):\", np.mean(bootstrap_scores))\n\n##💻 Question 5: Comments This is similar to #3 * Add comments to each of the code chunks above.\n##✏ Question 6: Accuracy Discussion This is the same question as #4, but now considering the resampled accuracy metrics. * Describe how to compare the accuracy metric for each of the three models."
+  },
+  {
+    "objectID": "PA2_Evaluation_with_BreastCancer.html#question-7-continued-evaluation",
+    "href": "PA2_Evaluation_with_BreastCancer.html#question-7-continued-evaluation",
+    "title": "Task 5: Reflection",
+    "section": "✏ Question 7: Continued evaluation",
+    "text": "✏ Question 7: Continued evaluation\nEven if a model has high accuracy, it may not be the best choice for our given situation.\n\nDescribe why this may be.\nWhat would be a solution for this problem?\n\n#Task 3: Evaluation Metrics\nIn this task, we will evaluate the performance of the models using different evaluation metrics such as accuracy, precision, recall, and F1 score.\n\nfrom sklearn.metrics import precision_score, recall_score, f1_score\n\n# Train and evaluate model\nmodels = [(null_model, \"null model\"), (basic_model, \"basic model\"), (complex_model, \"complex model\")]\nfor model_type in models:\n  y_pred = model_type[0].predict(X_test)\n  # Evaluate\n  print(f\"{model_type[1]}: {model_type[0]}\")\n  print(\"Accuracy:\", round(accuracy_score(y_test, y_pred),3))\n  print(\"Precision:\", round(precision_score(y_test, y_pred),3))\n  print(\"Recall:\", round(recall_score(y_test, y_pred),3))\n  print(\"F1 Score:\", round(f1_score(y_test, y_pred),3), \"\\n\")\n\n##Questions 8-11: Interpret Metrics\nFor each model, interpret the following evaluation metrics:\n##✏ Question 8: Accuracy\nNull model:\nBasic model:\nComplex model:\n##✏ Question 9: Precision\nNull model:\nBasic model:\nComplex model:\n##✏ Question 10: Recall\nNull model:\nBasic model:\nComplex model:\n##✏ Question 11: Which is the best Once you have interpreted all of metrics, we’d like to choose which model is the best given the problem. You’ll need to consider the trade-offs between precision, recall, and accuracy and how that impacts the model’s suitability for real-world application, especially in a healthcare context.\n\nDiscuss which of the models is the best performing.\n\n#Task 4: Ethical Matrix and Audit\nIn this task, you will create an ethical matrix to audit the algorithms you have been working with. The goal is to analyze the broader implications of your machine learning model and how it might affect different stakeholders. Following the guidelines outlined in class, your ethical audit should include key questions that explore the potential harms, benefits, fairness, and accountability of the algorithm.\n##✏ Question 12: Define the key stakeholders\nIn any algorithmic system, there are various stakeholders who will be affected by the decisions made by the model. For example, one stakeholder is the patient being screened for breast cancer.\n\nAdd at least three more stakeholders:\n\n##Questions 13-15: Identify the ethical dimensions\nFor each stakeholder, consider the potential benefits and harms of using the model. Also, think about the ethical principles of fairness and accountability.\nThe main issues we’ve covered in class are listed below: * Benefits: What positive outcomes might each stakeholder experience if the model is deployed? * Harms: What potential negative consequences might arise for each stakeholder? Could the model cause harm or lead to incorrect conclusions? * Fairness: Is the model equally fair to all stakeholders, especially those from under-represented or vulnerable groups? Does the model avoid reinforcing bias? * Accountability: Who is responsible if the model makes a mistake? What steps should be taken if the model’s predictions are inaccurate or harmful?\nIf you decide to consider different issues, make sure to update the text boxes below to account for that. For example, if you want to consider something like medical advances you might replace the issue fairness with medical advances.\n##✏ Question 13:\nStakeholder1:\nBenefits:\nHarms:\nFairness:\nAccountability:\n##✏ Question 14:\nStakeholder2:\nBenefits:\nHarms:\nFairness:\nAccountability:\n##✏ Question 15:\nStakeholder3:\nBenefits:\nHarms:\nFairness:\nAccountability:\n##✏ Question 16: Mitigating Harm\nBased on your matrix, come up with two concrete actions that can be taken to mitigate potential harms. Example action: we’d like to ensure the model is interpretable for healthcare providers so they can understand and trust its predictions. This means we’d need to choose a model that is less complex but still robust enough to give good results.\n\nFirst option:\nSecond option:"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#daily-structure",
+    "href": "slides/00-intro-ml.html#daily-structure",
+    "title": "Welcome to ML!",
+    "section": "Daily Structure",
+    "text": "Daily Structure\n\nA Days:\n\ntwo morning lectures\nafternoon homework and project check\n\nB Days:\n\none morning lecture\none morning Lab\nafternoon standard quiz"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#themes-what-why-and-how",
+    "href": "slides/00-intro-ml.html#themes-what-why-and-how",
+    "title": "Welcome to ML!",
+    "section": "Themes: what, why, and how",
+    "text": "Themes: what, why, and how\n\nWhat: the plot\n\nblah\n\n\n\n\nHow: the process\n\nblah\n\n\n\n\n\nWhy: the theory\n\nTie together “how” and “what”"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#show-and-tell",
+    "href": "slides/00-intro-ml.html#show-and-tell",
+    "title": "Welcome to ML!",
+    "section": "Show and tell",
+    "text": "Show and tell\n\n\nForm a small group (2-4 people) with people sitting around you\nFirst, introduce yourselves to each other – name (and proper pronunciation of name), year, major, where are you from, etc."
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#course-website",
+    "href": "slides/00-intro-ml.html#course-website",
+    "title": "Welcome to ML!",
+    "section": "Course website",
+    "text": "Course website\n\nML_J2026\n\n\naka “the one link to rule them all”"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#lectures",
+    "href": "slides/00-intro-ml.html#lectures",
+    "title": "Welcome to ML!",
+    "section": "Lectures",
+    "text": "Lectures\n\nIn person\nAttendance is required\nA little bit of everything:\n\nTraditional lecture\nLive coding + demos\nShort exercises\nDiscussions"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#labs",
+    "href": "slides/00-intro-ml.html#labs",
+    "title": "Welcome to ML!",
+    "section": "Labs",
+    "text": "Labs\n\nOccurs every other day in the morning (check schedule for 💻)"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#quizzes",
+    "href": "slides/00-intro-ml.html#quizzes",
+    "title": "Welcome to ML!",
+    "section": "Quizzes",
+    "text": "Quizzes\n\nOccurs every other day in the afternoon (check schedule for 📄)"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#announcements",
+    "href": "slides/00-intro-ml.html#announcements",
+    "title": "Welcome to ML!",
+    "section": "Announcements",
+    "text": "Announcements\n\nSent via email"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#this-weeks-tasks",
+    "href": "slides/00-intro-ml.html#this-weeks-tasks",
+    "title": "Welcome to ML!",
+    "section": "This week’s tasks",
+    "text": "This week’s tasks\n\nCreate a GitHub account if you don’t have one\nRead the syllabus\nPost on Discussion board\nComplete the readings"
   },
   {
     "objectID": "index.html",
@@ -322,130 +383,34 @@
     "text": "Group Members:\n\nTask1: Understanding the data\n\nFollow the link https://github.com/washingtonpost/data-police-shootings to read about the data. Write a three sentence summary of what is included in this data, and where it comes from. This dataset allows only a small number of categories for race, and the dataset fails to recognize that some people are multiracial. This is a weakness of the dataset. Include at least one other observation that may be a weakness of the data\n\n\nWritten Answer\n\n\nYou can view csv by running the code chunk below.\n\n\nimport pandas as pd\n\nfatal_police_shootings_data = pd.read_csv('https://raw.githubusercontent.com/washingtonpost/data-police-shootings/refs/heads/master/v2/fatal-police-shootings-data.csv')\n\nfatal_police_shootings_data.head(10)\n\n\n    \n\n\n\n\n\n\nid\ndate\nthreat_type\nflee_status\narmed_with\ncity\ncounty\nstate\nlatitude\nlongitude\nlocation_precision\nname\nage\ngender\nrace\nrace_source\nwas_mental_illness_related\nbody_camera\nagency_ids\n\n\n\n\n0\n3\n2015-01-02\npoint\nnot\ngun\nShelton\nMason\nWA\n47.246826\n-123.121592\nnot_available\nTim Elliot\n53.0\nmale\nA\nnot_available\nTrue\nFalse\n73\n\n\n1\n4\n2015-01-02\npoint\nnot\ngun\nAloha\nWashington\nOR\n45.487421\n-122.891696\nnot_available\nLewis Lee Lembke\n47.0\nmale\nW\nnot_available\nFalse\nFalse\n70\n\n\n2\n5\n2015-01-03\nmove\nnot\nunarmed\nWichita\nSedgwick\nKS\n37.694766\n-97.280554\nnot_available\nJohn Paul Quintero\n23.0\nmale\nH\nnot_available\nFalse\nFalse\n238\n\n\n3\n8\n2015-01-04\npoint\nnot\nreplica\nSan Francisco\nSan Francisco\nCA\n37.762910\n-122.422001\nnot_available\nMatthew Hoffman\n32.0\nmale\nW\nnot_available\nTrue\nFalse\n196\n\n\n4\n9\n2015-01-04\npoint\nnot\nother\nEvans\nWeld\nCO\n40.383937\n-104.692261\nnot_available\nMichael Rodriguez\n39.0\nmale\nH\nnot_available\nFalse\nFalse\n473\n\n\n5\n11\n2015-01-04\nattack\nnot\ngun\nGuthrie\nLogan\nOK\n35.876991\n-97.423454\nnot_available\nKenneth Joe Brown\n18.0\nmale\nW\nnot_available\nFalse\nFalse\n101\n\n\n6\n13\n2015-01-05\nshoot\ncar\ngun\nChandler\nMaricopa\nAZ\n33.327887\n-111.840959\nnot_available\nKenneth Arnold Buck\n22.0\nmale\nH\nnot_available\nFalse\nFalse\n195\n\n\n7\n15\n2015-01-06\npoint\nnot\ngun\nAssaria\nSaline\nKS\n38.703755\n-97.563904\nnot_available\nBrock Nichols\n35.0\nmale\nW\nnot_available\nFalse\nFalse\n490\n\n\n8\n16\n2015-01-06\naccident\nnot\nunarmed\nBurlington\nDes Moines\nIA\n40.809250\n-91.118875\nnot_available\nAutumn Steele\n34.0\nfemale\nW\nnot_available\nFalse\nTrue\n287\n\n\n9\n17\n2015-01-06\npoint\nnot\nreplica\nKnoxville\nAllegheny\nPA\n40.412936\n-79.991408\nnot_available\nLeslie Sapp III\n47.0\nmale\nB\nnot_available\nFalse\nFalse\n26254\n\n\n\n\n\n    \n\n  \n    \n\n  \n    \n  \n    \n\n  \n\n    \n  \n\n\n\n  \n\n\n    \n        \n    \n\n  \n\n\n\n  \n\n\n    \n  \n\n\n\nList out some of the columns that are contained in this csv.\n\nWritten Answer\n\nFor each of those columns, give some examples for the data in that column, and what they mean. For example, some examples of values in the first column id are 22, 325, and 140.\n\nWritten Answer\n\nIn order to compare the representation of black people among the subjects of fatal police shootings to their representation in the general population, we need to know the percent of the United States population which is black. You can find this by googling ’racial demographics of the United States‘. Include a citation with the organization and url.\n\nWritten Answer\n\n\n\n\nTask2: Reading data into a dict\nRun the code chunk below. This will select some of the features from the dataset, and put it into a Python dictionary.\n\npolicing = fatal_police_shootings_data[['id', 'name', 'date', 'armed_with', 'age', 'gender', 'race', 'state']]\npolicing_dict = policing.set_index('id').to_dict(orient='index')\n\n\nWhat information from the original csv is stored in policing_dict? What information from the original csv do we use as the keys in policing_dict? What is the type of the values in policing_dict? Hint: use type(dict[key]).\n\n\nStudent Answer Hint: create a code chunk with type(dict[key]) to find the data type of the values in our dictionary\n\n\n\nTask3: Using the database\n\nFinding a particular record: Find the record of the fatal police shooting with ID number 1694. If you’ve followed current events in the past few years, there should be a familiar name here.\n\n\nStudent Answer Add policing_dict[1694] to a code chunk\n\n\nDisplaying data from a single record: Print the name and state of the individual with ID number 1694.\n\nStudent Answer\n\nDisplaying data from multiple records: The following code will display the entire dictionary using a for loop:\n\nfor person,data in policing dict.items():\nprint(policing dict[person])\nAdd an if statement to the for loop to filter out only individuals from Minnesota. This means you’ll need to check the state for each person and only print data if the state is Minnesota.\n\nStudent Answer\n\n\n\nTask4: Summarizing our data\n\nCreating a new dictionary as a subset: Instead of displaying all the information, let’s create a new dictionary that only contains inviduals from Minnesota. The syntax for this is: key:values for key, values in dict.items() if condition where condition is what you’re filtering on and dict is your dictionary. Name this new dictionary MN_selection.\n\n\nStudent Answer\n\n\nCreating summarization functions: We’d like to create a function that takes in our database dictionary and returns a dictionary with counts of occurrences of each race among subjects of fatal police shootings. The keys in this dictionary should be races, and the corresponding values should be the number of subjects of that race.\n\n\nStudent Answer The starter code for this function is below:\n\n\ndef get_race_counts(database:dict)-&gt;dict:\n  race_counts = {}\n  for person, data in database.items():\n    #add logic to populate race counts\n\n\n  return race_counts\n\n\nUsing a summarization function: Print the fraction of fatal police shootings with a black subject. This should be a number between 0 and 1, and can be computed by dividing the number of fatal police shootings with a black subject, by the total number of fatal police shootings.\n\n\nStudent Answer Note: using get, len, and round may be helpful.\n\n\nHow does the proportion of black subjects in fatal police shootings compare to the proportion of black people in the United States population?\n\n\nStudent Answer\n\n\n\nTask5: Comparing Summarizations\n\nCreate a new dictionary called unarmed_selection, which is built using dictionary comprehension on the original dictionary policing_dict. This dictionary should have the same structure as policing dict, except it will only contain entries for fatal police shootings where the subject was unarmed.\n\n\nStudent Answer\n\n\nCreate a new dictionary, called unarmed race counts, which is created using the get_race_counts function on the dictionary unarmed_selection. The purpose of this dictionary will be to count the number of occurrences of each race among subjects of fatal police shootings, including only those where the subject is unarmed.\n\n\nStudent Answer\n\n\nPrint the fraction of unarmed fatal police shootings with a black subject. This should be a number between 0 and 1, and can be computed by dividing the number of unarmed fatal police shootings with a black subject (you can get this from the dictionary unarmed race counts), by the total number of unarmed fatal police shootings.\n\n\nStudent Answer\n\n\nHow does the proportion of black subjects in fatal police shootings where the subject is unarmed compare to the proportion of black people in the United States population? How does it compare to the proportion of black subjects in all police shootings?\n\n\nStudent Answer\n\n\n\nTask6: Trends over time\n\nCreating a list of a single feature: Let’s now take a look at creating a list with our data. Using the code below, edit it so that only dates are shown (hint: do something to data). Now, get rid of anything that isn’t the year (use some string slicing). Name this list year_col, which contains only the year for each record in our database.\n\n\nStudent Answer Edit [data for person, data in policing dict.items()]\n\n\nCreating counts from a list: Summarize the list you just created into a dictionary where each key is a single year and the value is the count of that year in our database. Note: If you do this with dictionary comprehension use the list method count and set(year col).\n\n\nStudent Answer\n\n\nHow do the number of fatal police shootings change over time? Do you notice any patterns or trends?\n\n\nStudent Answer\n\n\n\nTask7: More stories to be told\nSources: * U.S. Crime and Arrest Data (FBI UCR) * U.S. Demographic Data (Census Bureau) * Police Departments’ Use of Force Data (BJS) * Pew Research on Policing * Other relevant sources (Reddit, social media, etc.)\n\nList at least two sources you found informative. Include the organization, url, and brief description of the information the source contains. This source could be an additional dataset, or it could be a result of an analysis done. Our goal is to try to link the insights from the previous tasks to other insights found elsewhere.\n\n\nStudent Answer\n\n\nCome up with at least three questions/insights that could supplement the analysis you have done so far. These questions should address some aspects of the following:\n\n\nvalidation: how can the data from these sources support or challenge the findings you’ve already made about racial disparities in fatal police shootings?\nexpansion: how can additional data be used to expand upon the analysis in new areas, or further explore systemic issues related to police shootings?\ncomparisons: how do the findings from these sources compare to the conclusion you’ve drawn from other tasks? Are there any contradictions or surprising findings?\n\n\nStudent Answer\n\n\n\nTask8: Reflection\n\nWrite a reflection (at least five sentences) on what you learned from this project. This can include your reaction to the results of the project, as well as the process of working with the data.\n\n\nStudent Answer\n\nWhen your group is done, each partner must submit a link to their workbook to Moodle. Make sure the link you shared is public."
   },
   {
-    "objectID": "PA1_EDA_with_Titanic.html",
-    "href": "PA1_EDA_with_Titanic.html",
-    "title": "Task 2: Critique the analysis",
+    "objectID": "homework.html",
+    "href": "homework.html",
+    "title": "Homework",
     "section": "",
-    "text": "Name:\nWho you worked with:\n##Objectives The goals of this project are to: * Understand the process of exploratory data analysis (EDA), statistical tests, and visualizations. * Develop the ability to critique and improve code generated by a language model (like ChatGPT or DeepSeek). * Create two publication-style visualizations that tell a story.\n##Overview This project is designed to reinforce some of the concepts we have learned while exploring data. For Task 1, you are to generate Python code to analyze and summarize the Titanic dataset given a prompt for a genAI model. For Task 2, you will critique the generated program by identifying three areas of improvement. For Task 3, you will implement the improvements you identified. For Task 4, you will create two publication-style visualizations that tell a story. For Task 5, you will reflect on this assignment.\n##Schedule Here is the suggested schedule for working on this project: * By Thursday, 2/13, read through the project instructions. * By Sunday, 2/16, complete Tasks 1-2 of the project, and start Task 3 of the project. * By Tuesday, 2/18, complete Task 3 of the project, and start Task 4. * By Wednesday, 2/19, complete Tasks 4-5 and check your solutions against the rubric (included at the end of these instructions), and submit your files through moodle.\nThis project is due on Thursday, 2/20, by 11:59pm.\n#Task 1: Generate an analysis\nUse the following prompt in ChatGPT to generate Python code for analyzing the Titanic dataset:\nmodel used:"
+    "text": "Stuff about homework",
+    "crumbs": [
+      "Homework"
+    ]
   },
   {
-    "objectID": "PA1_EDA_with_Titanic.html#part-1-generate-code",
-    "href": "PA1_EDA_with_Titanic.html#part-1-generate-code",
-    "title": "Task 2: Critique the analysis",
-    "section": "Part 1: Generate Code",
-    "text": "Part 1: Generate Code\nAdd the output to a code chunk below.\nIf your code does not initially run, you may want to comment some of it out and return to it during Task2."
+    "objectID": "homework.html#overview",
+    "href": "homework.html#overview",
+    "title": "Homework",
+    "section": "",
+    "text": "Stuff about homework",
+    "crumbs": [
+      "Homework"
+    ]
   },
   {
-    "objectID": "PA1_EDA_with_Titanic.html#part-2-outline-analysis",
-    "href": "PA1_EDA_with_Titanic.html#part-2-outline-analysis",
-    "title": "Task 2: Critique the analysis",
-    "section": "Part 2: Outline Analysis",
-    "text": "Part 2: Outline Analysis\nWith the program that was generated, fill in the methods taken for each of the points below (keep it general). Some examples have been filled in for you.\nOnce you have listed these out, add a quick explaination for why this step was done (i.e. what did it accomplish? what do you know about the data now?)\nSteps taken below:\n\nBasic statistics:\n\n\nhead\ndescribe\nisnull + sum\n\n\nVisualizations:\n\n\nsns.boxplot\n\n\nStatistical tests:\n\n\nstats.ttest_ind"
-  },
-  {
-    "objectID": "PA1_EDA_with_Titanic.html#part-1-questions-to-consider",
-    "href": "PA1_EDA_with_Titanic.html#part-1-questions-to-consider",
-    "title": "Task 2: Critique the analysis",
-    "section": "Part 1: Questions to consider",
-    "text": "Part 1: Questions to consider\nSome initial questions to consider are listed below. Add three more questions you may want to consider when looking over EDA, visualizations, and code in general.\nExample questions: * Is the choice of statistical test appropriate for the analysis? * Are there interpretations of statistical tests beyond p-value? * Are the visualizations clear, informative, and easy to interpret? * Are there any redundancies or areas where the code could be simplified?\nAdditional questions to consider:"
-  },
-  {
-    "objectID": "PA1_EDA_with_Titanic.html#part-2-improvements",
-    "href": "PA1_EDA_with_Titanic.html#part-2-improvements",
-    "title": "Task 2: Critique the analysis",
-    "section": "Part 2: Improvements",
-    "text": "Part 2: Improvements\nUsing all the questions above, list out three improvements that you would like to implement.\nFor each improvement, describe when this would occur (e.g. visualizations, statistical tests), why you would like to implement it, and what additional information is gained by doing so (i.e. what was the purpose of doing it?)\nImprovements:"
-  },
-  {
-    "objectID": "PA1_EDA_with_Titanic.html#part-1-updated-prompt",
-    "href": "PA1_EDA_with_Titanic.html#part-1-updated-prompt",
-    "title": "Task 2: Critique the analysis",
-    "section": "Part 1: Updated Prompt",
-    "text": "Part 1: Updated Prompt\nYou may find that you will have to iteratively update the prompt to get the exact output you’re looking for. Once you have a final prompt that implements all of the improvements, add it to the text box below"
-  },
-  {
-    "objectID": "PA1_EDA_with_Titanic.html#part-2-updated-code",
-    "href": "PA1_EDA_with_Titanic.html#part-2-updated-code",
-    "title": "Task 2: Critique the analysis",
-    "section": "Part 2: Updated Code",
-    "text": "Part 2: Updated Code\nNow add the outputted code generated from the updated prompt below."
-  },
-  {
-    "objectID": "PA1_EDA_with_Titanic.html#part-1-viz-1",
-    "href": "PA1_EDA_with_Titanic.html#part-1-viz-1",
-    "title": "Task 2: Critique the analysis",
-    "section": "Part 1: Viz 1",
-    "text": "Part 1: Viz 1"
-  },
-  {
-    "objectID": "PA1_EDA_with_Titanic.html#part-2-viz-2",
-    "href": "PA1_EDA_with_Titanic.html#part-2-viz-2",
-    "title": "Task 2: Critique the analysis",
-    "section": "Part 2: Viz 2",
-    "text": "Part 2: Viz 2"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#daily-structure",
-    "href": "slides/00-intro-ml.html#daily-structure",
-    "title": "Welcome to ML!",
-    "section": "Daily Structure",
-    "text": "Daily Structure\n\nA Days:\n\ntwo morning lectures\nafternoon homework and project check\n\nB Days:\n\none morning lecture\none morning Lab\nafternoon standard quiz"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#themes-what-why-and-how",
-    "href": "slides/00-intro-ml.html#themes-what-why-and-how",
-    "title": "Welcome to ML!",
-    "section": "Themes: what, why, and how",
-    "text": "Themes: what, why, and how\n\nWhat: the plot\n\nblah\n\n\n\n\nHow: the process\n\nblah\n\n\n\n\n\nWhy: the theory\n\nTie together “how” and “what”"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#show-and-tell",
-    "href": "slides/00-intro-ml.html#show-and-tell",
-    "title": "Welcome to ML!",
-    "section": "Show and tell",
-    "text": "Show and tell\n\n\nForm a small group (2-4 people) with people sitting around you\nFirst, introduce yourselves to each other – name (and proper pronunciation of name), year, major, where are you from, etc."
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#course-website",
-    "href": "slides/00-intro-ml.html#course-website",
-    "title": "Welcome to ML!",
-    "section": "Course website",
-    "text": "Course website\n\nML_J2026\n\n\naka “the one link to rule them all”"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#lectures",
-    "href": "slides/00-intro-ml.html#lectures",
-    "title": "Welcome to ML!",
-    "section": "Lectures",
-    "text": "Lectures\n\nIn person\nAttendance is required\nA little bit of everything:\n\nTraditional lecture\nLive coding + demos\nShort exercises\nDiscussions"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#labs",
-    "href": "slides/00-intro-ml.html#labs",
-    "title": "Welcome to ML!",
-    "section": "Labs",
-    "text": "Labs\n\nOccurs every other day in the morning (check schedule for 💻)"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#quizzes",
-    "href": "slides/00-intro-ml.html#quizzes",
-    "title": "Welcome to ML!",
-    "section": "Quizzes",
-    "text": "Quizzes\n\nOccurs every other day in the afternoon (check schedule for 📄)"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#announcements",
-    "href": "slides/00-intro-ml.html#announcements",
-    "title": "Welcome to ML!",
-    "section": "Announcements",
-    "text": "Announcements\n\nSent via email"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#this-weeks-tasks",
-    "href": "slides/00-intro-ml.html#this-weeks-tasks",
-    "title": "Welcome to ML!",
-    "section": "This week’s tasks",
-    "text": "This week’s tasks\n\nCreate a GitHub account if you don’t have one\nRead the syllabus\nPost on Discussion board\nComplete the readings"
+    "objectID": "homework.html#list",
+    "href": "homework.html#list",
+    "title": "Homework",
+    "section": "List",
+    "text": "List\nHW 1",
+    "crumbs": [
+      "Homework"
+    ]
   },
   {
     "objectID": "labs.html",
