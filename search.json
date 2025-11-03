@@ -49,184 +49,41 @@
     "text": "✏ Question 7: Continued evaluation\nEven if a model has high accuracy, it may not be the best choice for our given situation.\n\nDescribe why this may be.\nWhat would be a solution for this problem?\n\n#Task 3: Evaluation Metrics\nIn this task, we will evaluate the performance of the models using different evaluation metrics such as accuracy, precision, recall, and F1 score.\n\nfrom sklearn.metrics import precision_score, recall_score, f1_score\n\n# Train and evaluate model\nmodels = [(null_model, \"null model\"), (basic_model, \"basic model\"), (complex_model, \"complex model\")]\nfor model_type in models:\n  y_pred = model_type[0].predict(X_test)\n  # Evaluate\n  print(f\"{model_type[1]}: {model_type[0]}\")\n  print(\"Accuracy:\", round(accuracy_score(y_test, y_pred),3))\n  print(\"Precision:\", round(precision_score(y_test, y_pred),3))\n  print(\"Recall:\", round(recall_score(y_test, y_pred),3))\n  print(\"F1 Score:\", round(f1_score(y_test, y_pred),3), \"\\n\")\n\n##Questions 8-11: Interpret Metrics\nFor each model, interpret the following evaluation metrics:\n##✏ Question 8: Accuracy\nNull model:\nBasic model:\nComplex model:\n##✏ Question 9: Precision\nNull model:\nBasic model:\nComplex model:\n##✏ Question 10: Recall\nNull model:\nBasic model:\nComplex model:\n##✏ Question 11: Which is the best Once you have interpreted all of metrics, we’d like to choose which model is the best given the problem. You’ll need to consider the trade-offs between precision, recall, and accuracy and how that impacts the model’s suitability for real-world application, especially in a healthcare context.\n\nDiscuss which of the models is the best performing.\n\n#Task 4: Ethical Matrix and Audit\nIn this task, you will create an ethical matrix to audit the algorithms you have been working with. The goal is to analyze the broader implications of your machine learning model and how it might affect different stakeholders. Following the guidelines outlined in class, your ethical audit should include key questions that explore the potential harms, benefits, fairness, and accountability of the algorithm.\n##✏ Question 12: Define the key stakeholders\nIn any algorithmic system, there are various stakeholders who will be affected by the decisions made by the model. For example, one stakeholder is the patient being screened for breast cancer.\n\nAdd at least three more stakeholders:\n\n##Questions 13-15: Identify the ethical dimensions\nFor each stakeholder, consider the potential benefits and harms of using the model. Also, think about the ethical principles of fairness and accountability.\nThe main issues we’ve covered in class are listed below: * Benefits: What positive outcomes might each stakeholder experience if the model is deployed? * Harms: What potential negative consequences might arise for each stakeholder? Could the model cause harm or lead to incorrect conclusions? * Fairness: Is the model equally fair to all stakeholders, especially those from under-represented or vulnerable groups? Does the model avoid reinforcing bias? * Accountability: Who is responsible if the model makes a mistake? What steps should be taken if the model’s predictions are inaccurate or harmful?\nIf you decide to consider different issues, make sure to update the text boxes below to account for that. For example, if you want to consider something like medical advances you might replace the issue fairness with medical advances.\n##✏ Question 13:\nStakeholder1:\nBenefits:\nHarms:\nFairness:\nAccountability:\n##✏ Question 14:\nStakeholder2:\nBenefits:\nHarms:\nFairness:\nAccountability:\n##✏ Question 15:\nStakeholder3:\nBenefits:\nHarms:\nFairness:\nAccountability:\n##✏ Question 16: Mitigating Harm\nBased on your matrix, come up with two concrete actions that can be taken to mitigate potential harms. Example action: we’d like to ensure the model is interpretable for healthcare providers so they can understand and trust its predictions. This means we’d need to choose a model that is less complex but still robust enough to give good results.\n\nFirst option:\nSecond option:"
   },
   {
-    "objectID": "slides/00-intro-ml.html#daily-structure",
-    "href": "slides/00-intro-ml.html#daily-structure",
-    "title": "Welcome to ML!",
-    "section": "Daily Structure",
-    "text": "Daily Structure\n\nA Days:\n\ntwo morning lectures\nafternoon homework and project check\n\nB Days:\n\none morning lecture\none morning Lab\nafternoon standard quiz"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#themes-what-why-and-how",
-    "href": "slides/00-intro-ml.html#themes-what-why-and-how",
-    "title": "Welcome to ML!",
-    "section": "Themes: what, why, and how",
-    "text": "Themes: what, why, and how\n\nWhat: the plot\n\nblah\n\n\n\n\nHow: the process\n\nblah\n\n\n\n\n\nWhy: the theory\n\nTie together “how” and “what”"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#show-and-tell",
-    "href": "slides/00-intro-ml.html#show-and-tell",
-    "title": "Welcome to ML!",
-    "section": "Show and tell",
-    "text": "Show and tell\n\n\nForm a small group (2-4 people) with people sitting around you\nFirst, introduce yourselves to each other – name (and proper pronunciation of name), year, major, where are you from, etc."
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#course-website",
-    "href": "slides/00-intro-ml.html#course-website",
-    "title": "Welcome to ML!",
-    "section": "Course website",
-    "text": "Course website\n\nML_J2026\n\n\naka “the one link to rule them all”"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#lectures",
-    "href": "slides/00-intro-ml.html#lectures",
-    "title": "Welcome to ML!",
-    "section": "Lectures",
-    "text": "Lectures\n\nIn person\nAttendance is required\nA little bit of everything:\n\nTraditional lecture\nLive coding + demos\nShort exercises\nDiscussions"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#labs",
-    "href": "slides/00-intro-ml.html#labs",
-    "title": "Welcome to ML!",
-    "section": "Labs",
-    "text": "Labs\n\nOccurs every other day in the morning (check schedule for 💻)"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#quizzes",
-    "href": "slides/00-intro-ml.html#quizzes",
-    "title": "Welcome to ML!",
-    "section": "Quizzes",
-    "text": "Quizzes\n\nOccurs every other day in the afternoon (check schedule for 📄)"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#announcements",
-    "href": "slides/00-intro-ml.html#announcements",
-    "title": "Welcome to ML!",
-    "section": "Announcements",
-    "text": "Announcements\n\nSent via email"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#this-weeks-tasks",
-    "href": "slides/00-intro-ml.html#this-weeks-tasks",
-    "title": "Welcome to ML!",
-    "section": "This week’s tasks",
-    "text": "This week’s tasks\n\nCreate a GitHub account if you don’t have one\nRead the syllabus\nPost on Discussion board\nComplete the readings"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Machine Learning",
+    "objectID": "homework.html",
+    "href": "homework.html",
+    "title": "Homework",
     "section": "",
-    "text": "This is the homepage for CSCI 200 - Introduction to Machine Learning taught by Prof. Kim Mandery in January 2026 at St. Olaf College. All course materials will be posted on this site.\nYou can find the course syllabus here and the course schedule here .",
+    "text": "Stuff about homework",
     "crumbs": [
-      "Course Information",
-      "Home"
+      "Homework"
     ]
   },
   {
-    "objectID": "index.html#course-overview",
-    "href": "index.html#course-overview",
-    "title": "Machine Learning",
+    "objectID": "homework.html#overview",
+    "href": "homework.html#overview",
+    "title": "Homework",
     "section": "",
-    "text": "This is the homepage for CSCI 200 - Introduction to Machine Learning taught by Prof. Kim Mandery in January 2026 at St. Olaf College. All course materials will be posted on this site.\nYou can find the course syllabus here and the course schedule here .",
+    "text": "Stuff about homework",
     "crumbs": [
-      "Course Information",
-      "Home"
+      "Homework"
     ]
   },
   {
-    "objectID": "course_information/schedule.html",
-    "href": "course_information/schedule.html",
-    "title": "Schedule",
-    "section": "",
-    "text": "week\ndow\ndate\nsession\nprepare\ntopic\nmaterials\n\n\n\n\n1\nM\nJan 5\nZ\nread the syllabus\nIntro to ML  Using GitHub\n👩🏻‍🏫intro to ml  👩🏻‍🏫github websites  💻Lab0\n\n\n\nT\nJan 6\nA\n📚 gg-book - grammar  📚 socviz\nEDA: graphs\n👩🏻‍🏫EDA1  📝HW1  ☑️PC1\n\n\n\nW\nJan 7\nB\n📋 EDA Standard\nEDA: statistics  Quiz: EDA\n👩🏻‍🏫EDA2  💻 Lab1",
+    "objectID": "homework.html#list",
+    "href": "homework.html#list",
+    "title": "Homework",
+    "section": "List",
+    "text": "List\nHW 1",
     "crumbs": [
-      "Course Information",
-      "Schedule"
+      "Homework"
     ]
   },
   {
-    "objectID": "PA4_Data_Cleaning_with_AirBnB.html",
-    "href": "PA4_Data_Cleaning_with_AirBnB.html",
-    "title": "Task 1: NYC Data",
+    "objectID": "labs/lab0.html",
+    "href": "labs/lab0.html",
+    "title": "Task1: Understanding the data",
     "section": "",
-    "text": "Name:\nWho you worked with:"
-  },
-  {
-    "objectID": "PA4_Data_Cleaning_with_AirBnB.html#objectives",
-    "href": "PA4_Data_Cleaning_with_AirBnB.html#objectives",
-    "title": "Task 1: NYC Data",
-    "section": "Objectives",
-    "text": "Objectives\nThe goals of this project are to: - Perform EDA and data cleaning - Implement transformations and filtering functions - Look for EDA and data cleaning inspiration from outside sources"
-  },
-  {
-    "objectID": "PA4_Data_Cleaning_with_AirBnB.html#overview",
-    "href": "PA4_Data_Cleaning_with_AirBnB.html#overview",
-    "title": "Task 1: NYC Data",
-    "section": "Overview",
-    "text": "Overview\nFor this programming assignment, you will practice some data cleaning and preprocessing, using a dataset of AirBNB data from New York City. In working with this dataset, our goal will be to train a model that can predict the price of an AirBNB rental. Imagine that you are a data scientist working for AirBNB, and your boss has asked you to develop this as a tool that can suggest prices for new listings."
-  },
-  {
-    "objectID": "PA4_Data_Cleaning_with_AirBnB.html#schedule",
-    "href": "PA4_Data_Cleaning_with_AirBnB.html#schedule",
-    "title": "Task 1: NYC Data",
-    "section": "Schedule",
-    "text": "Schedule\nHere is the suggested schedule for working on this project: - Weekend: Read through project instructions, complete Task 1. - Tuesday: Complete Tasks 2-3. - Wednesday: Complete Tasks 4-5. - Thursday: Complete Task 6.\nThis project is due on Thursday, 3/13, by 11:59pm."
-  },
-  {
-    "objectID": "PA4_Data_Cleaning_with_AirBnB.html#held-out-set",
-    "href": "PA4_Data_Cleaning_with_AirBnB.html#held-out-set",
-    "title": "Task 1: NYC Data",
-    "section": "Held-Out Set",
-    "text": "Held-Out Set\nNow, I’m going to select a few records that we’ll use at the end to test a prediction function. I’m selecting these here, since we’ll be making changes to the dataset later.\n\nchosen_indices = range(0, 9000, 1000)\n\nheld_out = nyc.iloc[chosen_indices]\n\nheld_out"
-  },
-  {
-    "objectID": "PA4_Data_Cleaning_with_AirBnB.html#price",
-    "href": "PA4_Data_Cleaning_with_AirBnB.html#price",
-    "title": "Task 1: NYC Data",
-    "section": "Price",
-    "text": "Price\nWe’ll start by looking at our target, price. Let’s look at a histogram, to see how the prices are distributed.\n\nnyc['price'].hist(bins = 80)\n\nThis is extremely skewed. We have a price that’s $100,000, but the vast majority have a price under $1000.\nThinking about the tool we’re building, we might want to focus on training a model that predicts well for lower/typical prices, and ignore the really expensive ones. Let’s look at what happens with a few different choices for restricting the prices.\nFirst, we look at prices below $2,000.\n\nprint(\"Number of entries: \", len(nyc[nyc['price'] &lt; 2000]))\n\nnyc[nyc['price'] &lt; 2000]['price'].hist(bins = 100)\n\nNext, let’s look at prices below $1,000.\n\nprint(\"Number of entries: \", len(nyc[nyc['price'] &lt; 1000]))\n\nnyc[nyc['price'] &lt; 1000]['price'].hist(bins = 100)\n\nHere, we look at prices below $500.\n\nprint(\"Number of entries: \", len(nyc[nyc['price'] &lt; 500]))\n\nnyc[nyc['price'] &lt; 500]['price'].hist(bins = 100)\n\nLet’s focus on prices below $500. This still captures a lot of the data, while limiting us to trying to predict prices for more typical listings. Note that the distribution is still skewed - we’ll handle this in a bit.\n\nnyc = nyc[nyc['price'] &lt; 500]\n\nnyc.describe(include = \"all\")\n\nNotice that the minimum price is $0, which seems like nonsense. Let’s look at the listings with a price of $0.\n\nnyc[nyc['price'] &lt;= 0]\n\nThere aren’t too many of them, so let’s just exclude those.\n\nnyc = nyc[nyc['price'] &gt; 0]\n\nnyc.describe(include = \"all\")\n\nWe’ve seen that even restricting to prices below $500, we still have a skewed distribution. Let’s see if applying a transformation can help. First, we try applying a log function.\n\nnyc[\"price\"].apply(np.log).hist(bins = 50)\n\nLet’s also see what happens with applying a square root function.\n\nnyc[\"price\"].apply(np.sqrt).hist(bins = 50)\n\nWe’ll choose to apply the log transformation. Note that applying such a transformation does make sense here, because the difference between prices $400 and $450 is less significant than the difference between prices $50 and $100.\n##💻 Q5: Log Price Add a new column called log_price, which has the log transformation appied to the column price. Then, drop price from the dataframe.\n\n# add column log_price\nnyc[\"log_price\"] = #your code here\n\n#drop price\n#your code here\n\nnyc.describe(include = \"all\")\n\n\nassert(np.isclose(nyc[\"log_price\"].mean(), 4.60618))\nassert(\"price\" not in nyc.columns)"
-  },
-  {
-    "objectID": "PA4_Data_Cleaning_with_AirBnB.html#latitude-and-longitude",
-    "href": "PA4_Data_Cleaning_with_AirBnB.html#latitude-and-longitude",
-    "title": "Task 1: NYC Data",
-    "section": "Latitude and Longitude",
-    "text": "Latitude and Longitude\nNow, let’s take a look at latitude and longitude. We’ll look at the maximum and mininum values, to see the range they fall in.\n\nprint(nyc['latitude'].max())\nprint(nyc['latitude'].min())\nprint(nyc['longitude'].max())\nprint(nyc['longitude'].min())\n\nThis range makes sense here, since all of the listings are in New York City. Now, let’s look at histograms.\n\nnyc['latitude'].hist(bins = 50)\n\n\nnyc['longitude'].hist(bins = 50)\n\nThe distributions look pretty close to normal, so we’ll leave them as they are."
-  },
-  {
-    "objectID": "PA4_Data_Cleaning_with_AirBnB.html#number-of-reviews",
-    "href": "PA4_Data_Cleaning_with_AirBnB.html#number-of-reviews",
-    "title": "Task 1: NYC Data",
-    "section": "Number of Reviews",
-    "text": "Number of Reviews\nNow, let’s look at number of reviews. We’ll create a histogram to see the distribution of the data.\n\nnyc['number_of_reviews'].hist(bins = 50)\n\nThis has a very dramatic right skew, so let’s try applying some transformations. We’ll start with a log transformation.\nNow, if we were to apply the log transformation to this feature we would end up with an error. To fix this we need to add 1 to each value prior to log transforming it. This process is called smoothing and can be particularly helpful when working with text data in the future.\n##✏ Q6: Add one smoothing\nExplain why we need to add 1. Hint: are there any values that when you apply the log transformation you would run into issues?\n[your answer here]\nNow let’s visualize this add-one smoothing log transformation\n\nnyc[\"number_of_reviews\"].apply(lambda x: (np.log(x+1))).hist(bins = 50)\n\nThis is an improvement, but still right skewed. Let’s look at a square root transformation next.\n\nnyc[\"number_of_reviews\"].apply(np.sqrt).hist(bins = 50)\n\nThat’s not as good as the log transformation.\nSince the result of the log transformation is still pretty skewed, let’s try applying the log transformation again. Again, we’ll have to add 1 before applying the log transformation.\n##💻 Q7: log-log function In the cell below, define a function called log_log that does the following computation: \\[ f(x) = \\log(\\log(x+1)+1)\\].\nNote: replace the keyword pass with the computation above.\n\ndef log_log(value):\n  pass\n\n# create histogram\nnyc[\"number_of_reviews\"].apply(log_log).hist(bins = 50)\n\nThis still isn’t great, but we can see that we’re going to have trouble improving much more, since the number of reviews is going to be very discrete for small numbers (hence the tall, isolated columns on the left side). So, we’ll use the log-log transformation.\nNow construct a new column, log_log_number_of_reviews, by applying the log_log function to the column number_of_reviews. Drop the old column, number_of_reviews, from the data frame\n\n# your code here\n\n\nnyc.describe(include = \"all\")\n\n\nassert(\"log_log_number_of_reviews\" in nyc.columns)\nassert(\"number_of_reviews\" not in nyc.columns)\nassert(np.isclose(nyc[\"log_log_number_of_reviews\"].mean(), 0.896842))"
-  },
-  {
-    "objectID": "PA4_Data_Cleaning_with_AirBnB.html#calculated-host-listings-count",
-    "href": "PA4_Data_Cleaning_with_AirBnB.html#calculated-host-listings-count",
-    "title": "Task 1: NYC Data",
-    "section": "Calculated Host Listings Count",
-    "text": "Calculated Host Listings Count\nNow, let’s look at the column calculated_host_listings_count. We’ll look at the distribution.\n\nnyc['calculated_host_listings_count'].hist(bins = 50)\n\nSince this is very skewed, let’s look at what happens when we apply a log transformtion.\n\nnyc[\"calculated_host_listings_count\"].apply(np.log).hist(bins = 50)\n\nStill very skewed, so let’s try the log log transformation\n\nnyc[\"calculated_host_listings_count\"].apply(log_log).hist(bins = 50)\n\nStill skewed, and we can tell that the data becoming very discrete is going to be an issue. This might not be the best choice, but let’s just stick with applying a log transformation.\n\nnyc[\"log_calculated_host_listings_count\"] = nyc[\"calculated_host_listings_count\"].apply(np.log)\n\nnyc.drop(\"calculated_host_listings_count\", axis = 1, inplace = True)\n\nnyc.describe(include = \"all\")"
-  },
-  {
-    "objectID": "PA4_Data_Cleaning_with_AirBnB.html#room-type",
-    "href": "PA4_Data_Cleaning_with_AirBnB.html#room-type",
-    "title": "Task 1: NYC Data",
-    "section": "Room Type",
-    "text": "Room Type\nWe’ll look at room type next.\n\nnyc['room_type'].value_counts()\n\n##✏ Q10: Reasoning for OHE\nWe’re going to apply one-hot encoding to this feature as it is. Why are we choosing to do the OHE immediately instead of doing additional cleaning on this feature first?\n[your answer here]\nLet’s go ahead and OHE room_type\n\nroom_type_dummies = pd.get_dummies(nyc[\"room_type\"], prefix = \"room_type\")\n\nnyc = nyc.join(room_type_dummies)\nnyc.drop('room_type', axis = 1, inplace = True)\n\nnyc.describe(include = \"all\")"
-  },
-  {
-    "objectID": "PA4_Data_Cleaning_with_AirBnB.html#data-cleaning-relates-to-model-performance",
-    "href": "PA4_Data_Cleaning_with_AirBnB.html#data-cleaning-relates-to-model-performance",
-    "title": "Task 1: NYC Data",
-    "section": "Data cleaning relates to model performance",
-    "text": "Data cleaning relates to model performance\nNow that we have gone through our features and made some transformations, we would typically train a model to see how well it performs. Remember, data cleaning is the most impactful thing you can do to improve your model performance.\nThe following steps would create a model to predict the price of an AirBNB rental based off our transformed feature set.\nSteps: * Selecting our features and target. * Split the data into testing and training sets. * Fit selected predictive model to the training data. * Check appropriate evaluation metric for our training data and for our testing data. * Plot predicted values again true target values, to visualize how the selected model is performing.\nThis last step means that we will need to apply transformations to the parameters, that correspond to the transformations we did on the features of the dataset.\nAn example for implementation with our data set: * Use selected model trained above to make a predict for log_price. * “Undo” the log transformation, and return the predicted price. * Compare your predictions to the actual prices for the records we pulled out.\n##✏ Q11: Next Steps Even after some data cleaning, suppose that we are not getting very good performance. What are two things you could try next?\nOption1:\nOption2:"
-  },
-  {
-    "objectID": "PA4_Data_Cleaning_with_AirBnB.html#finding-inspiration-in-others",
-    "href": "PA4_Data_Cleaning_with_AirBnB.html#finding-inspiration-in-others",
-    "title": "Task 1: NYC Data",
-    "section": "Finding inspiration in others",
-    "text": "Finding inspiration in others\nThe best way to learn how to clean data is to see what other people do!\nFor this last task, scroll down and select one of the notebooks someone has published on the Kaggle site (linked in Task 1). Note: you may have to dig a bit to see one you like.\nOnce you have a notebook selected, read through it and answer the following questions.\n##✏ Q12: Url of notebook used:\n[your answer here]\n##✏ Q13: EDA\n\nDescribe something new this workbook has done with EDA.\nWhat is one reason this may be a good choice for our data.\nWhat is one reason that this may not be a good choice for our data.\nHow does this compare to what we’ve done so far with the data?\n\n[your answer here]\n##💻 Q14: EDA plot Now, try to replicate this EDA step in the code chunk below. You can copy-paste from the author’s work, but you may need to change a few things so it can work on our dataframe nyc\n\n#your code here\n\n##✏ Q15: Data Cleaning\n\nDescribe something new this workbook has done with data cleaning.\nWhat is one reason this may be a good choice for our data.\nWhat is one reason that this may not be a good choice for our data.\nHow does this compare to what we’ve done so far with the data?\n\n[your answer here]\n##💻 Q16: Data cleaning step Now, try to replicate this data cleaning step in the code chunk below. You can copy-paste from the author’s work, but you may need to change a few things so it can work on our dataframe nyc\n\n#your code here\n\n#Task 6: Reflection\nTake a moment to reflect on the assingment\n##✏ Q17: Reflection\nWhat did you like about it? What could be improved? Your answers will not affect your overall grade. This feedback will be used to improve future programming assignments.\n#Grading\nFor each of the following accomplishments, there is a breakdown of points which total to 20. The fraction of points earned out of 20 will be multiplied by 5 to get your final score (e.g. 17 points earned will be 17/20 * 5 → 4.25) * (1pt) Task1 q1: Correctly filters dataset * (2pt) Task1 q2: Gives 1-2 sectence descriptions for each feature * (2pt) Task2 q3: Discussed reasons for why all the listed features were dropped * (1pt) Task2 q4: Discussed reasons for why all the listed features were kept * (1pt) Task3 q5: Correctly implemented a log function * (1pt) Task3 q6: Identified the reason for adding 1 to each value * (1pt) Task3 q7: Correctly implemented a log_log with add-one function * (1pt) Task4 q8: Correclt implemented a filtering function for neighborhoods * (1pt) Task4 q9: Replicated the OHE code for neighborhoods * (1pt) Task4 q10: Discusses why we can do OHE without cleaning * (2pt) Task5 q11: Gives two scenarios to improve model performance for our airbnb dataset. Must include specific examples from the data. * (1pt) Task5 q12: Url of inspiration is included * (1pt) Task5 q13: Discusses new EDA from inspiration notebook * (1pt) Task5 q14: Replicates (successfully) the EDA plot * (1pt) Task5 q15: Discusses new data cleaning from inspiration notebook * (1pt) Task5 q16: Replicates (successfully) the data cleaning * (1pt) Task6 q17: Thoughtfully reflected on the assignment"
+    "text": "Group Members:\n\nTask1: Understanding the data\n\nFollow the link https://github.com/washingtonpost/data-police-shootings to read about the data. Write a three sentence summary of what is included in this data, and where it comes from. This dataset allows only a small number of categories for race, and the dataset fails to recognize that some people are multiracial. This is a weakness of the dataset. Include at least one other observation that may be a weakness of the data\n\n\nWritten Answer\n\n\nYou can view csv by running the code chunk below.\n\n\nimport pandas as pd\n\nfatal_police_shootings_data = pd.read_csv('https://raw.githubusercontent.com/washingtonpost/data-police-shootings/refs/heads/master/v2/fatal-police-shootings-data.csv')\n\nfatal_police_shootings_data.head(10)\n\n\n    \n\n\n\n\n\n\nid\ndate\nthreat_type\nflee_status\narmed_with\ncity\ncounty\nstate\nlatitude\nlongitude\nlocation_precision\nname\nage\ngender\nrace\nrace_source\nwas_mental_illness_related\nbody_camera\nagency_ids\n\n\n\n\n0\n3\n2015-01-02\npoint\nnot\ngun\nShelton\nMason\nWA\n47.246826\n-123.121592\nnot_available\nTim Elliot\n53.0\nmale\nA\nnot_available\nTrue\nFalse\n73\n\n\n1\n4\n2015-01-02\npoint\nnot\ngun\nAloha\nWashington\nOR\n45.487421\n-122.891696\nnot_available\nLewis Lee Lembke\n47.0\nmale\nW\nnot_available\nFalse\nFalse\n70\n\n\n2\n5\n2015-01-03\nmove\nnot\nunarmed\nWichita\nSedgwick\nKS\n37.694766\n-97.280554\nnot_available\nJohn Paul Quintero\n23.0\nmale\nH\nnot_available\nFalse\nFalse\n238\n\n\n3\n8\n2015-01-04\npoint\nnot\nreplica\nSan Francisco\nSan Francisco\nCA\n37.762910\n-122.422001\nnot_available\nMatthew Hoffman\n32.0\nmale\nW\nnot_available\nTrue\nFalse\n196\n\n\n4\n9\n2015-01-04\npoint\nnot\nother\nEvans\nWeld\nCO\n40.383937\n-104.692261\nnot_available\nMichael Rodriguez\n39.0\nmale\nH\nnot_available\nFalse\nFalse\n473\n\n\n5\n11\n2015-01-04\nattack\nnot\ngun\nGuthrie\nLogan\nOK\n35.876991\n-97.423454\nnot_available\nKenneth Joe Brown\n18.0\nmale\nW\nnot_available\nFalse\nFalse\n101\n\n\n6\n13\n2015-01-05\nshoot\ncar\ngun\nChandler\nMaricopa\nAZ\n33.327887\n-111.840959\nnot_available\nKenneth Arnold Buck\n22.0\nmale\nH\nnot_available\nFalse\nFalse\n195\n\n\n7\n15\n2015-01-06\npoint\nnot\ngun\nAssaria\nSaline\nKS\n38.703755\n-97.563904\nnot_available\nBrock Nichols\n35.0\nmale\nW\nnot_available\nFalse\nFalse\n490\n\n\n8\n16\n2015-01-06\naccident\nnot\nunarmed\nBurlington\nDes Moines\nIA\n40.809250\n-91.118875\nnot_available\nAutumn Steele\n34.0\nfemale\nW\nnot_available\nFalse\nTrue\n287\n\n\n9\n17\n2015-01-06\npoint\nnot\nreplica\nKnoxville\nAllegheny\nPA\n40.412936\n-79.991408\nnot_available\nLeslie Sapp III\n47.0\nmale\nB\nnot_available\nFalse\nFalse\n26254\n\n\n\n\n\n    \n\n  \n    \n\n  \n    \n  \n    \n\n  \n\n    \n  \n\n\n\n  \n\n\n    \n        \n    \n\n  \n\n\n\n  \n\n\n    \n  \n\n\n\nList out some of the columns that are contained in this csv.\n\nWritten Answer\n\nFor each of those columns, give some examples for the data in that column, and what they mean. For example, some examples of values in the first column id are 22, 325, and 140.\n\nWritten Answer\n\nIn order to compare the representation of black people among the subjects of fatal police shootings to their representation in the general population, we need to know the percent of the United States population which is black. You can find this by googling ’racial demographics of the United States‘. Include a citation with the organization and url.\n\nWritten Answer\n\n\n\n\nTask2: Reading data into a dict\nRun the code chunk below. This will select some of the features from the dataset, and put it into a Python dictionary.\n\npolicing = fatal_police_shootings_data[['id', 'name', 'date', 'armed_with', 'age', 'gender', 'race', 'state']]\npolicing_dict = policing.set_index('id').to_dict(orient='index')\n\n\nWhat information from the original csv is stored in policing_dict? What information from the original csv do we use as the keys in policing_dict? What is the type of the values in policing_dict? Hint: use type(dict[key]).\n\n\nStudent Answer Hint: create a code chunk with type(dict[key]) to find the data type of the values in our dictionary\n\n\n\nTask3: Using the database\n\nFinding a particular record: Find the record of the fatal police shooting with ID number 1694. If you’ve followed current events in the past few years, there should be a familiar name here.\n\n\nStudent Answer Add policing_dict[1694] to a code chunk\n\n\nDisplaying data from a single record: Print the name and state of the individual with ID number 1694.\n\nStudent Answer\n\nDisplaying data from multiple records: The following code will display the entire dictionary using a for loop:\n\nfor person,data in policing dict.items():\nprint(policing dict[person])\nAdd an if statement to the for loop to filter out only individuals from Minnesota. This means you’ll need to check the state for each person and only print data if the state is Minnesota.\n\nStudent Answer\n\n\n\nTask4: Summarizing our data\n\nCreating a new dictionary as a subset: Instead of displaying all the information, let’s create a new dictionary that only contains inviduals from Minnesota. The syntax for this is: key:values for key, values in dict.items() if condition where condition is what you’re filtering on and dict is your dictionary. Name this new dictionary MN_selection.\n\n\nStudent Answer\n\n\nCreating summarization functions: We’d like to create a function that takes in our database dictionary and returns a dictionary with counts of occurrences of each race among subjects of fatal police shootings. The keys in this dictionary should be races, and the corresponding values should be the number of subjects of that race.\n\n\nStudent Answer The starter code for this function is below:\n\n\ndef get_race_counts(database:dict)-&gt;dict:\n  race_counts = {}\n  for person, data in database.items():\n    #add logic to populate race counts\n\n\n  return race_counts\n\n\nUsing a summarization function: Print the fraction of fatal police shootings with a black subject. This should be a number between 0 and 1, and can be computed by dividing the number of fatal police shootings with a black subject, by the total number of fatal police shootings.\n\n\nStudent Answer Note: using get, len, and round may be helpful.\n\n\nHow does the proportion of black subjects in fatal police shootings compare to the proportion of black people in the United States population?\n\n\nStudent Answer\n\n\n\nTask5: Comparing Summarizations\n\nCreate a new dictionary called unarmed_selection, which is built using dictionary comprehension on the original dictionary policing_dict. This dictionary should have the same structure as policing dict, except it will only contain entries for fatal police shootings where the subject was unarmed.\n\n\nStudent Answer\n\n\nCreate a new dictionary, called unarmed race counts, which is created using the get_race_counts function on the dictionary unarmed_selection. The purpose of this dictionary will be to count the number of occurrences of each race among subjects of fatal police shootings, including only those where the subject is unarmed.\n\n\nStudent Answer\n\n\nPrint the fraction of unarmed fatal police shootings with a black subject. This should be a number between 0 and 1, and can be computed by dividing the number of unarmed fatal police shootings with a black subject (you can get this from the dictionary unarmed race counts), by the total number of unarmed fatal police shootings.\n\n\nStudent Answer\n\n\nHow does the proportion of black subjects in fatal police shootings where the subject is unarmed compare to the proportion of black people in the United States population? How does it compare to the proportion of black subjects in all police shootings?\n\n\nStudent Answer\n\n\n\nTask6: Trends over time\n\nCreating a list of a single feature: Let’s now take a look at creating a list with our data. Using the code below, edit it so that only dates are shown (hint: do something to data). Now, get rid of anything that isn’t the year (use some string slicing). Name this list year_col, which contains only the year for each record in our database.\n\n\nStudent Answer Edit [data for person, data in policing dict.items()]\n\n\nCreating counts from a list: Summarize the list you just created into a dictionary where each key is a single year and the value is the count of that year in our database. Note: If you do this with dictionary comprehension use the list method count and set(year col).\n\n\nStudent Answer\n\n\nHow do the number of fatal police shootings change over time? Do you notice any patterns or trends?\n\n\nStudent Answer\n\n\n\nTask7: More stories to be told\nSources: * U.S. Crime and Arrest Data (FBI UCR) * U.S. Demographic Data (Census Bureau) * Police Departments’ Use of Force Data (BJS) * Pew Research on Policing * Other relevant sources (Reddit, social media, etc.)\n\nList at least two sources you found informative. Include the organization, url, and brief description of the information the source contains. This source could be an additional dataset, or it could be a result of an analysis done. Our goal is to try to link the insights from the previous tasks to other insights found elsewhere.\n\n\nStudent Answer\n\n\nCome up with at least three questions/insights that could supplement the analysis you have done so far. These questions should address some aspects of the following:\n\n\nvalidation: how can the data from these sources support or challenge the findings you’ve already made about racial disparities in fatal police shootings?\nexpansion: how can additional data be used to expand upon the analysis in new areas, or further explore systemic issues related to police shootings?\ncomparisons: how do the findings from these sources compare to the conclusion you’ve drawn from other tasks? Are there any contradictions or surprising findings?\n\n\nStudent Answer\n\n\n\nTask8: Reflection\n\nWrite a reflection (at least five sentences) on what you learned from this project. This can include your reaction to the results of the project, as well as the process of working with the data.\n\n\nStudent Answer\n\nWhen your group is done, each partner must submit a link to their workbook to Moodle. Make sure the link you shared is public."
   },
   {
     "objectID": "course_information/syllabus.html",
@@ -376,41 +233,247 @@
     "text": "Illness and Community Standards\nOut of respect for our learning community, if you are experiencing any symptoms of an illness, do not come to class or my office. Please contact me before class time to let me know of your absence. ## Cell Phone Policy and Classroom Atmosphere You are expected to contribute to a positive classroom atmosphere, which includes arriving on time, not being disruptive, being respectful, actively involving yourself in class, and silencing and putting away cell phones. There may come a time where we use technology in class – during this time you can use a laptop, tablet, or your phone if you do not have the other options available to you. At any other times, however, I do not want to see your phone out. I’ll ask you to put them away if they show up. ## Mental and Physical Health I greatly value your experience in this class, and it is my duty to facilitate a safe, caring, and productive learning environment. I recognize that you may experience a range of emotional, physical, and/or psychological issues, both in and out of the classroom, that may distract you from your learning. If you are experiencing such issues, please do not hesitate to see me– I am here to listen. We can also discuss what further resources might be available to you. ## Academic Accommodations I am committed to supporting the learning of all students in my class. If you have already registered with Disability and Access (DAC) and have your letter of accommodations, please meet with me as soon as possible to discuss, plan, and implement your accommodations in the course. If you have or think you have a disability (learning, sensory, physical, chronic health, mental health or attentional), please contact Disability and Access staff at 507-786-3288 or by visiting https://wp.stolaf.edu/academic-support/dac. ## Multilingual Students I am committed to making course content accessible to all students. If English is not your first language and this causes you concern about the course, please speak with me. Students who would like extra support with writing or speaking in English can also contact the language specialist (berryag@stolaf.edu) in CAAS. ## Managing stress, anxiety, and other issues I greatly value your experience in this class, and it is my duty to facilitate a safe, caring, and productive learning environment. I recognize that you may experience a range of emotional, physical, and/or psychological issues, both in and out of the classroom, that may distract you from your learning. If you are experiencing such issues, please do not hesitate to come see me – I am here to listen. We can also discuss what further resources might be available to you. ## Plagiarism & Academic Integrity Plagiarism, the unacknowledged appropriation of another person’s words or ideas, is a serious academic offense. It is imperative that you hand in work that is your own, and that cites or gives credit to others whenever you draw from their work. This includes citing prompts when using genAI tools or an internet search. Please see St.Olaf’s statements on academic integrity and plagiarism at: https://wp.stolaf.edu/thebook/academic/integrity/. See also the description of St.Olaf’s honor system at: https://wp.stolaf.edu/honorcouncil/. ## Communication Expectations: • Instructor/Student Expectations: I check my email frequently, and attempt to respond to questions within 24 hours. It should not be expected that I check my email after 9 PM, on Saturdays, or regularly during breaks. • E-mail Etiquette: If you have multiple questions, fewer emails with more information per email is preferred. Please include the following when sending an email: course number with section number, a description of your question(s) within the subject line, a greeting and your instructors preferred name (mine is Kim), and a sign-off using your preferred name (this is what you want others to refer to you in class by). Add screenshots of your work for clarity. ## The St. Olaf Honor System The St. Olaf Honor System has been in place at St. Olaf College since 1911. All tests, quizzes, and examinations of any kind are taken under the St. Olaf Honor System. Each student is responsible for adhering to all principles of the Honor System regardless of the individual circumstances associated with their assessment environment."
   },
   {
-    "objectID": "labs/lab0.html",
-    "href": "labs/lab0.html",
-    "title": "Task1: Understanding the data",
+    "objectID": "PA4_Data_Cleaning_with_AirBnB.html",
+    "href": "PA4_Data_Cleaning_with_AirBnB.html",
+    "title": "Task 1: NYC Data",
     "section": "",
-    "text": "Group Members:\n\nTask1: Understanding the data\n\nFollow the link https://github.com/washingtonpost/data-police-shootings to read about the data. Write a three sentence summary of what is included in this data, and where it comes from. This dataset allows only a small number of categories for race, and the dataset fails to recognize that some people are multiracial. This is a weakness of the dataset. Include at least one other observation that may be a weakness of the data\n\n\nWritten Answer\n\n\nYou can view csv by running the code chunk below.\n\n\nimport pandas as pd\n\nfatal_police_shootings_data = pd.read_csv('https://raw.githubusercontent.com/washingtonpost/data-police-shootings/refs/heads/master/v2/fatal-police-shootings-data.csv')\n\nfatal_police_shootings_data.head(10)\n\n\n    \n\n\n\n\n\n\nid\ndate\nthreat_type\nflee_status\narmed_with\ncity\ncounty\nstate\nlatitude\nlongitude\nlocation_precision\nname\nage\ngender\nrace\nrace_source\nwas_mental_illness_related\nbody_camera\nagency_ids\n\n\n\n\n0\n3\n2015-01-02\npoint\nnot\ngun\nShelton\nMason\nWA\n47.246826\n-123.121592\nnot_available\nTim Elliot\n53.0\nmale\nA\nnot_available\nTrue\nFalse\n73\n\n\n1\n4\n2015-01-02\npoint\nnot\ngun\nAloha\nWashington\nOR\n45.487421\n-122.891696\nnot_available\nLewis Lee Lembke\n47.0\nmale\nW\nnot_available\nFalse\nFalse\n70\n\n\n2\n5\n2015-01-03\nmove\nnot\nunarmed\nWichita\nSedgwick\nKS\n37.694766\n-97.280554\nnot_available\nJohn Paul Quintero\n23.0\nmale\nH\nnot_available\nFalse\nFalse\n238\n\n\n3\n8\n2015-01-04\npoint\nnot\nreplica\nSan Francisco\nSan Francisco\nCA\n37.762910\n-122.422001\nnot_available\nMatthew Hoffman\n32.0\nmale\nW\nnot_available\nTrue\nFalse\n196\n\n\n4\n9\n2015-01-04\npoint\nnot\nother\nEvans\nWeld\nCO\n40.383937\n-104.692261\nnot_available\nMichael Rodriguez\n39.0\nmale\nH\nnot_available\nFalse\nFalse\n473\n\n\n5\n11\n2015-01-04\nattack\nnot\ngun\nGuthrie\nLogan\nOK\n35.876991\n-97.423454\nnot_available\nKenneth Joe Brown\n18.0\nmale\nW\nnot_available\nFalse\nFalse\n101\n\n\n6\n13\n2015-01-05\nshoot\ncar\ngun\nChandler\nMaricopa\nAZ\n33.327887\n-111.840959\nnot_available\nKenneth Arnold Buck\n22.0\nmale\nH\nnot_available\nFalse\nFalse\n195\n\n\n7\n15\n2015-01-06\npoint\nnot\ngun\nAssaria\nSaline\nKS\n38.703755\n-97.563904\nnot_available\nBrock Nichols\n35.0\nmale\nW\nnot_available\nFalse\nFalse\n490\n\n\n8\n16\n2015-01-06\naccident\nnot\nunarmed\nBurlington\nDes Moines\nIA\n40.809250\n-91.118875\nnot_available\nAutumn Steele\n34.0\nfemale\nW\nnot_available\nFalse\nTrue\n287\n\n\n9\n17\n2015-01-06\npoint\nnot\nreplica\nKnoxville\nAllegheny\nPA\n40.412936\n-79.991408\nnot_available\nLeslie Sapp III\n47.0\nmale\nB\nnot_available\nFalse\nFalse\n26254\n\n\n\n\n\n    \n\n  \n    \n\n  \n    \n  \n    \n\n  \n\n    \n  \n\n\n\n  \n\n\n    \n        \n    \n\n  \n\n\n\n  \n\n\n    \n  \n\n\n\nList out some of the columns that are contained in this csv.\n\nWritten Answer\n\nFor each of those columns, give some examples for the data in that column, and what they mean. For example, some examples of values in the first column id are 22, 325, and 140.\n\nWritten Answer\n\nIn order to compare the representation of black people among the subjects of fatal police shootings to their representation in the general population, we need to know the percent of the United States population which is black. You can find this by googling ’racial demographics of the United States‘. Include a citation with the organization and url.\n\nWritten Answer\n\n\n\n\nTask2: Reading data into a dict\nRun the code chunk below. This will select some of the features from the dataset, and put it into a Python dictionary.\n\npolicing = fatal_police_shootings_data[['id', 'name', 'date', 'armed_with', 'age', 'gender', 'race', 'state']]\npolicing_dict = policing.set_index('id').to_dict(orient='index')\n\n\nWhat information from the original csv is stored in policing_dict? What information from the original csv do we use as the keys in policing_dict? What is the type of the values in policing_dict? Hint: use type(dict[key]).\n\n\nStudent Answer Hint: create a code chunk with type(dict[key]) to find the data type of the values in our dictionary\n\n\n\nTask3: Using the database\n\nFinding a particular record: Find the record of the fatal police shooting with ID number 1694. If you’ve followed current events in the past few years, there should be a familiar name here.\n\n\nStudent Answer Add policing_dict[1694] to a code chunk\n\n\nDisplaying data from a single record: Print the name and state of the individual with ID number 1694.\n\nStudent Answer\n\nDisplaying data from multiple records: The following code will display the entire dictionary using a for loop:\n\nfor person,data in policing dict.items():\nprint(policing dict[person])\nAdd an if statement to the for loop to filter out only individuals from Minnesota. This means you’ll need to check the state for each person and only print data if the state is Minnesota.\n\nStudent Answer\n\n\n\nTask4: Summarizing our data\n\nCreating a new dictionary as a subset: Instead of displaying all the information, let’s create a new dictionary that only contains inviduals from Minnesota. The syntax for this is: key:values for key, values in dict.items() if condition where condition is what you’re filtering on and dict is your dictionary. Name this new dictionary MN_selection.\n\n\nStudent Answer\n\n\nCreating summarization functions: We’d like to create a function that takes in our database dictionary and returns a dictionary with counts of occurrences of each race among subjects of fatal police shootings. The keys in this dictionary should be races, and the corresponding values should be the number of subjects of that race.\n\n\nStudent Answer The starter code for this function is below:\n\n\ndef get_race_counts(database:dict)-&gt;dict:\n  race_counts = {}\n  for person, data in database.items():\n    #add logic to populate race counts\n\n\n  return race_counts\n\n\nUsing a summarization function: Print the fraction of fatal police shootings with a black subject. This should be a number between 0 and 1, and can be computed by dividing the number of fatal police shootings with a black subject, by the total number of fatal police shootings.\n\n\nStudent Answer Note: using get, len, and round may be helpful.\n\n\nHow does the proportion of black subjects in fatal police shootings compare to the proportion of black people in the United States population?\n\n\nStudent Answer\n\n\n\nTask5: Comparing Summarizations\n\nCreate a new dictionary called unarmed_selection, which is built using dictionary comprehension on the original dictionary policing_dict. This dictionary should have the same structure as policing dict, except it will only contain entries for fatal police shootings where the subject was unarmed.\n\n\nStudent Answer\n\n\nCreate a new dictionary, called unarmed race counts, which is created using the get_race_counts function on the dictionary unarmed_selection. The purpose of this dictionary will be to count the number of occurrences of each race among subjects of fatal police shootings, including only those where the subject is unarmed.\n\n\nStudent Answer\n\n\nPrint the fraction of unarmed fatal police shootings with a black subject. This should be a number between 0 and 1, and can be computed by dividing the number of unarmed fatal police shootings with a black subject (you can get this from the dictionary unarmed race counts), by the total number of unarmed fatal police shootings.\n\n\nStudent Answer\n\n\nHow does the proportion of black subjects in fatal police shootings where the subject is unarmed compare to the proportion of black people in the United States population? How does it compare to the proportion of black subjects in all police shootings?\n\n\nStudent Answer\n\n\n\nTask6: Trends over time\n\nCreating a list of a single feature: Let’s now take a look at creating a list with our data. Using the code below, edit it so that only dates are shown (hint: do something to data). Now, get rid of anything that isn’t the year (use some string slicing). Name this list year_col, which contains only the year for each record in our database.\n\n\nStudent Answer Edit [data for person, data in policing dict.items()]\n\n\nCreating counts from a list: Summarize the list you just created into a dictionary where each key is a single year and the value is the count of that year in our database. Note: If you do this with dictionary comprehension use the list method count and set(year col).\n\n\nStudent Answer\n\n\nHow do the number of fatal police shootings change over time? Do you notice any patterns or trends?\n\n\nStudent Answer\n\n\n\nTask7: More stories to be told\nSources: * U.S. Crime and Arrest Data (FBI UCR) * U.S. Demographic Data (Census Bureau) * Police Departments’ Use of Force Data (BJS) * Pew Research on Policing * Other relevant sources (Reddit, social media, etc.)\n\nList at least two sources you found informative. Include the organization, url, and brief description of the information the source contains. This source could be an additional dataset, or it could be a result of an analysis done. Our goal is to try to link the insights from the previous tasks to other insights found elsewhere.\n\n\nStudent Answer\n\n\nCome up with at least three questions/insights that could supplement the analysis you have done so far. These questions should address some aspects of the following:\n\n\nvalidation: how can the data from these sources support or challenge the findings you’ve already made about racial disparities in fatal police shootings?\nexpansion: how can additional data be used to expand upon the analysis in new areas, or further explore systemic issues related to police shootings?\ncomparisons: how do the findings from these sources compare to the conclusion you’ve drawn from other tasks? Are there any contradictions or surprising findings?\n\n\nStudent Answer\n\n\n\nTask8: Reflection\n\nWrite a reflection (at least five sentences) on what you learned from this project. This can include your reaction to the results of the project, as well as the process of working with the data.\n\n\nStudent Answer\n\nWhen your group is done, each partner must submit a link to their workbook to Moodle. Make sure the link you shared is public."
+    "text": "Name:\nWho you worked with:"
   },
   {
-    "objectID": "homework.html",
-    "href": "homework.html",
-    "title": "Homework",
+    "objectID": "PA4_Data_Cleaning_with_AirBnB.html#objectives",
+    "href": "PA4_Data_Cleaning_with_AirBnB.html#objectives",
+    "title": "Task 1: NYC Data",
+    "section": "Objectives",
+    "text": "Objectives\nThe goals of this project are to: - Perform EDA and data cleaning - Implement transformations and filtering functions - Look for EDA and data cleaning inspiration from outside sources"
+  },
+  {
+    "objectID": "PA4_Data_Cleaning_with_AirBnB.html#overview",
+    "href": "PA4_Data_Cleaning_with_AirBnB.html#overview",
+    "title": "Task 1: NYC Data",
+    "section": "Overview",
+    "text": "Overview\nFor this programming assignment, you will practice some data cleaning and preprocessing, using a dataset of AirBNB data from New York City. In working with this dataset, our goal will be to train a model that can predict the price of an AirBNB rental. Imagine that you are a data scientist working for AirBNB, and your boss has asked you to develop this as a tool that can suggest prices for new listings."
+  },
+  {
+    "objectID": "PA4_Data_Cleaning_with_AirBnB.html#schedule",
+    "href": "PA4_Data_Cleaning_with_AirBnB.html#schedule",
+    "title": "Task 1: NYC Data",
+    "section": "Schedule",
+    "text": "Schedule\nHere is the suggested schedule for working on this project: - Weekend: Read through project instructions, complete Task 1. - Tuesday: Complete Tasks 2-3. - Wednesday: Complete Tasks 4-5. - Thursday: Complete Task 6.\nThis project is due on Thursday, 3/13, by 11:59pm."
+  },
+  {
+    "objectID": "PA4_Data_Cleaning_with_AirBnB.html#held-out-set",
+    "href": "PA4_Data_Cleaning_with_AirBnB.html#held-out-set",
+    "title": "Task 1: NYC Data",
+    "section": "Held-Out Set",
+    "text": "Held-Out Set\nNow, I’m going to select a few records that we’ll use at the end to test a prediction function. I’m selecting these here, since we’ll be making changes to the dataset later.\n\nchosen_indices = range(0, 9000, 1000)\n\nheld_out = nyc.iloc[chosen_indices]\n\nheld_out"
+  },
+  {
+    "objectID": "PA4_Data_Cleaning_with_AirBnB.html#price",
+    "href": "PA4_Data_Cleaning_with_AirBnB.html#price",
+    "title": "Task 1: NYC Data",
+    "section": "Price",
+    "text": "Price\nWe’ll start by looking at our target, price. Let’s look at a histogram, to see how the prices are distributed.\n\nnyc['price'].hist(bins = 80)\n\nThis is extremely skewed. We have a price that’s $100,000, but the vast majority have a price under $1000.\nThinking about the tool we’re building, we might want to focus on training a model that predicts well for lower/typical prices, and ignore the really expensive ones. Let’s look at what happens with a few different choices for restricting the prices.\nFirst, we look at prices below $2,000.\n\nprint(\"Number of entries: \", len(nyc[nyc['price'] &lt; 2000]))\n\nnyc[nyc['price'] &lt; 2000]['price'].hist(bins = 100)\n\nNext, let’s look at prices below $1,000.\n\nprint(\"Number of entries: \", len(nyc[nyc['price'] &lt; 1000]))\n\nnyc[nyc['price'] &lt; 1000]['price'].hist(bins = 100)\n\nHere, we look at prices below $500.\n\nprint(\"Number of entries: \", len(nyc[nyc['price'] &lt; 500]))\n\nnyc[nyc['price'] &lt; 500]['price'].hist(bins = 100)\n\nLet’s focus on prices below $500. This still captures a lot of the data, while limiting us to trying to predict prices for more typical listings. Note that the distribution is still skewed - we’ll handle this in a bit.\n\nnyc = nyc[nyc['price'] &lt; 500]\n\nnyc.describe(include = \"all\")\n\nNotice that the minimum price is $0, which seems like nonsense. Let’s look at the listings with a price of $0.\n\nnyc[nyc['price'] &lt;= 0]\n\nThere aren’t too many of them, so let’s just exclude those.\n\nnyc = nyc[nyc['price'] &gt; 0]\n\nnyc.describe(include = \"all\")\n\nWe’ve seen that even restricting to prices below $500, we still have a skewed distribution. Let’s see if applying a transformation can help. First, we try applying a log function.\n\nnyc[\"price\"].apply(np.log).hist(bins = 50)\n\nLet’s also see what happens with applying a square root function.\n\nnyc[\"price\"].apply(np.sqrt).hist(bins = 50)\n\nWe’ll choose to apply the log transformation. Note that applying such a transformation does make sense here, because the difference between prices $400 and $450 is less significant than the difference between prices $50 and $100.\n##💻 Q5: Log Price Add a new column called log_price, which has the log transformation appied to the column price. Then, drop price from the dataframe.\n\n# add column log_price\nnyc[\"log_price\"] = #your code here\n\n#drop price\n#your code here\n\nnyc.describe(include = \"all\")\n\n\nassert(np.isclose(nyc[\"log_price\"].mean(), 4.60618))\nassert(\"price\" not in nyc.columns)"
+  },
+  {
+    "objectID": "PA4_Data_Cleaning_with_AirBnB.html#latitude-and-longitude",
+    "href": "PA4_Data_Cleaning_with_AirBnB.html#latitude-and-longitude",
+    "title": "Task 1: NYC Data",
+    "section": "Latitude and Longitude",
+    "text": "Latitude and Longitude\nNow, let’s take a look at latitude and longitude. We’ll look at the maximum and mininum values, to see the range they fall in.\n\nprint(nyc['latitude'].max())\nprint(nyc['latitude'].min())\nprint(nyc['longitude'].max())\nprint(nyc['longitude'].min())\n\nThis range makes sense here, since all of the listings are in New York City. Now, let’s look at histograms.\n\nnyc['latitude'].hist(bins = 50)\n\n\nnyc['longitude'].hist(bins = 50)\n\nThe distributions look pretty close to normal, so we’ll leave them as they are."
+  },
+  {
+    "objectID": "PA4_Data_Cleaning_with_AirBnB.html#number-of-reviews",
+    "href": "PA4_Data_Cleaning_with_AirBnB.html#number-of-reviews",
+    "title": "Task 1: NYC Data",
+    "section": "Number of Reviews",
+    "text": "Number of Reviews\nNow, let’s look at number of reviews. We’ll create a histogram to see the distribution of the data.\n\nnyc['number_of_reviews'].hist(bins = 50)\n\nThis has a very dramatic right skew, so let’s try applying some transformations. We’ll start with a log transformation.\nNow, if we were to apply the log transformation to this feature we would end up with an error. To fix this we need to add 1 to each value prior to log transforming it. This process is called smoothing and can be particularly helpful when working with text data in the future.\n##✏ Q6: Add one smoothing\nExplain why we need to add 1. Hint: are there any values that when you apply the log transformation you would run into issues?\n[your answer here]\nNow let’s visualize this add-one smoothing log transformation\n\nnyc[\"number_of_reviews\"].apply(lambda x: (np.log(x+1))).hist(bins = 50)\n\nThis is an improvement, but still right skewed. Let’s look at a square root transformation next.\n\nnyc[\"number_of_reviews\"].apply(np.sqrt).hist(bins = 50)\n\nThat’s not as good as the log transformation.\nSince the result of the log transformation is still pretty skewed, let’s try applying the log transformation again. Again, we’ll have to add 1 before applying the log transformation.\n##💻 Q7: log-log function In the cell below, define a function called log_log that does the following computation: \\[ f(x) = \\log(\\log(x+1)+1)\\].\nNote: replace the keyword pass with the computation above.\n\ndef log_log(value):\n  pass\n\n# create histogram\nnyc[\"number_of_reviews\"].apply(log_log).hist(bins = 50)\n\nThis still isn’t great, but we can see that we’re going to have trouble improving much more, since the number of reviews is going to be very discrete for small numbers (hence the tall, isolated columns on the left side). So, we’ll use the log-log transformation.\nNow construct a new column, log_log_number_of_reviews, by applying the log_log function to the column number_of_reviews. Drop the old column, number_of_reviews, from the data frame\n\n# your code here\n\n\nnyc.describe(include = \"all\")\n\n\nassert(\"log_log_number_of_reviews\" in nyc.columns)\nassert(\"number_of_reviews\" not in nyc.columns)\nassert(np.isclose(nyc[\"log_log_number_of_reviews\"].mean(), 0.896842))"
+  },
+  {
+    "objectID": "PA4_Data_Cleaning_with_AirBnB.html#calculated-host-listings-count",
+    "href": "PA4_Data_Cleaning_with_AirBnB.html#calculated-host-listings-count",
+    "title": "Task 1: NYC Data",
+    "section": "Calculated Host Listings Count",
+    "text": "Calculated Host Listings Count\nNow, let’s look at the column calculated_host_listings_count. We’ll look at the distribution.\n\nnyc['calculated_host_listings_count'].hist(bins = 50)\n\nSince this is very skewed, let’s look at what happens when we apply a log transformtion.\n\nnyc[\"calculated_host_listings_count\"].apply(np.log).hist(bins = 50)\n\nStill very skewed, so let’s try the log log transformation\n\nnyc[\"calculated_host_listings_count\"].apply(log_log).hist(bins = 50)\n\nStill skewed, and we can tell that the data becoming very discrete is going to be an issue. This might not be the best choice, but let’s just stick with applying a log transformation.\n\nnyc[\"log_calculated_host_listings_count\"] = nyc[\"calculated_host_listings_count\"].apply(np.log)\n\nnyc.drop(\"calculated_host_listings_count\", axis = 1, inplace = True)\n\nnyc.describe(include = \"all\")"
+  },
+  {
+    "objectID": "PA4_Data_Cleaning_with_AirBnB.html#room-type",
+    "href": "PA4_Data_Cleaning_with_AirBnB.html#room-type",
+    "title": "Task 1: NYC Data",
+    "section": "Room Type",
+    "text": "Room Type\nWe’ll look at room type next.\n\nnyc['room_type'].value_counts()\n\n##✏ Q10: Reasoning for OHE\nWe’re going to apply one-hot encoding to this feature as it is. Why are we choosing to do the OHE immediately instead of doing additional cleaning on this feature first?\n[your answer here]\nLet’s go ahead and OHE room_type\n\nroom_type_dummies = pd.get_dummies(nyc[\"room_type\"], prefix = \"room_type\")\n\nnyc = nyc.join(room_type_dummies)\nnyc.drop('room_type', axis = 1, inplace = True)\n\nnyc.describe(include = \"all\")"
+  },
+  {
+    "objectID": "PA4_Data_Cleaning_with_AirBnB.html#data-cleaning-relates-to-model-performance",
+    "href": "PA4_Data_Cleaning_with_AirBnB.html#data-cleaning-relates-to-model-performance",
+    "title": "Task 1: NYC Data",
+    "section": "Data cleaning relates to model performance",
+    "text": "Data cleaning relates to model performance\nNow that we have gone through our features and made some transformations, we would typically train a model to see how well it performs. Remember, data cleaning is the most impactful thing you can do to improve your model performance.\nThe following steps would create a model to predict the price of an AirBNB rental based off our transformed feature set.\nSteps: * Selecting our features and target. * Split the data into testing and training sets. * Fit selected predictive model to the training data. * Check appropriate evaluation metric for our training data and for our testing data. * Plot predicted values again true target values, to visualize how the selected model is performing.\nThis last step means that we will need to apply transformations to the parameters, that correspond to the transformations we did on the features of the dataset.\nAn example for implementation with our data set: * Use selected model trained above to make a predict for log_price. * “Undo” the log transformation, and return the predicted price. * Compare your predictions to the actual prices for the records we pulled out.\n##✏ Q11: Next Steps Even after some data cleaning, suppose that we are not getting very good performance. What are two things you could try next?\nOption1:\nOption2:"
+  },
+  {
+    "objectID": "PA4_Data_Cleaning_with_AirBnB.html#finding-inspiration-in-others",
+    "href": "PA4_Data_Cleaning_with_AirBnB.html#finding-inspiration-in-others",
+    "title": "Task 1: NYC Data",
+    "section": "Finding inspiration in others",
+    "text": "Finding inspiration in others\nThe best way to learn how to clean data is to see what other people do!\nFor this last task, scroll down and select one of the notebooks someone has published on the Kaggle site (linked in Task 1). Note: you may have to dig a bit to see one you like.\nOnce you have a notebook selected, read through it and answer the following questions.\n##✏ Q12: Url of notebook used:\n[your answer here]\n##✏ Q13: EDA\n\nDescribe something new this workbook has done with EDA.\nWhat is one reason this may be a good choice for our data.\nWhat is one reason that this may not be a good choice for our data.\nHow does this compare to what we’ve done so far with the data?\n\n[your answer here]\n##💻 Q14: EDA plot Now, try to replicate this EDA step in the code chunk below. You can copy-paste from the author’s work, but you may need to change a few things so it can work on our dataframe nyc\n\n#your code here\n\n##✏ Q15: Data Cleaning\n\nDescribe something new this workbook has done with data cleaning.\nWhat is one reason this may be a good choice for our data.\nWhat is one reason that this may not be a good choice for our data.\nHow does this compare to what we’ve done so far with the data?\n\n[your answer here]\n##💻 Q16: Data cleaning step Now, try to replicate this data cleaning step in the code chunk below. You can copy-paste from the author’s work, but you may need to change a few things so it can work on our dataframe nyc\n\n#your code here\n\n#Task 6: Reflection\nTake a moment to reflect on the assingment\n##✏ Q17: Reflection\nWhat did you like about it? What could be improved? Your answers will not affect your overall grade. This feedback will be used to improve future programming assignments.\n#Grading\nFor each of the following accomplishments, there is a breakdown of points which total to 20. The fraction of points earned out of 20 will be multiplied by 5 to get your final score (e.g. 17 points earned will be 17/20 * 5 → 4.25) * (1pt) Task1 q1: Correctly filters dataset * (2pt) Task1 q2: Gives 1-2 sectence descriptions for each feature * (2pt) Task2 q3: Discussed reasons for why all the listed features were dropped * (1pt) Task2 q4: Discussed reasons for why all the listed features were kept * (1pt) Task3 q5: Correctly implemented a log function * (1pt) Task3 q6: Identified the reason for adding 1 to each value * (1pt) Task3 q7: Correctly implemented a log_log with add-one function * (1pt) Task4 q8: Correclt implemented a filtering function for neighborhoods * (1pt) Task4 q9: Replicated the OHE code for neighborhoods * (1pt) Task4 q10: Discusses why we can do OHE without cleaning * (2pt) Task5 q11: Gives two scenarios to improve model performance for our airbnb dataset. Must include specific examples from the data. * (1pt) Task5 q12: Url of inspiration is included * (1pt) Task5 q13: Discusses new EDA from inspiration notebook * (1pt) Task5 q14: Replicates (successfully) the EDA plot * (1pt) Task5 q15: Discusses new data cleaning from inspiration notebook * (1pt) Task5 q16: Replicates (successfully) the data cleaning * (1pt) Task6 q17: Thoughtfully reflected on the assignment"
+  },
+  {
+    "objectID": "course_information/schedule.html",
+    "href": "course_information/schedule.html",
+    "title": "Schedule",
     "section": "",
-    "text": "Stuff about homework",
+    "text": "week\ndow\ndate\nsession\nprepare\ntopic\nmaterials\n\n\n\n\n1\nM\nJan 5\nZ\nread the syllabus\nIntro to ML  Using GitHub\n👩🏻‍🏫intro to ml  👩🏻‍🏫github websites  💻Lab0\n\n\n\nT\nJan 6\nA\n📚 gg-book - grammar  📚 socviz\nEDA: graphs\n👩🏻‍🏫EDA1  📝HW1  ☑️PC1\n\n\n\nW\nJan 7\nB\n📋 EDA Standard\nEDA: statistics  Quiz: EDA\n👩🏻‍🏫EDA2  💻 Lab1",
     "crumbs": [
-      "Homework"
+      "Course Information",
+      "Schedule"
     ]
   },
   {
-    "objectID": "homework.html#overview",
-    "href": "homework.html#overview",
-    "title": "Homework",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Machine Learning",
     "section": "",
-    "text": "Stuff about homework",
+    "text": "This is the homepage for CSCI 200 - Introduction to Machine Learning taught by Prof. Kim Mandery in January 2026 at St. Olaf College. All course materials will be posted on this site.\nYou can find the course syllabus here and the course schedule here .",
     "crumbs": [
-      "Homework"
+      "Course Information",
+      "Home"
     ]
   },
   {
-    "objectID": "homework.html#list",
-    "href": "homework.html#list",
-    "title": "Homework",
-    "section": "List",
-    "text": "List\nHW 1",
+    "objectID": "index.html#course-overview",
+    "href": "index.html#course-overview",
+    "title": "Machine Learning",
+    "section": "",
+    "text": "This is the homepage for CSCI 200 - Introduction to Machine Learning taught by Prof. Kim Mandery in January 2026 at St. Olaf College. All course materials will be posted on this site.\nYou can find the course syllabus here and the course schedule here .",
     "crumbs": [
-      "Homework"
+      "Course Information",
+      "Home"
     ]
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#daily-structure",
+    "href": "slides/00-intro-ml.html#daily-structure",
+    "title": "Welcome to ML!",
+    "section": "Daily Structure",
+    "text": "Daily Structure\n\nA Days:\n\ntwo morning lectures\nafternoon homework and project check\n\nB Days:\n\none morning lecture\none morning Lab\nafternoon standard quiz"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#themes-what-why-and-how",
+    "href": "slides/00-intro-ml.html#themes-what-why-and-how",
+    "title": "Welcome to ML!",
+    "section": "Themes: what, why, and how",
+    "text": "Themes: what, why, and how\n\nWhat: the plot\n\nblah\n\n\n\n\nHow: the process\n\nblah\n\n\n\n\n\nWhy: the theory\n\nTie together “how” and “what”"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#show-and-tell",
+    "href": "slides/00-intro-ml.html#show-and-tell",
+    "title": "Welcome to ML!",
+    "section": "Show and tell",
+    "text": "Show and tell\n\n\nForm a small group (2-4 people) with people sitting around you\nFirst, introduce yourselves to each other – name (and proper pronunciation of name), year, major, where are you from, etc."
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#course-website",
+    "href": "slides/00-intro-ml.html#course-website",
+    "title": "Welcome to ML!",
+    "section": "Course website",
+    "text": "Course website\n\nML_J2026\n\n\naka “the one link to rule them all”"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#lectures",
+    "href": "slides/00-intro-ml.html#lectures",
+    "title": "Welcome to ML!",
+    "section": "Lectures",
+    "text": "Lectures\n\nIn person\nAttendance is required\nA little bit of everything:\n\nTraditional lecture\nLive coding + demos\nShort exercises\nDiscussions"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#labs",
+    "href": "slides/00-intro-ml.html#labs",
+    "title": "Welcome to ML!",
+    "section": "Labs",
+    "text": "Labs\n\nOccurs every other day in the morning (check schedule for 💻)"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#quizzes",
+    "href": "slides/00-intro-ml.html#quizzes",
+    "title": "Welcome to ML!",
+    "section": "Quizzes",
+    "text": "Quizzes\n\nOccurs every other day in the afternoon (check schedule for 📄)"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#announcements",
+    "href": "slides/00-intro-ml.html#announcements",
+    "title": "Welcome to ML!",
+    "section": "Announcements",
+    "text": "Announcements\n\nSent via email"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#this-weeks-tasks",
+    "href": "slides/00-intro-ml.html#this-weeks-tasks",
+    "title": "Welcome to ML!",
+    "section": "This week’s tasks",
+    "text": "This week’s tasks\n\nCreate a GitHub account if you don’t have one\nRead the syllabus\nPost on Discussion board\nComplete the readings"
+  },
+  {
+    "objectID": "PA3_Classification_with_Fashion_MNIST.html",
+    "href": "PA3_Classification_with_Fashion_MNIST.html",
+    "title": "Task 0: Data Exploration",
+    "section": "",
+    "text": "Name:\nWho you worked with:"
+  },
+  {
+    "objectID": "PA3_Classification_with_Fashion_MNIST.html#objectives",
+    "href": "PA3_Classification_with_Fashion_MNIST.html#objectives",
+    "title": "Task 0: Data Exploration",
+    "section": "Objectives",
+    "text": "Objectives\nThe goals of this project are to: - Perform EDA, PCA, and visualize the data - Implement K-means clustering - Evaluate the clustering results against the true labels - Thoughtfully interpret and discuss the results"
+  },
+  {
+    "objectID": "PA3_Classification_with_Fashion_MNIST.html#overview",
+    "href": "PA3_Classification_with_Fashion_MNIST.html#overview",
+    "title": "Task 0: Data Exploration",
+    "section": "Overview",
+    "text": "Overview\nIn this assignment, you will explore the Fashion MNIST dataset, which contains grayscale images of 10 different clothing items. You will focus on applying unsupervised learning techniques, specifically K-means clustering, to see if the algorithm can naturally identify patterns that correspond to different clothing categories. You will also critically evaluate the performance of clustering against the ground truth labels and reflect on the limitations of the algorithm."
+  },
+  {
+    "objectID": "PA3_Classification_with_Fashion_MNIST.html#schedule",
+    "href": "PA3_Classification_with_Fashion_MNIST.html#schedule",
+    "title": "Task 0: Data Exploration",
+    "section": "Schedule",
+    "text": "Schedule\nHere is the suggested schedule for working on this project: - Weekend: Read through project instructions, complete Task 0. - Tuesday: Complete Tasks 1-2. - Wednesday: Complete Tasks 3-4. - Thursday: Complete Task 5.\nThis project is due on Thursday, 3/6, by 11:59pm."
+  },
+  {
+    "objectID": "PA3_Classification_with_Fashion_MNIST.html#explore-the-data",
+    "href": "PA3_Classification_with_Fashion_MNIST.html#explore-the-data",
+    "title": "Task 0: Data Exploration",
+    "section": "Explore the data",
+    "text": "Explore the data\nLet’s explore the format of the dataset before training the model. The following shows there are 60,000 images, with each image represented as 28 x 28 pixels:\n\nX.shape\n\nLikewise, there are 60,000 labels:\n\nlen(y)\n\n###💻 Question1: Is The Data Balanced?\nLet’s take a look at how many of each type of clothing article we have.\nBelow is the dataframe of our target.\nAdd a new line of code that takes y_df and finds the counts of each class.\nIs our dataset balanced?\n\ny_df = pd.DataFrame(y)\n#add code here\n\n###✏ Question2: Image Flattening\nOur images are flattened from a 28×28 image to 784 features. What spatial information might be lost in this process? How could this impact our clustering results?\n##PCA\nIt would take a very long time to generate pairplots for 700+ features. Instead, we’ll use principal component analysis (PCA) for dimensionality reduction, so that we can visualize a projection of the data. Here, we reduce the data to a few dimensions.\n\nfrom sklearn.decomposition import PCA\n\npca = PCA(n_components=9)\npca.fit(X)\nprojection = pca.transform(X)\nprojection_df = pd.DataFrame(projection)\n\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nplt.figure()\nsns.pairplot(projection_df)\nplt.show()\n\n###✏ Question3: PCA plots How do the different shapes of these plots (such as nugget-shaped, normal, or multi-modal) help us understand the characteristics of clothing categories? For example, do they show variations in style within a category, or do they highlight differences between categories?"
+  },
+  {
+    "objectID": "PA3_Classification_with_Fashion_MNIST.html#task-1-closest-centroid",
+    "href": "PA3_Classification_with_Fashion_MNIST.html#task-1-closest-centroid",
+    "title": "Task 0: Data Exploration",
+    "section": "Task 1: Closest Centroid",
+    "text": "Task 1: Closest Centroid\nFirst, you’ll implement a function that takes an array of data points and an array of centroids, and returns an array giving the index of the closest centroid to each data point. Note that the shapes should be:\n\ndata has shape \\((N, D)\\), where \\(N\\) is the number of datapoints and \\(D\\) is the dimensionality of each datapoint.\ncentroids has shape \\((k, D)\\), where \\(k\\) is the number of centroids, and \\(D\\) is the dimensionality of each datapoint.\nclosest_centroids (the return value) has shape \\((N,)\\), where \\(N\\) is the number of datapoints.\n\nThe code below has been outlined in such a way that only basic programming logic needs to be used. You may find that using numpy methods helpful when calculating the Euclidean.\nHint: since we have high-dimensional data you can use np.sum((point - centroid) ** 2) to find the sum of squared differences when you do the distance calculation.\n\nimport numpy as np\n\ndef closest_centroid(data, centroids):\n    # init to store the closest centroid index for each data point\n    closest_centroids = []\n\n    # looping through each data point\n    for point in data:\n        min_distance = float('inf')  #init min distance to huge number like infinity\n        closest_centroid_index = -1\n\n        # counter for centroid index\n        i = 0\n\n        # looping through each centroid to compute the distance to the data point\n\n            # calculate the Euclidean distance\n\n\n            # if the distance is smaller than the minimum (min_distance) found so far, update the closest centroid (closest_centroid_index)\n\n\n            # increment the counter by 1\n\n        # appending the index of the closest centroid to the result list\n        closest_centroids.append(closest_centroid_index)\n\n    # return the list of closest centroid indices\n    return np.array(closest_centroids)\n\nThe code chunks below will test your functions. If you run both and no errors occur, your function works as expected.\n\n# testing your function\ndata = np.array([[-2,2], [-1, 2], [-1,1], [1,1], [1,2], [2,2]])\ncentroids = np.array([[-3,3], [3,3]])\nassert(np.array_equal(closest_centroid(data, centroids), np.array([0,0,0,1,1,1])))\n\n\ndata = train_data[:10]  # First 10 images\ncentroids = train_data[121:123]  # Images at index 121 and 123 as centroids\nclosest_centroid(data, centroids)\n#assert(np.array_equal(closest_centroid(data, centroids), np.array([1, 1, 0, 0, 0, 1, 0, 1, 0, 0])))\n\n###✏ Question4: Dimensionality and Distances\nIn high-dimensional spaces like our 784-dimensional images, how does distance calculation become problematic? (This is related to what we call the “curse of dimensionality”)\n###✏ Question5: Computational Costs\nIf we apply this function to all 60,000 images, it will be computationally expensive. How might you modify the approach to make it more efficient for large datasets? For example, we may consider only a subset of the data rather than all 60k images.\n###✏ Question6: Dealing with Ties\nWhat would happen if two centroids were equally distant from a data point? How does your function handle this case, and is this approach appropriate?"
+  },
+  {
+    "objectID": "PA3_Classification_with_Fashion_MNIST.html#task-2-recompute-centroids",
+    "href": "PA3_Classification_with_Fashion_MNIST.html#task-2-recompute-centroids",
+    "title": "Task 0: Data Exploration",
+    "section": "Task 2: Recompute Centroids",
+    "text": "Task 2: Recompute Centroids\nNext, you’ll define a function that recomputes centroids once each data point has been assigned to a cluster. This function takes an array of datapoints and an array giving the cluster assignments. The index of each centroid should correspond to its cluster number. Note that the shapes should be:\n\ndata has shape \\((N, D)\\), where \\(N\\) is the number of datapoints and \\(D\\) is the dimensionality of each datapoint.\nlabels has shape \\((N,)\\), where \\(N\\) is the number of datapoints.\ncentroids (the return value) has shape \\((k, D)\\), where \\(k\\) is the number of centroids, and \\(D\\) is the dimensionality of each datapoint.\n\n\nimport numpy as np\n\ndef compute_centroids(data, labels):\n    # getting the number of clusters\n    k = np.max(labels) + 1 #adding one since we start counting at 0 not 1\n\n    # init to store the new centroids\n    new_centroids = []\n\n    # looping through each cluster\n    for i in range(k):\n        # get the data points(data) assigned to cluster i (check if labels are equal to i)\n        cluster_points = #\n\n        # compute the mean (use np.mean) of the data points in the cluster (cluster_points)\n        new_centroid = #\n\n        # append the new centroid to our new centroid list\n        new_centroids.append(new_centroid)\n\n    # convert new_centroids into a numpy array and return\n    return #\n\nThe code chunks below will test your functions. If you run both and no errors occur, your function works as expected.\n\n# testing your function\ndata = np.array([[-2,2], [-1, 2], [-1,1], [1,1], [1,2], [2,2]])\nlabels = np.array([0,0,0,0,1,1])\nassert(np.array_equal(compute_centroids(data, labels), np.array([[-.75, 1.5], [1.5, 2]])))\n\n\ndata = train_data[:10]  # Take the first 10 images for testing\nlabels = np.array([1, 0, 1, 1, 1, 0, 1, 0, 1, 1])  # Example labels (clusters)\nassert(np.array_equal(compute_centroids(data, labels)[0][5:7], np.array([0.6666667 , 0.33333334], dtype='float32')))\n\n###✏ Question7: Centroid as an Image\nA centroid is the mean of all points in a cluster. For image data, what does this “average image” actually represent visually? Would it still look like a recognizable piece of clothing?\n###✏ Question8: Mean vs Median\nThe mean minimizes the sum of squared distances to all points. What if we used the median instead? How might this change our clusters and when might this be beneficial?"
+  },
+  {
+    "objectID": "PA3_Classification_with_Fashion_MNIST.html#task-3-implement-k-means",
+    "href": "PA3_Classification_with_Fashion_MNIST.html#task-3-implement-k-means",
+    "title": "Task 0: Data Exploration",
+    "section": "Task 3: Implement \\(k\\)-Means",
+    "text": "Task 3: Implement \\(k\\)-Means\nNow, that you’ve seen how the various components of the algorithm are created, we’re going to switch gears and create a model.\nUsually when we have a ton of data, we have methods to make it easier on our algorithms (and machines) to create the clusters. For our purposes, we’re going to take only three of the types of clothing and do k-means on this subset of data. This will help us as we eventually want to also investigate the clusters to see what is going on.\nWith large data, that also means that the process of choosing the actual best k take a bit of time. Instead, we’re going to use some domain knowledge (we’re choosing 3 articles of clothing in our subset) and use that to pick our k value.\n\ndataset = np.column_stack((X, y))\narticles = [y_names.index(\"Coat\"), y_names.index(\"Bag\"), y_names.index(\"Sneaker\")]\nsubset = dataset[np.isin(dataset[:, -1], articles)]\nX_subset = subset[:, :-1]\ny_subset = subset[:,-1:]\n\n\nfrom sklearn.cluster import KMeans\nfrom sklearn.metrics import silhouette_score\n\nkmeans = KMeans(n_clusters=3, random_state = 42)\nkmeans.fit(X_subset)\nsilhouette_score(X_subset, kmeans.labels_)\n\n###✏ Question9: Subset Article Choices Our subset currently cointains Coat, Bag, and Sneaker. What if instead we had selected only footwear items: Sandal, Sneaker, Ankle boot? What clustering challenges might arise when items are similar? How might this affect our silhouette score compared to clustering with an unrelated subset?\n###✏ Question10: Silhouette Score\nThe silhouette score measures how well-separated clusters are. What would a perfect silhouette score be, and what does our current score suggest about our clusters?"
+  },
+  {
+    "objectID": "PA3_Classification_with_Fashion_MNIST.html#finding-particular-images",
+    "href": "PA3_Classification_with_Fashion_MNIST.html#finding-particular-images",
+    "title": "Task 0: Data Exploration",
+    "section": "Finding particular images",
+    "text": "Finding particular images\nYou can further invesitgate by using the function below find_pic which will take the class label (items from row_0 in the matrix above) and the cluster label (items from col_0 in the matrix above) and return the first image that meets that criteria.\n\ndef find_pic(article_type, cluster_label):\n  \"\"\"This function takes in y label (article_type) and the cluster it belongs\n  to (cluster_label) and will show that image\"\"\"\n  valid_indices = np.where((y_subset.flatten() == article_type) & (kmeans.labels_ == cluster_label))[0]\n  chosen_index = np.random.choice(valid_indices)\n  print(chosen_index)\n  plt.figure(figsize=(3, 3))\n  plt.imshow(X_subset[chosen_index].reshape(28, 28), cmap='gray')\n  plt.title(f'Label: {article_type}, Cluster: {cluster_label}')\n  plt.show()\n\n\nfind_pic(4,0)\n\n\nfind_pic(4,1)\n\n\nfind_pic(4,2)\n\n###✏ Question11: Labels\nWhat does the row values 4, 7, 8 mean in the context of our data?\n###💻 Question12: Identifying Clothing\nIs the model generally grouping items according to their true class? Which clothing article type seems easiest for the algorithm to identify? Which is most confused? You can use the find_pic function above if that is helpful.\n###💻 Question13: Visual Inspection\nConsider the shapes of our articles of clothing. What visual features might cause the algorithm to group certain articles together despite having different labels? Use the function above to find at least two pieces of evidence in the data to support your claim. Add your code below.\n###✏ Question14: Clusters\nFor each cluster: * which of the labels appear in the cluster? * is there a label that occurs significantly more frequently than the others?\nWhere does the algorithm have difficulty? Why do you think this is happening?\n#Reflection\nTake a moment to reflect on the assingment\n##✏ Question 15: Reflection\nWhat did you like about it? What could be improved? Your answers will not affect your overall grade. This feedback will be used to improve future programming assignments.\n#Grading For each of the following accomplishments, there is a breakdown of points which total to 21. The fraction of points earned out of 21 will be multiplied by 5 to get your final score (e.g. 17 points earned will be 17/21 * 5 → 4.05) * (1pt) Task0 q1: Identified counts and discussed if balanced. * (1pt) Task0 q2: Identified at least one concern of flattening images * (1pt) Task0 q3: Discussed distributions of features * (2pt) Task1: Function closest_centroid runs as expected * (1pt) Task1 q4: Correctly states why dimensions matter when calculating distances * (1pt) Task1 q5: At least one approach to save on computational costs is discussed. * (1pt) Task1 q6: Discusses ties and offers a solution * (2pt) Task2: Function recompute_centroid runs as expected * (1pt) Task2 q7: Correctly explains what “average image” means * (1pt) Task2 q8: Discusses mean vs median appropriately * (1pt) Task3 q9: Discusses subsets and their influence on the accuracy of the model * (1pt) Task3 q10: Interprets the silhouette score * (1pt) Task4 q11: Indentifies what each label means in the context of the dataset * (2pt) Task4 q12: Interprets the confusion matrix for articles of clothing (rows) * (1pt) Task4 q13: Used the function find_pic to support the claims * (2pt) Task4 q14: Interprets the confusion matrix for clusters (columns) * (1pt) Task5 q15: You have reflected on the assignment"
   },
   {
     "objectID": "labs.html",
