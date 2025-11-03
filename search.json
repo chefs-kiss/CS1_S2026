@@ -39,7 +39,7 @@
     "href": "labs.html",
     "title": "Labs",
     "section": "",
-    "text": "Stuff about labs",
+    "text": "Stuff about labs\n\n\nThis lab uses Python dictionaries to look at national policing with regard to Black Americans.\n\n\n\nThis lab uses Titanic data to use basic EDA techniques.",
     "crumbs": [
       "Labs"
     ]
@@ -49,7 +49,7 @@
     "href": "labs.html#overview",
     "title": "Labs",
     "section": "",
-    "text": "Stuff about labs",
+    "text": "Stuff about labs\n\n\nThis lab uses Python dictionaries to look at national policing with regard to Black Americans.\n\n\n\nThis lab uses Titanic data to use basic EDA techniques.",
     "crumbs": [
       "Labs"
     ]
@@ -185,7 +185,7 @@
     "href": "homework.html",
     "title": "Homework",
     "section": "",
-    "text": "Stuff about homework",
+    "text": "Stuff about homework\n\n\nThis homework goes over looking at summary tables for a dataset, explaining statistical terms to non-tech folks, exploring statistics, and interpretting statistical tests.\n\n\n\nThis homework goes over model selection in our 5-step ML workflow, as well as evaluation metrics for both classification and regression.",
     "crumbs": [
       "Homework"
     ]
@@ -195,7 +195,7 @@
     "href": "homework.html#overview",
     "title": "Homework",
     "section": "",
-    "text": "Stuff about homework",
+    "text": "Stuff about homework\n\n\nThis homework goes over looking at summary tables for a dataset, explaining statistical terms to non-tech folks, exploring statistics, and interpretting statistical tests.\n\n\n\nThis homework goes over model selection in our 5-step ML workflow, as well as evaluation metrics for both classification and regression.",
     "crumbs": [
       "Homework"
     ]
@@ -563,7 +563,51 @@
     "href": "course_information/schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Week 1 (Jan 5 - 9)\n\n\n\ndow\ndate\nprepare\ntopic\nmaterials\n\n\n\n\nM\nJan 5\n📖syllabus\nINTRO\n👩🏻‍🏫 INTRO 💻 Lab: Intro ☑️ PC0\n\n\nT\nJan 6\n📖readings\nEDA\n👩🏻‍🏫 EDA1 EDA2 📝 HW:EDA\n\n\nW\nJan 7\n📓EDA study guide\nEDA\n👩🏻‍🏫 EDA3 💻 Lab:EDA ☑️ PC1\n\n\nTh\nJan 8\n📖readings\nEDA Quiz  EVL\n👩🏻‍🏫 EVL1 EVL2 📝 HW:EVL\n\n\nF\nJan 9\n📓EDA study guide\nEVL\n👩🏻‍🏫 EVL3 💻 Lab:EVL ☑️ PC2\n\n\n\n\n\nWeek 2 (Jan 12 - 16)\n\n\n\ndow\ndate\nprepare\ntopic\nmaterials\n\n\n\n\nM\nJan 12\n📖readings\nEVL Quiz  CLS\n👩🏻‍🏫 CLS1  👩🏻‍🏫 CLS2  📝 HW:CLS\n\n\nT\nJan 13\n📓CLS Quiz\nCLS  Quiz Retakes\n👩🏻‍🏫 CLS3  💻 Lab:CLS  ☑️ PC3\n\n\nW\nJan 14\n📖readings\nCLS Quiz  DATA\n👩🏻‍🏫 DATA1  👩🏻‍🏫 DATA2  📝 HW:DATA  ☑️ PC4\n\n\nTh\nJan 15\n📓DATA Quiz\nDATA\n👩🏻‍🏫 DATA3  💻 Lab:DATA  ☑️ PC4\n\n\nF\nJan 16\n📖readings\nDATA Quiz  MOD\n👩🏻‍🏫 TREE1  👩🏻‍🏫 TREE2  📝 HW:TREE\n\n\n\n\n\nWeek 3 (Jan 19 - 23)\n\n\n\ndow\ndate\nprepare\ntopic\nmaterials\n\n\n\n\nM\nJan 19\n\nMOD  Quiz Retakes\n👩🏻‍🏫 KNN  💻 Lab:TREE  ☑️ PC5\n\n\nT\nJan 20\n\nTREE Quiz  MOD\n👩🏻‍🏫 LIN1  👩🏻‍🏫 LIN2  📝 HW:LIN\n\n\nW\nJan 21\n\nMOD\n👩🏻‍🏫 SVM  💻 Lab:MOD Part 1  ☑️ PC6\n\n\nTh\nJan 22\n\nLIN Quiz  ENS\n👩🏻‍🏫 ENS1  👩🏻‍🏫 ENS2  📝 HW:ENS\n\n\nF\nJan 23\n\nENS  Quiz Retakes\n👩🏻‍🏫 ENS3  💻 Lab:MOD Part 2  ☑️ PC7\n\n\n\n\n\nWeek 4 (Jan 26 - 30)\n\n\n\ndow\ndate\nprepare\ntopic\nmaterials\n\n\n\n\nM\nJan 26\n\nENS Quiz  NN\n👩🏻‍🏫 NN1  👩🏻‍🏫 NN2  📝 HW:NN\n\n\nT\nJan 27\n\nNN\n👩🏻‍🏫 NN3  💻 Lab:NN  ☑️ PC8\n\n\nW\nJan 28\n\nNN Quiz  DL\n👩🏻‍🏫 DL1  💻 DL2\n\n\nTh\nJan 29\n\nDL Quiz  Last Day\n☑️ PC9\n\n\nF\nJan 30\n\nPresentations  Quiz Retakes",
+    "text": "dow\ndate\nprepare\ntopic\nmaterials\n\n\n\n\nM\nJan 5\n📖syllabus\nINTRO\n👩🏻‍🏫 INTRO 💻 Lab: Intro ☑️ PC0\n\n\nT\nJan 6\n📖readings\nEDA\n👩🏻‍🏫 EDA1 EDA2 📝 HW:EDA\n\n\nW\nJan 7\n📓EDA study guide\nEDA\n👩🏻‍🏫 EDA3 💻 Lab:EDA ☑️ PC1\n\n\nTh\nJan 8\n📖readings\nEDA Quiz  EVL\n👩🏻‍🏫 EVL1 EVL2 📝 HW:EVL\n\n\nF\nJan 9\n📓EDA study guide\nEVL\n👩🏻‍🏫 EVL3 💻 Lab:EVL ☑️ PC2",
+    "crumbs": [
+      "Course Information",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "course_information/schedule.html#week-1-jan-5---9",
+    "href": "course_information/schedule.html#week-1-jan-5---9",
+    "title": "Schedule",
+    "section": "",
+    "text": "dow\ndate\nprepare\ntopic\nmaterials\n\n\n\n\nM\nJan 5\n📖syllabus\nINTRO\n👩🏻‍🏫 INTRO 💻 Lab: Intro ☑️ PC0\n\n\nT\nJan 6\n📖readings\nEDA\n👩🏻‍🏫 EDA1 EDA2 📝 HW:EDA\n\n\nW\nJan 7\n📓EDA study guide\nEDA\n👩🏻‍🏫 EDA3 💻 Lab:EDA ☑️ PC1\n\n\nTh\nJan 8\n📖readings\nEDA Quiz  EVL\n👩🏻‍🏫 EVL1 EVL2 📝 HW:EVL\n\n\nF\nJan 9\n📓EDA study guide\nEVL\n👩🏻‍🏫 EVL3 💻 Lab:EVL ☑️ PC2",
+    "crumbs": [
+      "Course Information",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "course_information/schedule.html#week-2-jan-12---16",
+    "href": "course_information/schedule.html#week-2-jan-12---16",
+    "title": "Schedule",
+    "section": "Week 2 (Jan 12 - 16)",
+    "text": "Week 2 (Jan 12 - 16)\n\n\n\ndow\ndate\nprepare\ntopic\nmaterials\n\n\n\n\nM\nJan 12\n📖readings\nEVL Quiz  CLS\n👩🏻‍🏫 CLS1 CLS2 📝 HW:CLS\n\n\nT\nJan 13\n📓CLS study guide\nCLS  Quiz Retakes\n👩🏻‍🏫 CLS3 💻 Lab:CLS ☑️ PC3\n\n\nW\nJan 14\n📖readings\nCLS Quiz  DATA\n👩🏻‍🏫 DATA1 DATA2 📝 HW:DATA ☑️ PC4\n\n\nTh\nJan 15\n📓DATA study guide\nDATA\n👩🏻‍🏫 DATA3 💻 Lab:DATA ☑️ PC4\n\n\nF\nJan 16\n📖readings\nDATA Quiz  MOD\n👩🏻‍🏫 TREE1 TREE2 📝 HW:TREE",
+    "crumbs": [
+      "Course Information",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "course_information/schedule.html#week-3-jan-19---23",
+    "href": "course_information/schedule.html#week-3-jan-19---23",
+    "title": "Schedule",
+    "section": "Week 3 (Jan 19 - 23)",
+    "text": "Week 3 (Jan 19 - 23)\n\n\n\ndow\ndate\nprepare\ntopic\nmaterials\n\n\n\n\nM\nJan 19\n\nMOD  Quiz Retakes\n👩🏻‍🏫 KNN 💻 Lab:TREE ☑️ PC5\n\n\nT\nJan 20\n\nTREE Quiz  MOD\n👩🏻‍🏫 LIN1 LIN2 📝 HW:LIN\n\n\nW\nJan 21\n\nMOD\n👩🏻‍🏫 SVM  💻 Lab:MOD Part 1 ☑️ PC6\n\n\nTh\nJan 22\n\nLIN Quiz  ENS\n👩🏻‍🏫 ENS1 ENS2 📝 HW:ENS\n\n\nF\nJan 23\n\nENS  Quiz Retakes\n👩🏻‍🏫 ENS3 💻 Lab:MOD Part 2 ☑️ PC7",
+    "crumbs": [
+      "Course Information",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "course_information/schedule.html#week-4-jan-26---30",
+    "href": "course_information/schedule.html#week-4-jan-26---30",
+    "title": "Schedule",
+    "section": "Week 4 (Jan 26 - 30)",
+    "text": "Week 4 (Jan 26 - 30)\n\n\n\ndow\ndate\nprepare\ntopic\nmaterials\n\n\n\n\nM\nJan 26\n\nENS Quiz  NN\n👩🏻‍🏫 NN1 NN2 📝 HW:NN\n\n\nT\nJan 27\n\nNN\n👩🏻‍🏫 NN3 💻 Lab:NN ☑️ PC8\n\n\nW\nJan 28\n\nNN Quiz  DL\n👩🏻‍🏫 DL1 💻 DL2\n\n\nTh\nJan 29\n\nDL Quiz  Last Day\n☑️ PC9\n\n\nF\nJan 30\n\nPresentations  Quiz Retakes",
     "crumbs": [
       "Course Information",
       "Schedule"
