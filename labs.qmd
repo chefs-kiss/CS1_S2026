@@ -5,8 +5,9 @@ title: "Labs"
 ## Overview
 Stuff about labs
 
-### [Lab: Intro](/00-INTRO/lab-python.ipynb) 
-This lab uses Python dictionaries to look at national policing with regard to Black Americans. 
+## Lab: Intro 
+This lab uses Python dictionaries to look at national policing data and its impact on Black Americans. 
+[Click to view Colab Notebook](https://colab.research.google.com/drive/1--LiIuUrYp2gkUp6d6pW3Nl1NzPD_yed?usp=sharing)
 
-### [Lab: EDA](/01-EDA/lab-EDA.ipynb) 
+## Lab: EDA
 This lab uses Titanic data to use basic EDA techniques.
