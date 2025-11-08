@@ -4,7 +4,21 @@
     "href": "02-EVL/rr-EVL.html",
     "title": "EVL readings",
     "section": "",
-    "text": "EVL readings\nISL-P: Intro to ML section 2.1; Model Accuracy section 2.2; Cross-validation section 5.1; Bootstrap section 5.2\nRead the following articles: Accountable algorithms describes principles for investigating algorithms and holding them accountable.\nAlgorithm guidance expands off of the accountable algorithms article to show some real-world examples. This is a bit long, so skim as needed. Pay attention to the real-world examples."
+    "text": "Dive deeper in the content we’ll be covering. These articles can be quite math-heavy. If anything is unclear, don’t hesitate to reach out to your instructor. Aim to grasp the big-picture ideas so you can explain each topic to a non-technical audience. \n\nIntro to ML section 2.1 \nModel Accuracy section 2.2 \nCross-validation section 5.1 \nBootstrap section 5.2\n\n\n\n\n\nAccountable algorithms describes principles for investigating algorithms and holding them accountable. \nAlgorithm guidance expands off of the accountable algorithms article to show some real-world examples. This is a bit long, so skim as needed. Pay attention to the real-world examples."
+  },
+  {
+    "objectID": "02-EVL/rr-EVL.html#islp-selected-readings",
+    "href": "02-EVL/rr-EVL.html#islp-selected-readings",
+    "title": "EVL readings",
+    "section": "",
+    "text": "Dive deeper in the content we’ll be covering. These articles can be quite math-heavy. If anything is unclear, don’t hesitate to reach out to your instructor. Aim to grasp the big-picture ideas so you can explain each topic to a non-technical audience. \n\nIntro to ML section 2.1 \nModel Accuracy section 2.2 \nCross-validation section 5.1 \nBootstrap section 5.2"
+  },
+  {
+    "objectID": "02-EVL/rr-EVL.html#related-articles",
+    "href": "02-EVL/rr-EVL.html#related-articles",
+    "title": "EVL readings",
+    "section": "",
+    "text": "Accountable algorithms describes principles for investigating algorithms and holding them accountable. \nAlgorithm guidance expands off of the accountable algorithms article to show some real-world examples. This is a bit long, so skim as needed. Pay attention to the real-world examples."
   },
   {
     "objectID": "02-EVL/hw-EVL.html",
@@ -88,14 +102,14 @@
     "href": "course_information/syllabus.html",
     "title": "Syllabus",
     "section": "",
-    "text": "CSCI 200B Interim 2026 Special Topics: Machine Learning Morning Sessions: 10:40-12:40 in RNS 203 Afternoon Sessions: 1-3 in RNS 203\n\n\nMission: This is a welcoming, inclusive, encouraging, and failure-tolerant class.  Instructor: Kim Mandery  E-mail: mander1@stolaf.edu  Office: RMS 407\nTextbook: Introduction to Statistical Learning with Python (ISL-P). This book is free and online.\n\n\n\nIt has become increasingly common to use machine learning algorithms to analyze data, draw conclusions, and build models, without direct human instruction. These algorithms have been used in a wide variety of applications, including Netflix recommendations, predicting healthcare outcomes, criminal justice, and many more. In this course, we’ll explore several common machine learning algorithms, learning how they work, and applying them to real datasets. We will cover the strengths and limitations of machine learning algorithms. We will also explore real-world applications of machine learning, and discuss the ethical and societal consequences of the use of these algorithms.\n\n\n\nThrough the lens of machine learning, we will:  - develop and interpret applications of algorithms to domain use-cases - develop working software that satisfies coding best practices - work effectively, both individually and in teams - communicate information effectively to both technical and non-technical audiences\nCourse Schedule: The schedule for this course is available here. This document is likely to be updated throughout the semester, and will be announced in class if it is.\nActive Learning and Engagement: I expect you to take an active role in class each day, participating positively, wholeheartedly, and respectfully in class/group discussions and other activities. You may need sick/mental health days. You are responsible for learning the material on the day you missed. If you are experiencing issues causing you to miss classes often, please speak with me as this may be evident of a possible failing grade. You can also visit your class dean as they are a great resource."
+    "text": "CSCI 200B Interim 2026 Special Topics: Machine Learning Morning Sessions: 10:40-12:40 in RNS 203 Afternoon Sessions: 1-3 in RNS 203\n\n\nMission: This is a welcoming, inclusive, encouraging, and failure-tolerant class.  Instructor: Kim Mandery  E-mail: mander1@stolaf.edu  Office: RMS 407\nTextbook: Introduction to Statistical Learning with Python (ISL-P). This book is free and available online, and is also hosted on this site. You can download your own pdf or access via your browser here\n\n\n\nIt has become increasingly common to use machine learning algorithms to analyze data, draw conclusions, and build models, without direct human instruction. These algorithms have been used in a wide variety of applications, including Netflix recommendations, predicting healthcare outcomes, criminal justice, and many more. In this course, we’ll explore several common machine learning algorithms, learning how they work, and applying them to real datasets. We will cover the strengths and limitations of machine learning algorithms. We will also explore real-world applications of machine learning, and discuss the ethical and societal consequences of the use of these algorithms.\n\n\n\nThrough the lens of machine learning, we will:  - develop and interpret applications of algorithms to domain use-cases - develop working software that satisfies coding best practices - work effectively, both individually and in teams - communicate information effectively to both technical and non-technical audiences\nCourse Schedule: The schedule for this course is available here. This document is likely to be updated throughout the semester, and will be announced in class if it is.\nActive Learning and Engagement: I expect you to take an active role in class each day, participating positively, wholeheartedly, and respectfully in class/group discussions and other activities. You may need sick/mental health days. You are responsible for learning the material on the day you missed. If you are experiencing issues causing you to miss classes often, please speak with me as this may be evident of a possible failing grade. You can also visit your class dean as they are a great resource."
   },
   {
     "objectID": "course_information/syllabus.html#general-information",
     "href": "course_information/syllabus.html#general-information",
     "title": "Syllabus",
     "section": "",
-    "text": "Mission: This is a welcoming, inclusive, encouraging, and failure-tolerant class.  Instructor: Kim Mandery  E-mail: mander1@stolaf.edu  Office: RMS 407\nTextbook: Introduction to Statistical Learning with Python (ISL-P). This book is free and online."
+    "text": "Mission: This is a welcoming, inclusive, encouraging, and failure-tolerant class.  Instructor: Kim Mandery  E-mail: mander1@stolaf.edu  Office: RMS 407\nTextbook: Introduction to Statistical Learning with Python (ISL-P). This book is free and available online, and is also hosted on this site. You can download your own pdf or access via your browser here"
   },
   {
     "objectID": "course_information/syllabus.html#course-description",
@@ -235,14 +249,42 @@
     "href": "01-EDA/rr-EDA.html",
     "title": "EDA readings",
     "section": "",
-    "text": "EDA readings\nRead through the following articles:\nStats distributions describes how by only knowing statistical properties we may be making inaccurate assumptions of what our data actually looks like visually.\nImplications behind visualizations (excusing the explicit language) has loads of examples of how biases can creep into our data insights. This article shows how we can initially interpret visualizations, and perhaps how to start questioning if the visualization is telling the story we think it is.\nUsing LLMs to storyboard goes through the process of how a data-driven story is created at The Pudding, but using an LLM. This article is a great way to understand how data-driven stories are put together, and how good (or not so good) LLMs are at replicating tasks associated with the design and implementation process.\nggplot vs plotnine compares the graphing power of R’s ggplot to Python’s plotnine (R wrapper for ggplot). Useful for those who have experience with creating visualizations in R, or for those who are unimpressed by matplotlib’s capabilities. Only read if you have a background using R. The following cheatsheets may be helpful for your reference: data storytelling, data visualizations, matplotlib, plotly, seaborn."
+    "text": "Stats distributions describes how by only knowing statistical properties we may be making inaccurate assumptions of what our data actually looks like visually. \nImplications behind visualizations (excusing the explicit language) has loads of examples of how biases can creep into our data insights. This article shows how we can initially interpret visualizations, and perhaps how to start questioning if the visualization is telling the story we think it is. \nUsing LLMs to storyboard goes through the process of how a data-driven story is created at The Pudding, but using an LLM. This article is a great way to understand how data-driven stories are put together, and how good (or not so good) LLMs are at replicating tasks associated with the design and implementation process. \nggplot vs plotnine compares the graphing power of R’s ggplot to Python’s plotnine (R wrapper for ggplot). Useful for those who have experience with creating visualizations in R, or for those who are unimpressed by matplotlib’s capabilities. Only read if you have a background using R.\n\n\n\n\nThe following cheatsheets may be helpful for your reference: data storytelling, data visualizations, matplotlib, plotly, seaborn."
+  },
+  {
+    "objectID": "01-EDA/rr-EDA.html#related-articles",
+    "href": "01-EDA/rr-EDA.html#related-articles",
+    "title": "EDA readings",
+    "section": "",
+    "text": "Stats distributions describes how by only knowing statistical properties we may be making inaccurate assumptions of what our data actually looks like visually. \nImplications behind visualizations (excusing the explicit language) has loads of examples of how biases can creep into our data insights. This article shows how we can initially interpret visualizations, and perhaps how to start questioning if the visualization is telling the story we think it is. \nUsing LLMs to storyboard goes through the process of how a data-driven story is created at The Pudding, but using an LLM. This article is a great way to understand how data-driven stories are put together, and how good (or not so good) LLMs are at replicating tasks associated with the design and implementation process. \nggplot vs plotnine compares the graphing power of R’s ggplot to Python’s plotnine (R wrapper for ggplot). Useful for those who have experience with creating visualizations in R, or for those who are unimpressed by matplotlib’s capabilities. Only read if you have a background using R."
+  },
+  {
+    "objectID": "01-EDA/rr-EDA.html#cheat-sheets",
+    "href": "01-EDA/rr-EDA.html#cheat-sheets",
+    "title": "EDA readings",
+    "section": "",
+    "text": "The following cheatsheets may be helpful for your reference: data storytelling, data visualizations, matplotlib, plotly, seaborn."
   },
   {
     "objectID": "03-CLS/rr-CLS.html",
     "href": "03-CLS/rr-CLS.html",
     "title": "CLS readings",
     "section": "",
-    "text": "CLS readings\nISL-P: Unsupervised Learning section 12.1; PCA section 12.2; Clustering Models section 12.3\nRead the following articles: Decision making with AI (few years old) gives real-world examples of the ethical dilemmas of ML\n[Recommender system tutorial] (https://www.alldatascience.com/recommender-systems/simple-recipe-recommender-system-with-scikit-surprise/)(won’t cover in class but interesting unsupervised learning model) which you can get a better idea of how it works by writing out the 5-step ML workflow and fill in the steps you see being taken in the tutorial."
+    "text": "Dive deeper in the content we’ll be covering. These articles can be quite math-heavy. If anything is unclear, don’t hesitate to reach out to your instructor. Aim to grasp the big-picture ideas so you can explain each topic to a non-technical audience. \n\nUnsupervised Learning section 12.1 \nPCA section 12.2 \nClustering Models section 12.4\n\n\n\n\n\nDecision making with AI (few years old) gives real-world examples of the ethical dilemmas of ML \nRecommender system tutorial(won’t cover in class but interesting unsupervised learning model) which you can get a better idea of how it works by writing out the 5-step ML workflow and fill in the steps you see being taken in the tutorial."
+  },
+  {
+    "objectID": "03-CLS/rr-CLS.html#islp-selected-readings",
+    "href": "03-CLS/rr-CLS.html#islp-selected-readings",
+    "title": "CLS readings",
+    "section": "",
+    "text": "Dive deeper in the content we’ll be covering. These articles can be quite math-heavy. If anything is unclear, don’t hesitate to reach out to your instructor. Aim to grasp the big-picture ideas so you can explain each topic to a non-technical audience. \n\nUnsupervised Learning section 12.1 \nPCA section 12.2 \nClustering Models section 12.4"
+  },
+  {
+    "objectID": "03-CLS/rr-CLS.html#related-articles",
+    "href": "03-CLS/rr-CLS.html#related-articles",
+    "title": "CLS readings",
+    "section": "",
+    "text": "Decision making with AI (few years old) gives real-world examples of the ethical dilemmas of ML \nRecommender system tutorial(won’t cover in class but interesting unsupervised learning model) which you can get a better idea of how it works by writing out the 5-step ML workflow and fill in the steps you see being taken in the tutorial."
   },
   {
     "objectID": "01-EDA/hw-EDA.html",

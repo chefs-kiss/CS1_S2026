@@ -170,7 +170,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#cls-readings" id="toc-cls-readings" class="nav-link active" data-scroll-target="#cls-readings">CLS readings</a></li>
+  <li><a href="#cls-readings" id="toc-cls-readings" class="nav-link active" data-scroll-target="#cls-readings">CLS readings</a>
+  <ul class="collapse">
+  <li><a href="#islp-selected-readings" id="toc-islp-selected-readings" class="nav-link" data-scroll-target="#islp-selected-readings">ISLP selected readings</a></li>
+  <li><a href="#related-articles" id="toc-related-articles" class="nav-link" data-scroll-target="#related-articles">Related articles</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -182,11 +186,24 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="cls-readings" class="level1">
 <h1>CLS readings</h1>
-<p><a href="https://www.statlearning.com/">ISL-P</a>: Unsupervised Learning section 12.1; PCA section 12.2; Clustering Models section 12.3</p>
-<p>Read the following articles: <a href="https://www.nature.com/articles/s41599-020-0501-9">Decision making with AI</a> (few years old) gives real-world examples of the ethical dilemmas of ML</p>
-<p>[Recommender system tutorial] (https://www.alldatascience.com/recommender-systems/simple-recipe-recommender-system-with-scikit-surprise/)(won’t cover in class but interesting unsupervised learning model) which you can get a better idea of how it works by writing out the 5-step ML workflow and fill in the steps you see being taken in the tutorial.</p>
+<section id="islp-selected-readings" class="level2">
+<h2 class="anchored" data-anchor-id="islp-selected-readings">ISLP selected readings</h2>
+<p>Dive deeper in the content we’ll be covering. These articles can be quite math-heavy. If anything is unclear, don’t hesitate to reach out to your instructor. Aim to grasp the big-picture ideas so you can explain each topic to a non-technical audience. <br></p>
+<ul class="task-list">
+<li><label><input type="checkbox">Unsupervised Learning <a href="../files/ISLP.pdf#page=509">section 12.1</a> <br></label></li>
+<li><label><input type="checkbox">PCA <a href="../files/ISLP.pdf#page=510">section 12.2</a> <br></label></li>
+<li><label><input type="checkbox">Clustering Models <a href="../files/ISLP.pdf#page=526">section 12.4</a><br></label></li>
+</ul>
+</section>
+<section id="related-articles" class="level2">
+<h2 class="anchored" data-anchor-id="related-articles">Related articles</h2>
+<ul class="task-list">
+<li><p><label><input type="checkbox"><a href="https://www.nature.com/articles/s41599-020-0501-9">Decision making with AI</a> (few years old) gives real-world examples of the ethical dilemmas of ML <br></label></p></li>
+<li><p><label><input type="checkbox"><a href="https://www.alldatascience.com/recommender-systems/simple-recipe-recommender-system-with-scikit-surprise/">Recommender system tutorial</a>(won’t cover in class but interesting unsupervised learning model) which you can get a better idea of how it works by writing out the 5-step ML workflow and fill in the steps you see being taken in the tutorial. <br></label></p></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
