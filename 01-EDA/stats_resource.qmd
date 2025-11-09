@@ -1,5 +1,5 @@
 ---
-title: "Practical Statistics for Data Science"
+title: "Statistics for Machine Learning"
 subtitle: "Essential Concepts with Python"
 format:
   revealjs:
@@ -10,6 +10,8 @@ format:
     code-line-numbers: false
     scrollable: true
     smaller: true
+    progress: true
+    highlight-style: tango
 jupyter: python3
 ---
 
@@ -1362,7 +1364,7 @@ plt.show()
 
 **Further Reading**
 
-- Practical Statistics for Data Scientists (Bruce & Bruce)
+- [Practical Statistics for Data Scientists](../files/Stats4ML.pdf) (Bruce & Bruce)
 - Python for Data Analysis (McKinney)
 - Statistical Inference via Data Science (Ismay & Kim)
 
