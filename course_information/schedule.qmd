@@ -1,8 +1,5 @@
----
-title: "Schedule"
-css: ../styles.css
----
 
+![](../static/art3.png)
 
 ## Week 1 (Jan 5 - 9)
 
@@ -49,3 +46,5 @@ Over the weekend, complete an [article review](syllabus.qmd#article-reviews)
 | W       | Jan 28    | [📖<br><br> readings](){.badge .bg-light .text-decoration-none}  |  DL        | [👩🏻‍🏫<br><br>DL1](){.badge .bg-light .text-decoration-none}  [👩🏻‍🏫<br><br>DL2](){.badge .bg-light .text-decoration-none}  [QUIZ <br><br>NN]{.badge .bg-info}                                          |
 | Th      | Jan 29    |  [📓<br>DL<br> standard](){.badge .bg-light .text-decoration-none}   | DL    | Last Day! <br>[QUIZ <br><br>DL]{.badge .bg-info}  [☑️<br><br>PC9](){.badge .bg-light .text-decoration-none} [Quiz <br>Retakes<br> ENS+NN+DL]{.badge .bg-info .text-decoration-none}                             |
 | F       | Jan 30    |     [submit<br>final<br>site](){.badge .bg-light .text-decoration-none}             | Final  |   Presentation Day!<br>  [☑️<br><br>PREZ](){.badge .bg-light .text-decoration-none} [Quiz <br>Retakes<br> ANY]{.badge .bg-info .text-decoration-none}                                                                                         |
+
+![](../static/art2.jpg)

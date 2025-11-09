@@ -1,8 +1,5 @@
----
-title: "Article Reviews"
----
+![](static/art3.png)
 
-## Overview
 You will complete **three (3) reviews** of articles related to **machine learning**. Each review is worth 5 points.
 
 These assignments are designed to help you:  
@@ -76,3 +73,4 @@ All three are due before the final exam day, though it is encouraged to complete
 - Use your own words to demonstrate understanding.  
 - Choose a mix of technical and non-technical articles for variety.
 
+![](static/art2.jpg)

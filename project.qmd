@@ -1,4 +1,4 @@
-# Semester Project
+![](static/art3.png)
 
 # Overview
 You may choose to work on any machine learning project of your choice. This could be similar to the
@@ -101,3 +101,5 @@ A detailed grading rubric *TBD*
 Grading is based on the quality of your peer review during these rounds. 
 
 The peer review form is available [here]()
+
+![](static/art1.jpg)

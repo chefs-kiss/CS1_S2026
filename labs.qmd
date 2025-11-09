@@ -1,9 +1,7 @@
----
-title: "Labs"
----
 
-## Overview
-Stuff about labs
+![](../static/art3.png)
+
+Stuff about labs...
 
 ## Lab: Intro 
 This lab uses Python dictionaries to look at national policing data and its impact on Black Americans. 

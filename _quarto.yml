@@ -12,15 +12,18 @@ website:
     pinned: true
     align: center
     tools:
-      - icon: github
-        href: https://github.com/chefs-kiss/ML_J2026
-        text: GitHub
+      - icon: house
+        href: course_information/schedule.qmd
+        text: Home
       - icon: file-earmark-pdf
         href: https://chefs-kiss.github.io/ML_J2026/files/ISLP.pdf
         text: ISLP
       - icon: chat-heart
         href: https://mdl.stolaf.edu/course/view.php?id=56310
         text: Moodle
+      - icon: github
+        href: https://github.com/chefs-kiss/ML_J2026
+        text: GitHub
     style: docked
     contents:
     - section: "Course Information"
@@ -48,8 +51,8 @@ website:
 
 format:
   html:
-    theme: lux #vapor
-    # css: styles.css
+    theme: sandstone  #yeti #materia #lux #sandstone #spacelab #vapor   #litera
+    #css: styles.css
     toc: true
 
 execute:
