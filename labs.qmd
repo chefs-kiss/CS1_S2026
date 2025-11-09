@@ -1,5 +1,5 @@
 
-![](../static/art3.png)
+![](static/art3.png)
 
 Stuff about labs...
 
