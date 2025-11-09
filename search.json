@@ -58,20 +58,9 @@
   {
     "objectID": "homework.html",
     "href": "homework.html",
-    "title": "Homework",
+    "title": "Machine Learning",
     "section": "",
-    "text": "Homeworks are due at the start of the next class.\n\n\nThis homework goes over looking at summary tables for a dataset, explaining statistical terms to non-tech folks, exploring statistics, and interpretting statistical tests.\n\n\n\nThis homework goes over model selection in our 5-step ML workflow, as well as evaluation metrics for both classification and regression.",
-    "crumbs": [
-      "Materials",
-      "Homework"
-    ]
-  },
-  {
-    "objectID": "homework.html#overview",
-    "href": "homework.html#overview",
-    "title": "Homework",
-    "section": "",
-    "text": "Homeworks are due at the start of the next class.\n\n\nThis homework goes over looking at summary tables for a dataset, explaining statistical terms to non-tech folks, exploring statistics, and interpretting statistical tests.\n\n\n\nThis homework goes over model selection in our 5-step ML workflow, as well as evaluation metrics for both classification and regression.",
+    "text": "Homeworks are due at the start of the next class.\n\nHW: EDA\nThis homework goes over looking at summary tables for a dataset, explaining statistical terms to non-tech folks, exploring statistics, and interpretting statistical tests.\n\n\nHW: EVL\nThis homework goes over model selection in our 5-step ML workflow, as well as evaluation metrics for both classification and regression.",
     "crumbs": [
       "Materials",
       "Homework"
@@ -80,20 +69,9 @@
   {
     "objectID": "articles.html",
     "href": "articles.html",
-    "title": "Article Reviews",
+    "title": "Machine Learning",
     "section": "",
-    "text": "You will complete three (3) reviews of articles related to machine learning. Each review is worth 5 points.\nThese assignments are designed to help you:\n\nExplore real-world applications and discussions of machine learning.\n\nPractice critical reading and reflection.\n\nConnect technical concepts to societal and personal contexts.\n\nEach review should demonstrate that you have read and understood the article, and thoughtfully reflected on its content. Most importantly, I should be able to get to know you personally through your writing of the review.",
-    "crumbs": [
-      "Materials",
-      "Article Reviews"
-    ]
-  },
-  {
-    "objectID": "articles.html#overview",
-    "href": "articles.html#overview",
-    "title": "Article Reviews",
-    "section": "",
-    "text": "You will complete three (3) reviews of articles related to machine learning. Each review is worth 5 points.\nThese assignments are designed to help you:\n\nExplore real-world applications and discussions of machine learning.\n\nPractice critical reading and reflection.\n\nConnect technical concepts to societal and personal contexts.\n\nEach review should demonstrate that you have read and understood the article, and thoughtfully reflected on its content. Most importantly, I should be able to get to know you personally through your writing of the review.",
+    "text": "You will complete three (3) reviews of articles related to machine learning. Each review is worth 5 points.\nThese assignments are designed to help you:\nEach review should demonstrate that you have read and understood the article, and thoughtfully reflected on its content. Most importantly, I should be able to get to know you personally through your writing of the review.",
     "crumbs": [
       "Materials",
       "Article Reviews"
@@ -102,7 +80,7 @@
   {
     "objectID": "articles.html#finding-articles",
     "href": "articles.html#finding-articles",
-    "title": "Article Reviews",
+    "title": "Machine Learning",
     "section": "Finding Articles",
     "text": "Finding Articles\nYou are encouraged to find articles from reputable sources. Some suggestions include:\n\nThe New York Times (free access through our library)\n\nThe Pudding (data-driven storytelling)\n\nYouTube channels like 3Blue1Brown or Veritasium\n\nOther sources such as academic blogs, news outlets, Medium posts, or scientific publications\n\nTip: Pick articles that genuinely interest you. You will write better reflections if the topic captures your attention.",
     "crumbs": [
@@ -113,7 +91,7 @@
   {
     "objectID": "articles.html#article-review-instructions",
     "href": "articles.html#article-review-instructions",
-    "title": "Article Reviews",
+    "title": "Machine Learning",
     "section": "Article Review Instructions",
     "text": "Article Review Instructions\nFor each article, provide clear and complete answers to the following questions.\nWrite in your own words. I do not want to read summarized slop from LLMs (these will receive 0 points).\n\nArticle Information: title of the article, author(s), publication month and year, link to the article\nIn your own words, summarize what the article covers. Focus on the key points and main ideas.\nIdentify any surprising facts, unique approaches, or compelling examples mentioned in the article.\nDiscuss how the ideas or technologies presented could affect society. Consider both positive and negative implications.\nReflect on how the article’s ideas might influence your own life, studies, or career.\nWhat would you ask the author to clarify, expand upon, or explain further?\nWhat question could you pose to readers or viewers to spark discussion?\nReflect on the article as a whole. What did you like or dislike? What did you agree or disagree with? Did it change your perspective on machine learning in any way? Would you recommend this article?",
     "crumbs": [
@@ -124,7 +102,7 @@
   {
     "objectID": "articles.html#submission-guidelines",
     "href": "articles.html#submission-guidelines",
-    "title": "Article Reviews",
+    "title": "Machine Learning",
     "section": "Submission Guidelines",
     "text": "Submission Guidelines\n\nSubmit each review as pdf to Moodle\nEach review should be about a page or so in length.\nIt’s okay if your grammar is less than perfect.\n\nAll three are due before the final exam day, though it is encouraged to complete them early.",
     "crumbs": [
@@ -135,7 +113,7 @@
   {
     "objectID": "articles.html#grading-criteria",
     "href": "articles.html#grading-criteria",
-    "title": "Article Reviews",
+    "title": "Machine Learning",
     "section": "Grading Criteria",
     "text": "Grading Criteria\n\nCompleteness (2 pts)\nPersonal (1 pt)\nInsightful impact (1pt)\nClarity + organization (1pt)\nTotal: 5 pt",
     "crumbs": [
@@ -146,7 +124,7 @@
   {
     "objectID": "articles.html#tips-for-success",
     "href": "articles.html#tips-for-success",
-    "title": "Article Reviews",
+    "title": "Machine Learning",
     "section": "Tips for Success",
     "text": "Tips for Success\n\nReflect on how the article connects to your understanding of machine learning.\n\nThink critically about the societal and personal implications.\n\nUse your own words to demonstrate understanding.\n\nChoose a mix of technical and non-technical articles for variety.",
     "crumbs": [
@@ -155,22 +133,11 @@
     ]
   },
   {
-    "objectID": "course_information/schedule.html",
-    "href": "course_information/schedule.html",
-    "title": "Schedule",
-    "section": "",
-    "text": "dow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 5\n📖 syllabus\nINTRO\n👩🏻‍🏫 INTRO ☑️PC0 💻Lab: Intro\n\n\nT\nJan 6\n📖 readings\nEDA\n👩🏻‍🏫EDA1 👩🏻‍🏫EDA2 QUIZ INTRO📝HW:EDA\n\n\nW\nJan 7\n📓EDA standard\nEDA\n👩🏻‍🏫EDA3 ☑️PC1💻Lab:EDA\n\n\nTh\nJan 8\n📖 readings\nEVL\n👩🏻‍🏫EVL1 👩🏻‍🏫EVL2 QUIZ EDA 📝HW:EVL\n\n\nF\nJan 9\n📓EVL standard\nEVL\n👩🏻‍🏫EVL3 ☑️PC2 💻Lab:EVL\n\n\n\nOver the weekend, complete an article review",
-    "crumbs": [
-      "Course Information",
-      "Schedule"
-    ]
-  },
-  {
     "objectID": "course_information/schedule.html#week-1-jan-5---9",
     "href": "course_information/schedule.html#week-1-jan-5---9",
-    "title": "Schedule",
-    "section": "",
-    "text": "dow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 5\n📖 syllabus\nINTRO\n👩🏻‍🏫 INTRO ☑️PC0 💻Lab: Intro\n\n\nT\nJan 6\n📖 readings\nEDA\n👩🏻‍🏫EDA1 👩🏻‍🏫EDA2 QUIZ INTRO📝HW:EDA\n\n\nW\nJan 7\n📓EDA standard\nEDA\n👩🏻‍🏫EDA3 ☑️PC1💻Lab:EDA\n\n\nTh\nJan 8\n📖 readings\nEVL\n👩🏻‍🏫EVL1 👩🏻‍🏫EVL2 QUIZ EDA 📝HW:EVL\n\n\nF\nJan 9\n📓EVL standard\nEVL\n👩🏻‍🏫EVL3 ☑️PC2 💻Lab:EVL\n\n\n\nOver the weekend, complete an article review",
+    "title": "Machine Learning",
+    "section": "Week 1 (Jan 5 - 9)",
+    "text": "Week 1 (Jan 5 - 9)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 5\n📖 syllabus\nINTRO\n👩🏻‍🏫 INTRO ☑️PC0 💻Lab: Intro\n\n\nT\nJan 6\n📖 readings\nEDA\n👩🏻‍🏫EDA1 👩🏻‍🏫EDA2 QUIZ INTRO📝HW:EDA\n\n\nW\nJan 7\n📓EDA standard\nEDA\n👩🏻‍🏫EDA3 ☑️PC1💻Lab:EDA\n\n\nTh\nJan 8\n📖 readings\nEVL\n👩🏻‍🏫EVL1 👩🏻‍🏫EVL2 QUIZ EDA 📝HW:EVL\n\n\nF\nJan 9\n📓EVL standard\nEVL\n👩🏻‍🏫EVL3 ☑️PC2 💻Lab:EVL\n\n\n\nOver the weekend, complete an article review",
     "crumbs": [
       "Course Information",
       "Schedule"
@@ -179,7 +146,7 @@
   {
     "objectID": "course_information/schedule.html#week-2-jan-12---16",
     "href": "course_information/schedule.html#week-2-jan-12---16",
-    "title": "Schedule",
+    "title": "Machine Learning",
     "section": "Week 2 (Jan 12 - 16)",
     "text": "Week 2 (Jan 12 - 16)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 12\n📖 readings\nCLS\n👩🏻‍🏫CLS1 👩🏻‍🏫CLS2 QUIZ EVL 📝HW:CLS\n\n\nT\nJan 13\n📓CLS standard\nCLS\n👩🏻‍🏫CLS3 ☑️PC3 💻Lab:CLS Quiz Retakes: EDA + EVL\n\n\nW\nJan 14\n📖 readings\nDATA\n👩🏻‍🏫DATA1 👩🏻‍🏫DATA2 QUIZ CLS 📝HW:DATA\n\n\nTh\nJan 15\n📓DATA standard\nDATA\n👩🏻‍🏫DATA3 ☑️PC4 💻Lab:DATA\n\n\nF\nJan 16\n📖 readings\nMOD\n👩🏻‍🏫TREE1 👩🏻‍🏫TREE2 QUIZ DATA 📝HW:TREE\n\n\n\nOver the weekend, complete an article review",
     "crumbs": [
@@ -190,7 +157,7 @@
   {
     "objectID": "course_information/schedule.html#week-3-jan-19---23",
     "href": "course_information/schedule.html#week-3-jan-19---23",
-    "title": "Schedule",
+    "title": "Machine Learning",
     "section": "Week 3 (Jan 19 - 23)",
     "text": "Week 3 (Jan 19 - 23)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 19\n📓TREE standard\nMOD\n👩🏻‍🏫KNN ☑️PC5 💻Lab:TREE Quiz Retakes:  CLS + DATA\n\n\nT\nJan 20\n📖 readings\nMOD\n👩🏻‍🏫LIN1 👩🏻‍🏫LIN2 QUIZ TREE 📝HW:LIN\n\n\nW\nJan 21\n📓LIN standard\nMOD\n👩🏻‍🏫SVM 💻Lab:MOD  Part 1 ☑️PC6\n\n\nTh\nJan 22\n📖 readings\nENS\n👩🏻‍🏫ENS1 👩🏻‍🏫ENS2 QUIZ LIN 📝HW:ENS\n\n\nF\nJan 23\n📓ENS standard\nENS\n👩🏻‍🏫ENS3 ☑️PC7 💻Lab:MOD Part 2 QUIZ  RETAKES  TREE+LIN\n\n\n\nOver the weekend, complete an article review",
     "crumbs": [
@@ -201,7 +168,7 @@
   {
     "objectID": "course_information/schedule.html#week-4-jan-26---30",
     "href": "course_information/schedule.html#week-4-jan-26---30",
-    "title": "Schedule",
+    "title": "Machine Learning",
     "section": "Week 4 (Jan 26 - 30)",
     "text": "Week 4 (Jan 26 - 30)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 26\n📖 readings\nNN\n👩🏻‍🏫NN1 👩🏻‍🏫NN2 QUIZ ENS 📝 HW:NN\n\n\nT\nJan 27\n📓NN standard\nNN\n👩🏻‍🏫NN3 💻Lab:NN ☑️PC8\n\n\nW\nJan 28\n📖 readings\nDL\n👩🏻‍🏫DL1 👩🏻‍🏫DL2 QUIZ NN\n\n\nTh\nJan 29\n📓DL standard\nDL\nLast Day! QUIZ DL ☑️PC9 Quiz Retakes ENS+NN+DL\n\n\nF\nJan 30\nsubmitfinalsite\nFinal\nPresentation Day! ☑️PREZ Quiz Retakes ANY",
     "crumbs": [
@@ -536,18 +503,7 @@
     "href": "index.html",
     "title": "Machine Learning",
     "section": "",
-    "text": "This is the homepage for CSCI 200 - Introduction to Machine Learning taught by Prof. Kim Mandery in January 2026 at St. Olaf College. All course materials will be posted on this site.\nYou can find the course syllabus here and the course schedule here\nWe will be using this Moodle page to submit assignments and host our class discussion forum",
-    "crumbs": [
-      "Course Information",
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#course-overview",
-    "href": "index.html#course-overview",
-    "title": "Machine Learning",
-    "section": "",
-    "text": "This is the homepage for CSCI 200 - Introduction to Machine Learning taught by Prof. Kim Mandery in January 2026 at St. Olaf College. All course materials will be posted on this site.\nYou can find the course syllabus here and the course schedule here\nWe will be using this Moodle page to submit assignments and host our class discussion forum",
+    "text": "This is the homepage for CSCI 200 - Introduction to Machine Learning taught by Prof. Kim Mandery in January 2026 at St. Olaf College. All course materials will be posted on this site.\nWe will be using our Moodle page to submit assignments and host our class discussion forum\nClick here for the course syllabus or here for the course schedule\n\nArtwork: The Myth of Zhuangzi by Yeachin Tsai",
     "crumbs": [
       "Course Information",
       "Home"
@@ -556,9 +512,9 @@
   {
     "objectID": "project.html",
     "href": "project.html",
-    "title": "Semester Project",
+    "title": "Overview",
     "section": "",
-    "text": "Semester Project\n\n\nOverview\nYou may choose to work on any machine learning project of your choice. This could be similar to the types of regression, classification, or clustering that we will cover in class, or could be on machine learning related to text (things like sentiment analysis, or text generation), or could be on machine learning related to images (things like image recognition, or image generation), or another area of machine learning altogether.\nYou must choose to complete this project individually.\n\n\nRequirements\nThe first requirement for the project is that you have created a workflow plan for each section of the ML workflow process, and have code that implements that plan. There is a template up on Moodle for you to copy. You may make any changes you want to this template.\nYour workflow should have some form of data pre-processing, some kind of exploratory data analysis, training and testing of machine learning algorithms (including some parameter tuning), and evaluating the performance of your models.\nThe second requirement for the project is that it use one of the following datasets. These datasets cover a variety of topics and have enough records to build substantial models. If you wish, you may choose your own data set (both the UCI repo or data.world are good places to start) that is not on this list, but you’ll need to check with your instructor first.\n\nCardiotocography\nHuman Activity Recognition Using Smartphones\nLetter Recognition\nTurkiye Student Evaluation\nWine Quality\nBank Marketing Data Set\nContraceptive Method Choice Data Set\nCrimes in Chicago\nDefault of Credit Card Clients Data Set\nOnline Shoppers Purchasing Intention Dataset\nSynthetic Financial Datasets for Fraud Detection (fake data set, but should still provide useful practice)\nRice Variety Recognition\nMice Protein Expression\n\n\n\nProject Check-ins\nThere are nine progress checks during the semester, each worth 4 points (see the schedule). To receive full credit for a progress check, you must check in with your instructor before leaving class on the day of the check.\n\nPC0\nFork project site and deploy via GitPages.  slides\n\n\nPC1\nIdentify three data sets that you’re interested in. If you include a data set not on the list above, you need to check with your instructor. Include links to each dataset.  slides\n\n\nPC2\nSelect one dataset and do some background research. Make sure your data is accessible on a git repo.\nDepending on your project, this might be as simple as locating a git repo that has your data set, or it might require you to upload the dataset to your personal git repo. Additionally, this could involve combining multiple data sources, or gathering data yourself. If your project requires you to gather your own data, please discuss this with your instructor before beginning, so that we can make sure you have a realistic plan to gather enough data.\nslides\n\n\nPC3\nPerform some exploratory data analysis. Discuss the results, and what this tells you about your data, as well as your expectations for your results. This should include some data visualizations that go beyond a basic chart.\n\n\nPC4\nTime to do some research. What is the goal of the model you plan to build? Has something similar been done with this type of data? Do a write up of background information, making sure to link sources.\n\n\nPC5\nPrepare your data set for training. This might include handling missing or categorical values, basic conversions, or more extensive conversions. Any choices that you make should be explained. Additionally, spend time making good visualizations.\n\n\nPC6\nPlan out your modeling workflow: what models would you like to use, what evaluation are you doing? Start building your presentation.\n\n\nPC7\nTrain models using machine learning algorithms. Although you do not need to use every algorithm that we’ve covered, you should use those that make sense for your data set. You should explain your choices, and perform parameter tuning in order to optimize their performance.Continue building presentation.\n\n\nPC8\nDiscussion of results. Compare the performance of your models, and discuss the results. Do you consider your results successful? Explain why or why not, and discuss how further improvements might be made.\nContinue working on your final presentation. You want a presentation that is digestible to a non-technical audidence and is interesting in some way (visualizations, insights, models, data).\n\n\nPC9\nEvaluation of your plan. Discuss how closely you were able to follow your workflow. What unexpected issues did you encounter? What adjustments did you need to make? How would this affect planning a future machine learning project? Finalize your presentation, and submit your link along with a screenshot to Moodle.\n\n\n\nFinal Submission\nThe final submission evaluates the overall quality of your project and presentation, based on the materials submitted prior to the final exam. Submissions are due the night before finals.\nA detailed grading rubric TBD\n\n\nSmall group presentations\n(12 pts): During presentations, you will participate in three rounds of small-group presentations, presenting one-on-one with another project. Grading is based on the quality of your peer review during these rounds.\nThe peer review form is available here",
+    "text": "Overview\nYou may choose to work on any machine learning project of your choice. This could be similar to the types of regression, classification, or clustering that we will cover in class, or could be on machine learning related to text (things like sentiment analysis, or text generation), or could be on machine learning related to images (things like image recognition, or image generation), or another area of machine learning altogether.\nYou must choose to complete this project individually.\n\n\nRequirements\nThe first requirement for the project is that you have created a workflow plan for each section of the ML workflow process, and have code that implements that plan. There is a template up on Moodle for you to copy. You may make any changes you want to this template.\nYour workflow should have some form of data pre-processing, some kind of exploratory data analysis, training and testing of machine learning algorithms (including some parameter tuning), and evaluating the performance of your models.\nThe second requirement for the project is that it use one of the following datasets. These datasets cover a variety of topics and have enough records to build substantial models. If you wish, you may choose your own data set (both the UCI repo or data.world are good places to start) that is not on this list, but you’ll need to check with your instructor first.\n\nCardiotocography\nHuman Activity Recognition Using Smartphones\nLetter Recognition\nTurkiye Student Evaluation\nWine Quality\nBank Marketing Data Set\nContraceptive Method Choice Data Set\nCrimes in Chicago\nDefault of Credit Card Clients Data Set\nOnline Shoppers Purchasing Intention Dataset\nSynthetic Financial Datasets for Fraud Detection (fake data set, but should still provide useful practice)\nRice Variety Recognition\nMice Protein Expression\n\n\n\nProject Check-ins\nThere are nine progress checks during the semester, each worth 4 points (see the schedule). To receive full credit for a progress check, you must check in with your instructor before leaving class on the day of the check.\n\nPC0\nFork project site and deploy via GitPages.  slides\n\n\nPC1\nIdentify three data sets that you’re interested in. If you include a data set not on the list above, you need to check with your instructor. Include links to each dataset.  slides\n\n\nPC2\nSelect one dataset and do some background research. Make sure your data is accessible on a git repo.\nDepending on your project, this might be as simple as locating a git repo that has your data set, or it might require you to upload the dataset to your personal git repo. Additionally, this could involve combining multiple data sources, or gathering data yourself. If your project requires you to gather your own data, please discuss this with your instructor before beginning, so that we can make sure you have a realistic plan to gather enough data.\nslides\n\n\nPC3\nPerform some exploratory data analysis. Discuss the results, and what this tells you about your data, as well as your expectations for your results. This should include some data visualizations that go beyond a basic chart.\n\n\nPC4\nTime to do some research. What is the goal of the model you plan to build? Has something similar been done with this type of data? Do a write up of background information, making sure to link sources.\n\n\nPC5\nPrepare your data set for training. This might include handling missing or categorical values, basic conversions, or more extensive conversions. Any choices that you make should be explained. Additionally, spend time making good visualizations.\n\n\nPC6\nPlan out your modeling workflow: what models would you like to use, what evaluation are you doing? Start building your presentation.\n\n\nPC7\nTrain models using machine learning algorithms. Although you do not need to use every algorithm that we’ve covered, you should use those that make sense for your data set. You should explain your choices, and perform parameter tuning in order to optimize their performance.Continue building presentation.\n\n\nPC8\nDiscussion of results. Compare the performance of your models, and discuss the results. Do you consider your results successful? Explain why or why not, and discuss how further improvements might be made.\nContinue working on your final presentation. You want a presentation that is digestible to a non-technical audidence and is interesting in some way (visualizations, insights, models, data).\n\n\nPC9\nEvaluation of your plan. Discuss how closely you were able to follow your workflow. What unexpected issues did you encounter? What adjustments did you need to make? How would this affect planning a future machine learning project? Finalize your presentation, and submit your link along with a screenshot to Moodle.\n\n\n\nFinal Submission\nThe final submission evaluates the overall quality of your project and presentation, based on the materials submitted prior to the final exam. Submissions are due the night before finals.\nA detailed grading rubric TBD\n\n\nSmall group presentations\n(12 pts): During presentations, you will participate in three rounds of small-group presentations, presenting one-on-one with another project. Grading is based on the quality of your peer review during these rounds.\nThe peer review form is available here",
     "crumbs": [
       "Materials",
       "Project"
@@ -567,20 +523,9 @@
   {
     "objectID": "labs.html",
     "href": "labs.html",
-    "title": "Labs",
+    "title": "Machine Learning",
     "section": "",
-    "text": "Stuff about labs",
-    "crumbs": [
-      "Materials",
-      "Labs"
-    ]
-  },
-  {
-    "objectID": "labs.html#overview",
-    "href": "labs.html#overview",
-    "title": "Labs",
-    "section": "",
-    "text": "Stuff about labs",
+    "text": "Stuff about labs…",
     "crumbs": [
       "Materials",
       "Labs"
@@ -589,7 +534,7 @@
   {
     "objectID": "labs.html#lab-intro",
     "href": "labs.html#lab-intro",
-    "title": "Labs",
+    "title": "Machine Learning",
     "section": "Lab: Intro",
     "text": "Lab: Intro\nThis lab uses Python dictionaries to look at national policing data and its impact on Black Americans. Click to view Colab Notebook",
     "crumbs": [
@@ -600,7 +545,7 @@
   {
     "objectID": "labs.html#lab-eda",
     "href": "labs.html#lab-eda",
-    "title": "Labs",
+    "title": "Machine Learning",
     "section": "Lab: EDA",
     "text": "Lab: EDA\nThis lab uses Titanic data to use basic EDA techniques.",
     "crumbs": [
