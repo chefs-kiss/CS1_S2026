@@ -1,0 +1,53 @@
+---
+title: "Slides Redirect"
+format: html
+execute:
+  echo: false
+  warning: false
+  error: false
+  eval: false
+---
+
+<script>
+  const slides = {
+    "EDA1": "https://docs.google.com/presentation/d/1vXiVFaSsBIhlHjO_p1hXRefWfyRjFdsBXQVJslPyF_g/edit?slide=id.g3a19c45b4b0_1_5#slide=id.g3a19c45b4b0_1_5",
+    "EDA2": "https://docs.google.com/presentation/d/1vXiVFaSsBIhlHjO_p1hXRefWfyRjFdsBXQVJslPyF_g/edit?slide=id.g33a550423b4_0_650#slide=id.g33a550423b4_0_650",
+    "EDA3": "https://docs.google.com/presentation/d/1vXiVFaSsBIhlHjO_p1hXRefWfyRjFdsBXQVJslPyF_g/edit?slide=id.g33a550423b4_0_1438#slide=id.g33a550423b4_0_1438",
+    "EVL1":"https://docs.google.com/presentation/d/1GtvpOFBLJzXoIgXyQgwvJR5PDyIkhCuacD80LlGRHic/edit?slide=id.g323999f4ad1_0_263#slide=id.g323999f4ad1_0_263",
+    "EVL2":"https://docs.google.com/presentation/d/1GtvpOFBLJzXoIgXyQgwvJR5PDyIkhCuacD80LlGRHic/edit?slide=id.g32c0696979f_0_98#slide=id.g32c0696979f_0_98",
+    "EVL3":"https://docs.google.com/presentation/d/1GtvpOFBLJzXoIgXyQgwvJR5PDyIkhCuacD80LlGRHic/edit?slide=id.g32c0696979f_0_104#slide=id.g32c0696979f_0_104",
+    "CLS1":"",
+    "CLS2":"",
+    "CLS3":"",
+    "DATA1":"",
+    "DATA2":"",
+    "DATA3":"",
+    "TREE1":"",
+    "TREE2":"",
+    "KNN":"",
+    "LIN1":"",
+    "LIN2":"",
+    "SVM":"",
+    "ENS1":"",
+    "ENS2":"",
+    "ENS3":"",
+    "NN1":"",
+    "NN2":"",
+    "NN3":"",
+    "DL1":"",
+    "DL2":"",
+    "DL3":""
+  };
+
+  const params = new URLSearchParams(window.location.search);
+  const target = params.get("q");
+
+  if (target && slides[target]) {
+    window.location.href = slides[target];
+  } else {
+    document.write("<h2>Select a slide deck:</h2>");
+    for (const key in slides) {
+      document.write(`<p><a href="?q=${key}">${key} slides</a></p>`);
+    }
+  }
+</script>
