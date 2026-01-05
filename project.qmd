@@ -6,7 +6,7 @@ types of regression, classification, or clustering that we will cover in class, 
 related to text (things like sentiment analysis, or text generation), or could be on machine learning related
 to images (things like image recognition, or image generation), or another area of machine learning altogether.
 
-You must choose to complete this project individually.
+You must complete this project individually.
 
 # Requirements
 
