@@ -594,7 +594,28 @@
     "href": "01-EDA/std-EDA.html",
     "title": "Machine Learning",
     "section": "",
-    "text": "Practice questions around EDA topic."
+    "text": "The following standards will be assessed on the EDA quiz:"
+  },
+  {
+    "objectID": "01-EDA/std-EDA.html#flow",
+    "href": "01-EDA/std-EDA.html#flow",
+    "title": "Machine Learning",
+    "section": "FLOW",
+    "text": "FLOW\nYou should be able to:\n\nDefine learning approaches (supervised vs. unsupervised learning) and learning tasks (regression, classification, and clustering).\nInterpret a dataset summary table.\nDescribe a model’s goal and explain who might benefit from the model."
+  },
+  {
+    "objectID": "01-EDA/std-EDA.html#eda-stat",
+    "href": "01-EDA/std-EDA.html#eda-stat",
+    "title": "Machine Learning",
+    "section": "EDA-STAT",
+    "text": "EDA-STAT\nYou should be able to:\n\nDefine common statistical measures and explain them to a non-technical audience using real-world examples.\nRead and interpret charts, including identifying key features (skew, balance, shape) and chart types (histogram, boxplot, scatterplot)\nIdentify different feature types (numeric, discrete, continuous, ordinal, categorical, binary, or none).\nExplain what factors to consider when deciding whether a feature type is appropriate to include in a machine learning model."
+  },
+  {
+    "objectID": "01-EDA/std-EDA.html#study-tips",
+    "href": "01-EDA/std-EDA.html#study-tips",
+    "title": "Machine Learning",
+    "section": "Study Tips",
+    "text": "Study Tips\nReview the lecture slides, workbooks, homework assignments, and the associated lab.\nQuiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.\nThe primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.\nQuizzes are also a valuable opportunity to receive feedback on your reasoning skills."
   },
   {
     "objectID": "course_information/syllabus.html",
