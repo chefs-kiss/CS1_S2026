@@ -601,14 +601,14 @@
     "href": "01-EDA/std-EDA.html#flow",
     "title": "Machine Learning",
     "section": "FLOW",
-    "text": "FLOW\nYou should be able to:\n\nDefine learning approaches (supervised vs. unsupervised learning) and learning tasks (regression, classification, and clustering).\nInterpret a dataset summary table.\nDescribe a model’s goal and explain who might benefit from the model."
+    "text": "FLOW\nYou should be able to:\n\nDefine learning approaches (supervised vs. unsupervised learning) and learning tasks (regression, classification, and clustering).\nInterpret a dataset summary table.\nDescribe a model’s goal and explain who might benefit from the model.\nDescribe the five steps ML workflow and give a few examples of tasks for each step"
   },
   {
     "objectID": "01-EDA/std-EDA.html#eda-stat",
     "href": "01-EDA/std-EDA.html#eda-stat",
     "title": "Machine Learning",
     "section": "EDA-STAT",
-    "text": "EDA-STAT\nYou should be able to:\n\nDefine common statistical measures and explain them to a non-technical audience using real-world examples.\nRead and interpret charts, including identifying key features (skew, balance, shape) and chart types (histogram, boxplot, scatterplot)\nIdentify different feature types (numeric, discrete, continuous, ordinal, categorical, binary, or none).\nExplain what factors to consider when deciding whether a feature type is appropriate to include in a machine learning model."
+    "text": "EDA-STAT\nYou should be able to:\n\nUnderstand and describe statistical measures, distributions, and tests\nRead and interpret charts, including identifying key features (skew, balance, shape) and chart types (histogram, boxplot, scatterplot)\nIdentify different feature types (numeric, discrete, continuous, ordinal, categorical, binary, or none).\nExplain what factors to consider when deciding whether a feature type is appropriate to include in a machine learning model."
   },
   {
     "objectID": "01-EDA/std-EDA.html#study-tips",
@@ -909,5 +909,40 @@
       "Materials",
       "Labs"
     ]
+  },
+  {
+    "objectID": "02-EVL/std-EVL.html",
+    "href": "02-EVL/std-EVL.html",
+    "title": "Machine Learning",
+    "section": "",
+    "text": "The following standards will be assessed on the EVL quiz:"
+  },
+  {
+    "objectID": "02-EVL/std-EVL.html#eval",
+    "href": "02-EVL/std-EVL.html#eval",
+    "title": "Machine Learning",
+    "section": "EVAL",
+    "text": "EVAL\nYou should be able to:\n\nIdentify which evaluation metrics to use for various ML tasks\nCompute metrics (formulas provided)\nInterpret metrics in an accessible way"
+  },
+  {
+    "objectID": "02-EVL/std-EVL.html#train",
+    "href": "02-EVL/std-EVL.html#train",
+    "title": "Machine Learning",
+    "section": "TRAIN",
+    "text": "TRAIN\nYou should be able to:\n\nKnow ways to separate train, validation, and test sets\nDefine overfitting, underfitting, cross-fold validation\nUnderstand and give examples of the bias(underfitting) - variance (overfitting) tradeoff"
+  },
+  {
+    "objectID": "02-EVL/std-EVL.html#study-tips",
+    "href": "02-EVL/std-EVL.html#study-tips",
+    "title": "Machine Learning",
+    "section": "Study Tips",
+    "text": "Study Tips\nReview the lecture slides, workbooks, homework assignments, and the associated lab.\nQuiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.\nThe primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.\nQuizzes are also a valuable opportunity to receive feedback on your reasoning skills."
+  },
+  {
+    "objectID": "02-EVL/std-EVL.html#formulas-given",
+    "href": "02-EVL/std-EVL.html#formulas-given",
+    "title": "Machine Learning",
+    "section": "Formulas given",
+    "text": "Formulas given\n\\(\\text{Accuracy} = \\frac{TP + TN}{TP + FP + FN + TN}\\)\n\\(\\text{Precision} = \\frac{TP}{TP + FP}\\)\n\\(\\text{Recall} = \\frac{TP}{TP + FN}\\)\n\\(F1 = \\frac{2 \\cdot \\text{Precision} \\cdot \\text{Recall}}{\\text{Precision} + \\text{Recall}}\\)\n\\(MAE = \\frac{1}{n} \\sum |y_{obs} - y_{pred}|\\)\n\\(MSE = \\frac{1}{n} \\sum (y_{obs} - y_{pred})^2\\)\n\\(RMSE = \\sqrt{MSE}\\)"
   }
 ]
