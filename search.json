@@ -137,7 +137,18 @@
     "href": "course_information/schedule.html",
     "title": "Machine Learning",
     "section": "",
-    "text": "Note: Days that are bolded will be help asynchronously. Student will work through the material at their own pace, and schedule a time to meet with their lab partner (if needed). ## Week 1 (Jan 5 - 9)",
+    "text": "Note: Days that are bolded will be help asynchronously. Student will work through the material at their own pace, and schedule a time to meet with their lab partner (if needed).",
+    "crumbs": [
+      "Course Information",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "course_information/schedule.html#week-1-jan-5---9",
+    "href": "course_information/schedule.html#week-1-jan-5---9",
+    "title": "Machine Learning",
+    "section": "Week 1 (Jan 5 - 9)",
+    "text": "Week 1 (Jan 5 - 9)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 5\n📖 syllabus\nINTRO\n👩🏻‍🏫 INTRO ☑️PC0 🍽️ 💻Lab: Intro\n\n\nT\nJan 6\n📖 readings\nEDA\n👩🏻‍🏫EDA1 👩🏻‍🏫EDA2 🍽️ QUIZ INTRO 📝HW:EDA\n\n\nW\nJan 7\n📓EDA standards\nEDA\n👩🏻‍🏫EDA3 ☑️PC1 🍽️ 💻Lab:EDA 😵‍💫 TA help  7:30-8:30\n\n\nTh\nJan 8\n📖 readings\nEVL\n👩🏻‍🏫EVL1 👩🏻‍🏫EVL2 🍽️ QUIZ EDA 📝HW:EVL\n\n\nF\nJan 9\n📓EVL standards\nEVL\n👩🏻‍🏫EVL3 ☑️PC2 💻Lab:EVL 😵‍💫 TA help  2:00-3:00\n\n\nSu\nJan 11\n\n\n📰  article  review 😵‍💫 TA help  8:00-9:00",
     "crumbs": [
       "Course Information",
       "Schedule"
@@ -882,7 +893,7 @@
     "href": "labs.html",
     "title": "Machine Learning",
     "section": "",
-    "text": "Stuff about labs…",
+    "text": "Each lab will be completed with a lab partner. The group can decide which member is the recorder (copies the colab workbook and notetakes) and the researcher (searchs documentation, slide decks, class materials). The recorder should submit a clickable link to the Moodle submission by the next lecture.",
     "crumbs": [
       "Materials",
       "Labs"
@@ -892,8 +903,8 @@
     "objectID": "labs.html#lab-intro",
     "href": "labs.html#lab-intro",
     "title": "Machine Learning",
-    "section": "Lab: Intro",
-    "text": "Lab: Intro\nIn this lab, we explore how to build our own Python dictionaries and functions to store and summarize data. Using a national policing dataset, we examine the impact of policing on Black Americans. Click to view Colab Notebook",
+    "section": "Lab: INTRO",
+    "text": "Lab: INTRO\nIn this lab, we explore how to build our own Python dictionaries and functions to store and summarize data. Using a national policing dataset, we examine the impact of policing on Black Americans. Click to view Colab Notebook",
     "crumbs": [
       "Materials",
       "Labs"
@@ -905,6 +916,17 @@
     "title": "Machine Learning",
     "section": "Lab: EDA",
     "text": "Lab: EDA\nIn this lab, we will explore how to critic and refine code outputted by a language model, and practice a bit of prompt engineering. We will be using the Titanic dataset to perform exploratory data analysis tasks, including calculating statistical measures, conducting statistical tests, and creating visualizations. Click to view Colab Notebook",
+    "crumbs": [
+      "Materials",
+      "Labs"
+    ]
+  },
+  {
+    "objectID": "labs.html#lab-evl",
+    "href": "labs.html#lab-evl",
+    "title": "Machine Learning",
+    "section": "Lab: EVL",
+    "text": "Lab: EVL\nIn this lab, we will explore the Wisconsin Breast Cancer dataset and focus on key aspects of model evaluation and resampling techniques. We will comment on the complexity of chosen models in a developed workflow, discuss resampling techniques, as well as the implications on various evaluation metrics. The lab finished with auditing the algorithms using the ethical matrix framework discussed in class. Click to view Colab Notebook",
     "crumbs": [
       "Materials",
       "Labs"
