@@ -863,7 +863,7 @@
     "href": "labs.html#lab-evl",
     "title": "Machine Learning",
     "section": "Lab: EVL",
-    "text": "Lab: EVL\nIn this lab, we will explore the Wisconsin Breast Cancer dataset and focus on key aspects of model evaluation and resampling techniques. We will comment on the complexity of chosen models in a developed workflow, discuss resampling techniques, as well as the implications on various evaluation metrics. The lab finished with auditing the algorithms using the ethical matrix framework discussed in class. Click to view Colab Notebook",
+    "text": "Lab: EVL\nIn this lab, we will explore the Wisconsin Breast Cancer dataset and focus on key aspects of model evaluation and resampling techniques. We will comment on the complexity of chosen models in a developed workflow, discuss resampling techniques, as well as the implications on various evaluation metrics. The lab finishes with auditing the algorithms using the ethical matrix framework discussed in class. Click to view Colab Notebook",
     "crumbs": [
       "Materials",
       "Labs"
