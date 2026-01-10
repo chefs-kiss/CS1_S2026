@@ -549,14 +549,14 @@
     "href": "03-CLS/std-CLS.html#alg-cls",
     "title": "Machine Learning",
     "section": "ALG-CLS",
-    "text": "ALG-CLS\nYou should be able to:\n\nDefine the unsupervised learning approach and identify it’s associated algorithms\nExplain these algorithms and their associated terms to a non-technical audience\nIdentify when to use various unsupervised algorithms"
+    "text": "ALG-CLS\nYou should be able to:\n\nDefine the unsupervised learning approach and identify it’s associated algorithms\nExplain these algorithms and their associated terms to a non-technical audience\nIdentify when to use various unsupervised algorithms\nDefine intra vs inter cluster distances and it’s relevance to the k-means clustering algorithm"
   },
   {
     "objectID": "03-CLS/std-CLS.html#evl-cls",
     "href": "03-CLS/std-CLS.html#evl-cls",
     "title": "Machine Learning",
     "section": "EVL-CLS",
-    "text": "EVL-CLS\nYou should be able to:\n\nInterpret clustering results and identify which clusters are related to ground truths\nCalculate and interpret silhouette coefficients\nDefine intra vs inter cluster and when to use these types of calculations\nIdentify good choices for cluster size \\(k\\)"
+    "text": "EVL-CLS\nYou should be able to:\n\nInterpret clustering results and identify which clusters are related to ground truths\nCalculate and interpret silhouette coefficients\nIdentify good choices for cluster size \\(k\\)"
   },
   {
     "objectID": "03-CLS/std-CLS.html#study-tips",
