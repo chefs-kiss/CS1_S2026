@@ -538,36 +538,36 @@
     "text": "For the following calculations, you can reuse the functions you build in your in-class workbooks."
   },
   {
-    "objectID": "03-CLS/std-EVL.html",
-    "href": "03-CLS/std-EVL.html",
+    "objectID": "03-CLS/std-CLS.html",
+    "href": "03-CLS/std-CLS.html",
     "title": "Machine Learning",
     "section": "",
     "text": "The following standards will be assessed on the CLS quiz:"
   },
   {
-    "objectID": "03-CLS/std-EVL.html#alg-cls",
-    "href": "03-CLS/std-EVL.html#alg-cls",
+    "objectID": "03-CLS/std-CLS.html#alg-cls",
+    "href": "03-CLS/std-CLS.html#alg-cls",
     "title": "Machine Learning",
     "section": "ALG-CLS",
     "text": "ALG-CLS\nYou should be able to:\n\nDefine the unsupervised learning approach and identify it’s associated algorithms\nExplain these algorithms and their associated terms to a non-technical audience\nIdentify when to use various unsupervised algorithms"
   },
   {
-    "objectID": "03-CLS/std-EVL.html#evl-cls",
-    "href": "03-CLS/std-EVL.html#evl-cls",
+    "objectID": "03-CLS/std-CLS.html#evl-cls",
+    "href": "03-CLS/std-CLS.html#evl-cls",
     "title": "Machine Learning",
     "section": "EVL-CLS",
     "text": "EVL-CLS\nYou should be able to:\n\nInterpret clustering results and identify which clusters are related to ground truths\nCalculate and interpret silhouette coefficients\nDefine intra vs inter cluster and when to use these types of calculations\nIdentify good choices for cluster size \\(k\\)"
   },
   {
-    "objectID": "03-CLS/std-EVL.html#study-tips",
-    "href": "03-CLS/std-EVL.html#study-tips",
+    "objectID": "03-CLS/std-CLS.html#study-tips",
+    "href": "03-CLS/std-CLS.html#study-tips",
     "title": "Machine Learning",
     "section": "Study Tips",
     "text": "Study Tips\nReview the lecture slides, workbooks, homework assignments, and the associated lab.\nQuiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.\nThe primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.\nQuizzes are also a valuable opportunity to receive feedback on your reasoning skills."
   },
   {
-    "objectID": "03-CLS/std-EVL.html#formulas-given",
-    "href": "03-CLS/std-EVL.html#formulas-given",
+    "objectID": "03-CLS/std-CLS.html#formulas-given",
+    "href": "03-CLS/std-CLS.html#formulas-given",
     "title": "Machine Learning",
     "section": "Formulas given",
     "text": "Formulas given\n\\(\\text{Silhouette coefficient} = \\frac{b-a}{max(a,b)}\\) \\(\\text{Euclidean distance} = \\sqrt{(x_2 - x_1)^2+ (y_2 - y_1)^2}\\)"
