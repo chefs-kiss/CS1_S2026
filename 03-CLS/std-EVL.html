@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>schedule – Machine Learning</title>
+<title>std-evl – Machine Learning</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,6 +67,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -79,7 +108,9 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Course Information</a></li><li class="breadcrumb-item"><a href="../course_information/schedule.html">Schedule</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Machine Learning
+      </li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -127,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../course_information/schedule.html" class="sidebar-item-text sidebar-link active">
+  <a href="../course_information/schedule.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Schedule</span></a>
   </div>
 </li>
@@ -192,234 +223,49 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#week-1-jan-5---9" id="toc-week-1-jan-5---9" class="nav-link active" data-scroll-target="#week-1-jan-5---9">Week 1 (Jan 5 - 9)</a></li>
-  <li><a href="#week-2-jan-12---16" id="toc-week-2-jan-12---16" class="nav-link" data-scroll-target="#week-2-jan-12---16">Week 2 (Jan 12 - 16)</a></li>
-  <li><a href="#week-3-jan-19---23" id="toc-week-3-jan-19---23" class="nav-link" data-scroll-target="#week-3-jan-19---23">Week 3 (Jan 19 - 23)</a></li>
-  <li><a href="#week-4-jan-26---30" id="toc-week-4-jan-26---30" class="nav-link" data-scroll-target="#week-4-jan-26---30">Week 4 (Jan 26 - 30)</a></li>
+  <li><a href="#alg-cls" id="toc-alg-cls" class="nav-link active" data-scroll-target="#alg-cls">ALG-CLS</a></li>
+  <li><a href="#evl-cls" id="toc-evl-cls" class="nav-link" data-scroll-target="#evl-cls">EVL-CLS</a></li>
+  <li><a href="#study-tips" id="toc-study-tips" class="nav-link" data-scroll-target="#study-tips">Study Tips</a></li>
+  <li><a href="#formulas-given" id="toc-formulas-given" class="nav-link" data-scroll-target="#formulas-given">Formulas given</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Course Information</a></li><li class="breadcrumb-item"><a href="../course_information/schedule.html">Schedule</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
-<p><img src="../static/art3.png" class="img-fluid"></p>
-<p>Note: Days that are bolded will be held asynchronously. Student will work through the material at their own pace, and schedule a time to meet with their lab partner (if needed).</p>
-<section id="week-1-jan-5---9" class="level2">
-<h2 class="anchored" data-anchor-id="week-1-jan-5---9">Week 1 (Jan 5 - 9)</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;"><strong>dow</strong></th>
-<th style="text-align: center;"><strong>date</strong></th>
-<th style="text-align: left;"><strong>prepare</strong></th>
-<th style="text-align: left;"><strong>topic</strong></th>
-<th style="text-align: left;"><strong>agenda</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">M</td>
-<td style="text-align: center;">Jan 5</td>
-<td style="text-align: left;"><a href="../course_information/syllabus.html" class="badge bg-light text-decoration-none">📖<br><br> syllabus</a></td>
-<td style="text-align: left;">INTRO</td>
-<td style="text-align: left;"><a href="../slides.html?q=INTRO1" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br> INTRO</a> <a href="../project.html#pc0" class="badge bg-light text-decoration-none">☑️<br><br>PC0</a> 🍽️ <a href="../labs.html#lab-intro" class="badge bg-light text-decoration-none">💻<br><br>Lab: Intro</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">Jan 6</td>
-<td style="text-align: left;"><a href="../01-EDA/rr-EDA.html" class="badge bg-light text-decoration-none">📖<br><br> readings</a></td>
-<td style="text-align: left;">EDA</td>
-<td style="text-align: left;"><a href="../slides.html?q=EDA1" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>EDA1</a> <a href="../slides.html?q=EDA2" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>EDA2</a> 🍽️ <span class="badge bg-info text-decoration-none">QUIZ <br><br>INTRO</span> <a href="../01-EDA/hw-EDA.html" class="badge bg-light text-decoration-none">📝<br><br>HW:EDA</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">W</td>
-<td style="text-align: center;">Jan 7</td>
-<td style="text-align: left;"><a href="../01-EDA/std-EDA.html" class="badge bg-light text-decoration-none">📓<br>EDA <br>standards</a></td>
-<td style="text-align: left;">EDA</td>
-<td style="text-align: left;"><a href="../slides.html?q=EDA3" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>EDA3</a> <a href="../project.html#pc1" class="badge bg-light text-decoration-none">☑️<br><br>PC1</a> 🍽️ <a href="../labs.html#lab-eda" class="badge bg-light text-decoration-none">💻<br><br>Lab:EDA</a> <span class="badge bg-light text-decoration-none">😵‍💫 <br>TA help <br> 7:30-8:30</span></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Th</td>
-<td style="text-align: center;">Jan 8</td>
-<td style="text-align: left;"><a href="../02-EVL/rr-EVL.html" class="badge bg-light text-decoration-none">📖<br><br> readings</a></td>
-<td style="text-align: left;">EVL</td>
-<td style="text-align: left;"><a href="../slides.html?q=EVL1" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>EVL1</a> <a href="../slides.html?q=EVL2" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>EVL2</a> 🍽️ <span class="badge bg-info">QUIZ <br><br>EDA</span> <a href="../02-EVL/hw-EVL.html" class="badge bg-light text-decoration-none">📝<br><br>HW:EVL</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">F</td>
-<td style="text-align: center;"><strong>Jan 9</strong></td>
-<td style="text-align: left;"><a href="../02-EVL/std-EVL.html" class="badge bg-light text-decoration-none">📓<br>EVL<br> standards</a></td>
-<td style="text-align: left;">EVL</td>
-<td style="text-align: left;"><a href="../slides.html?q=EVL3" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>EVL3</a> <a href="../project.html#pc2" class="badge bg-light text-decoration-none">☑️<br><br>PC2</a> <a href="../labs.html#lab-evl" class="badge bg-light text-decoration-none">💻<br><br>Lab:EVL</a> <span class="badge bg-light text-decoration-none">😵‍💫 <br>TA help <br> 2:00-3:00</span></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Su</td>
-<td style="text-align: center;">Jan 11</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><a href="../articles.html" class="badge bg-light text-decoration-none">📰 <br> article <br> review</a> <span class="badge bg-light text-decoration-none">😵‍💫 <br>TA help <br> 8:00-9:00</span></td>
-</tr>
-</tbody>
-</table>
+<p>The following standards will be assessed on the CLS quiz:</p>
+<section id="alg-cls" class="level2">
+<h2 class="anchored" data-anchor-id="alg-cls">ALG-CLS</h2>
+<p>You should be able to:</p>
+<ul>
+<li>Define the unsupervised learning approach and identify it’s associated algorithms</li>
+<li>Explain these algorithms and their associated terms to a non-technical audience</li>
+<li>Identify when to use various unsupervised algorithms</li>
+</ul>
 </section>
-<section id="week-2-jan-12---16" class="level2">
-<h2 class="anchored" data-anchor-id="week-2-jan-12---16">Week 2 (Jan 12 - 16)</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;"><strong>dow</strong></th>
-<th style="text-align: center;"><strong>date</strong></th>
-<th style="text-align: left;"><strong>prepare</strong></th>
-<th style="text-align: left;"><strong>topic</strong></th>
-<th style="text-align: left;"><strong>agenda</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">M</td>
-<td style="text-align: center;">Jan 12</td>
-<td style="text-align: left;"><a href="../03-CLS/rr-CLS.html" class="badge bg-light text-decoration-none">📖<br><br> readings</a></td>
-<td style="text-align: left;">CLS</td>
-<td style="text-align: left;"><a href="../slides.html?q=CLS1" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>CLS1</a> <a href="../slides.html?q=CLS1" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>CLS3</a> <span class="badge bg-info">QUIZ <br><br>EVL</span> <a href="../03-CLS/hw-CLS.html" class="badge bg-light text-decoration-none">📝<br><br>HW:CLS</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">Jan 13</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">📓<br>CLS<br> standards</a></td>
-<td style="text-align: left;">CLS</td>
-<td style="text-align: left;"><a href="../slides.html?q=CLS3" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>CLS3</a> <a href="../project.html#pc3" class="badge bg-light text-decoration-none">☑️<br><br>PC3</a> <a href="../labs.html#lab-cls" class="badge bg-light text-decoration-none">💻<br><br>Lab:CLS</a> <span class="badge bg-info text-decoration-none">Quiz <br>Retakes:<br> EDA + EVL</span> <span class="badge bg-light text-decoration-none">😵‍💫 <br>TA help <br> 8:00-9:00</span></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">W</td>
-<td style="text-align: center;">Jan 14</td>
-<td style="text-align: left;"><a href="../04-DATA/rr-DATA.html" class="badge bg-light text-decoration-none">📖<br><br> readings</a></td>
-<td style="text-align: left;">DATA</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>DATA1</a> <a href="" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>DATA2</a> <span class="badge bg-info">QUIZ <br><br>CLS</span> <a href="" class="badge bg-light text-decoration-none">📝<br><br>HW:DATA</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Th</td>
-<td style="text-align: center;">Jan 15</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">📓<br>DATA<br> standards</a></td>
-<td style="text-align: left;">DATA</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>DATA3</a> <a href="" class="badge bg-light text-decoration-none">☑️<br><br>PC4</a> <a href="" class="badge bg-light text-decoration-none">💻<br><br>Lab:DATA</a> <span class="badge bg-light text-decoration-none">😵‍💫 <br>TA help <br> 8:00-9:00</span></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">Jan 16</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">📖<br><br> readings</a></td>
-<td style="text-align: left;">MOD</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>TREE1</a> <a href="" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>TREE2</a> <span class="badge bg-info">QUIZ <br><br>DATA</span> <a href="" class="badge bg-light text-decoration-none">📝<br><br>HW:TREE</a></td>
-</tr>
-</tbody>
-</table>
-<p>Over the weekend, complete an <a href="../articles.html">article review</a></p>
+<section id="evl-cls" class="level2">
+<h2 class="anchored" data-anchor-id="evl-cls">EVL-CLS</h2>
+<p>You should be able to:</p>
+<ul>
+<li>Interpret clustering results and identify which clusters are related to ground truths</li>
+<li>Calculate and interpret silhouette coefficients</li>
+<li>Define intra vs inter cluster and when to use these types of calculations</li>
+<li>Interpret cluster evaluation charts</li>
+</ul>
 </section>
-<section id="week-3-jan-19---23" class="level2">
-<h2 class="anchored" data-anchor-id="week-3-jan-19---23">Week 3 (Jan 19 - 23)</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;"><strong>dow</strong></th>
-<th style="text-align: center;"><strong>date</strong></th>
-<th style="text-align: left;"><strong>prepare</strong></th>
-<th style="text-align: left;"><strong>topic</strong></th>
-<th style="text-align: left;"><strong>agenda</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">M</td>
-<td style="text-align: center;">Jan 19</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">📓<br>TREE<br> standards</a></td>
-<td style="text-align: left;">MOD</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>KNN</a> <a href="" class="badge bg-light text-decoration-none">☑️<br><br>PC5</a> <a href="" class="badge bg-light text-decoration-none">💻<br><br>Lab:TREE</a> <span class="badge bg-light text-decoration-none">Quiz Retakes: <br> CLS + DATA</span> <span class="badge bg-light text-decoration-none">😵‍💫 <br>TA help <br> 8:00-9:00</span></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">Jan 20</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">📖<br><br> readings</a></td>
-<td style="text-align: left;">MOD</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>LIN1</a> <a href="" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>LIN2</a> <span class="badge bg-info">QUIZ <br><br>TREE</span> <a href="" class="badge bg-light text-decoration-none">📝<br><br>HW:LIN</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">W</td>
-<td style="text-align: center;">Jan 21</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">📓<br>LIN<br> standards</a></td>
-<td style="text-align: left;">MOD</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>SVM</a> <a href="" class="badge bg-light text-decoration-none">☑️<br><br>PC6</a> <a href="" class="badge bg-light text-decoration-none">💻<br>Lab:MOD <br> Part 1</a> <span class="badge bg-light text-decoration-none">😵‍💫 <br>TA help <br> 8:00-9:00</span></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Th</td>
-<td style="text-align: center;">Jan 22</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">📖<br><br> readings</a></td>
-<td style="text-align: left;">ENS</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>ENS1</a> <a href="" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>ENS2</a> <span class="badge bg-info">QUIZ <br><br>LIN</span> <a href="" class="badge bg-light text-decoration-none">📝<br><br>HW:ENS</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">Jan 23</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">📓<br>ENS<br> standards</a></td>
-<td style="text-align: left;">ENS</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>ENS3</a> <a href="" class="badge bg-light text-decoration-none">☑️<br><br>PC7</a> <a href="" class="badge bg-light text-decoration-none">💻<br>Lab:MOD <br>Part 2</a> <span class="badge bg-info text-decoration-none">QUIZ <br> RETAKES <br> TREE+LIN</span></td>
-</tr>
-</tbody>
-</table>
-<p>Over the weekend, complete an <a href="../articles.html">article review</a></p>
+<section id="study-tips" class="level2">
+<h2 class="anchored" data-anchor-id="study-tips">Study Tips</h2>
+<p>Review the lecture slides, workbooks, homework assignments, and the associated lab.<br>
+Quiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.</p>
+<p>The primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.<br>
+Quizzes are also a valuable opportunity to receive feedback on your reasoning skills.</p>
 </section>
-<section id="week-4-jan-26---30" class="level2">
-<h2 class="anchored" data-anchor-id="week-4-jan-26---30">Week 4 (Jan 26 - 30)</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;"><strong>dow</strong></th>
-<th style="text-align: center;"><strong>date</strong></th>
-<th style="text-align: left;"><strong>prepare</strong></th>
-<th style="text-align: left;"><strong>topic</strong></th>
-<th style="text-align: left;"><strong>agenda</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">M</td>
-<td style="text-align: center;">Jan 26</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">📖<br><br> readings</a></td>
-<td style="text-align: left;">NN</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>NN1</a> <a href="" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>NN2</a> <span class="badge bg-info">QUIZ <br><br>ENS</span> <a href="" class="badge bg-light text-decoration-none">📝<br><br> HW:NN</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">Jan 27</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">📓<br>NN<br> standards</a></td>
-<td style="text-align: left;">NN</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>NN3</a> <a href="" class="badge bg-light text-decoration-none">☑️<br><br>PC8</a> <a href="" class="badge bg-light text-decoration-none">💻<br><br>Lab:NN</a> <span class="badge bg-light text-decoration-none">😵‍💫 <br>TA help <br> 8:00-9:00</span></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">W</td>
-<td style="text-align: center;">Jan 28</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">📖<br><br> readings</a></td>
-<td style="text-align: left;">DL</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>DL1</a> <a href="" class="badge bg-light text-decoration-none">👩🏻‍🏫<br><br>DL2</a> <span class="badge bg-info">QUIZ <br><br>NN</span></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Th</td>
-<td style="text-align: center;">Jan 29</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">📓<br>DL<br> standards</a></td>
-<td style="text-align: left;">DL</td>
-<td style="text-align: left;">Last Day! <br><span class="badge bg-info">QUIZ <br><br>DL</span> <a href="" class="badge bg-light text-decoration-none">☑️<br><br>PC9</a> <span class="badge bg-info text-decoration-none">Quiz <br>Retakes<br> ENS+NN+DL</span></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">Jan 30</td>
-<td style="text-align: left;"><a href="" class="badge bg-light text-decoration-none">submit<br>final<br>site</a></td>
-<td style="text-align: left;">Final</td>
-<td style="text-align: left;">Presentation Day!<br> <a href="" class="badge bg-light text-decoration-none">☑️<br><br>PREZ</a> <span class="badge bg-info text-decoration-none">Quiz <br>Retakes<br> ANY</span></td>
-</tr>
-</tbody>
-</table>
-<p><img src="../static/art2.jpg" class="img-fluid"></p>
+<section id="formulas-given" class="level2">
+<h2 class="anchored" data-anchor-id="formulas-given">Formulas given</h2>
+<p><span class="math inline">\(\text{Silhouette coefficient} = \frac{b-a}{max(a,b)}\)</span> <span class="math inline">\(\text{Euclidean distance} = \sqrt{(x_2 - x_1)^2+ (y_2 - y_1)^2}\)</span></p>
 
 
 </section>
