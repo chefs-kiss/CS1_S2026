@@ -7,6 +7,7 @@ You should be able to:
 - Define the unsupervised learning approach and identify it's associated algorithms
 - Explain these algorithms and their associated terms to a non-technical audience
 - Identify when to use various unsupervised algorithms
+- Define intra vs inter cluster distances and it's relevance to the k-means clustering algorithm
 
 
 ## EVL-CLS
@@ -15,7 +16,6 @@ You should be able to:
 
 - Interpret clustering results and identify which clusters are related to ground truths
 - Calculate and interpret silhouette coefficients
-- Define intra vs inter cluster and when to use these types of calculations
 - Identify good choices for cluster size $k$
 
 ## Study Tips
