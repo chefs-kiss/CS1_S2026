@@ -27,5 +27,5 @@ The lab finishes with auditing the algorithms using the ethical matrix framework
 ## Lab: CLS
 In this lab, we will be working with image data and exploring how decisions made in the modeling workflow impact
 results for our clustering models. There are a selection of open-ended questions (give your best guess on these)
-along with implementing some aspects of the clustering algorithm with functions that you build.
+along with a few questions that require you to implement your own clustering functions.
 [Click to view Colab Notebook](https://colab.research.google.com/drive/1zxjJBzxeiUDcKLoKXxMzQ-9GyLkKPbN3#scrollTo=jwg7qCK6uMR2)
