@@ -556,7 +556,7 @@
     "href": "03-CLS/std-EVL.html#evl-cls",
     "title": "Machine Learning",
     "section": "EVL-CLS",
-    "text": "EVL-CLS\nYou should be able to:\n\nInterpret clustering results and identify which clusters are related to ground truths\nCalculate and interpret silhouette coefficients\nDefine intra vs inter cluster and when to use these types of calculations\nInterpret cluster evaluation charts"
+    "text": "EVL-CLS\nYou should be able to:\n\nInterpret clustering results and identify which clusters are related to ground truths\nCalculate and interpret silhouette coefficients\nDefine intra vs inter cluster and when to use these types of calculations\nIdentify good choices for cluster size \\(k\\)"
   },
   {
     "objectID": "03-CLS/std-EVL.html#study-tips",
