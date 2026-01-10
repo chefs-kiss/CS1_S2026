@@ -874,7 +874,7 @@
     "href": "labs.html#lab-cls",
     "title": "Machine Learning",
     "section": "Lab: CLS",
-    "text": "Lab: CLS\nIn this lab, we will be working with image data and exploring how decisions made in the modeling workflow impact results for our clustering models. There are a selection of open-ended questions (give your best guess on these) along with implementing some aspects of the clustering algorithm with functions that you build. Click to view Colab Notebook",
+    "text": "Lab: CLS\nIn this lab, we will be working with image data and exploring how decisions made in the modeling workflow impact results for our clustering models. There are a selection of open-ended questions (give your best guess on these) along with a few questions that require you to implement your own clustering functions. Click to view Colab Notebook",
     "crumbs": [
       "Materials",
       "Labs"
