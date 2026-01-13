@@ -50,7 +50,7 @@ need to check with your instructor first (look for data >5k records with both nu
 
 # Project Check-ins
 There are nine progress checks during the semester, each worth 4 points (see the schedule).
-To receive full credit for a progress check, you must check in with your instructor before leaving class on the day of the check.
+To receive full credit for a progress check, you must submit work before the next lecture's afternoon session.
 
 ### PC0
 Read over the project, taking a look at deadlines and deliverables. Then start to look at datasets you're interested in. You can certainly use the ones given, but it is 
@@ -76,6 +76,8 @@ Submit the link to your colab workbook to the [Moodle submission](https://mdl.st
 Perform some exploratory data analysis using your workbook.
 Discuss the results, and what this tells you about your data, as well as your expectations for your results. 
 This should include some data visualizations that go beyond a basic chart.
+
+Submit a picture of a plot you made along with a quick relection to the [Moodle submission](https://mdl.stolaf.edu/mod/assign/view.php?id=528573)
 
 
 ### PC4
