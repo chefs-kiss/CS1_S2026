@@ -79,6 +79,8 @@ This should include some data visualizations that go beyond a basic chart.
 
 Submit a picture of a plot you made along with a quick relection to the [Moodle submission](https://mdl.stolaf.edu/mod/assign/view.php?id=528573)
 
+<!-- Switch PC3 with PC4  -->
+
 
 ### PC4
 Time to do some more background research. By now, hopefully you have identified what the goal of the model you plan to build is. 
