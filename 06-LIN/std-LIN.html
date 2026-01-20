@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>rr-tree – Machine Learning</title>
+<title>std-lin – Machine Learning</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,6 +67,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -194,14 +223,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#tree-readings" id="toc-tree-readings" class="nav-link active" data-scroll-target="#tree-readings">TREE readings</a>
-  <ul class="collapse">
-  <li><a href="#islp-selected-readings" id="toc-islp-selected-readings" class="nav-link" data-scroll-target="#islp-selected-readings">ISLP selected readings</a>
-  <ul class="collapse">
-  <li><a href="#decision-trees" id="toc-decision-trees" class="nav-link" data-scroll-target="#decision-trees">Decision Trees</a></li>
-  <li><a href="#more-tree-models" id="toc-more-tree-models" class="nav-link" data-scroll-target="#more-tree-models">More Tree Models</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#alg-lin" id="toc-alg-lin" class="nav-link active" data-scroll-target="#alg-lin">ALG-LIN</a></li>
+  <li><a href="#flow-lin" id="toc-flow-lin" class="nav-link" data-scroll-target="#flow-lin">FLOW-LIN</a></li>
+  <li><a href="#study-tips" id="toc-study-tips" class="nav-link" data-scroll-target="#study-tips">Study Tips</a></li>
+  <li><a href="#formulas-given" id="toc-formulas-given" class="nav-link" data-scroll-target="#formulas-given">Formulas given</a></li>
   </ul>
 </nav>
     </div>
@@ -211,31 +236,33 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="tree-readings" class="level1">
-<h1>TREE readings</h1>
-<section id="islp-selected-readings" class="level2">
-<h2 class="anchored" data-anchor-id="islp-selected-readings">ISLP selected readings</h2>
-<p>Dive deeper in the content we’ll be covering. These articles can be quite math-heavy. If anything is unclear, don’t hesitate to reach out to your instructor. Aim to grasp the big-picture ideas so you can explain each topic to a non-technical audience. <br></p>
-<section id="decision-trees" class="level3">
-<h3 class="anchored" data-anchor-id="decision-trees">Decision Trees</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">Regression Trees <a href="../files/ISLP.pdf#page=338">section 8.1.1</a> <br></label></li>
-<li><label><input type="checkbox">Classification Trees <a href="../files/ISLP.pdf#page=344">section 8.1.1</a> <br></label></li>
-<li><label><input type="checkbox">Linear vs Tree Models <a href="../files/ISLP.pdf#page=348">section 8.1.1</a> <br></label></li>
-<li><label><input type="checkbox">Pros and Cons of Tree Models <a href="../files/ISLP.pdf#page=348">section 8.1.1</a> <br></label></li>
+<p>The following standards will be assessed on the LIN quiz:</p>
+<section id="alg-lin" class="level2">
+<h2 class="anchored" data-anchor-id="alg-lin">ALG-LIN</h2>
+<p>You should be able to:</p>
+<ul>
+<li></li>
 </ul>
 </section>
-<section id="more-tree-models" class="level3">
-<h3 class="anchored" data-anchor-id="more-tree-models">More Tree Models</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">Bagging <a href="../files/ISLP.pdf#page=350">section 18.2.1</a><br></label></li>
-<li><label><input type="checkbox">Random Forests <a href="../files/ISLP.pdf#page=350">section 18.2.2</a><br></label></li>
-<li><label><input type="checkbox">Boosting <a href="../files/ISLP.pdf#page=354">section 18.2.3</a><br></label></li>
+<section id="flow-lin" class="level2">
+<h2 class="anchored" data-anchor-id="flow-lin">FLOW-LIN</h2>
+<p>You should be able to:</p>
+<ul>
+<li></li>
 </ul>
+</section>
+<section id="study-tips" class="level2">
+<h2 class="anchored" data-anchor-id="study-tips">Study Tips</h2>
+<p>Review the lecture slides, workbooks, homework assignments, and the associated lab.<br>
+Quiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.</p>
+<p>The primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.<br>
+Quizzes are also a valuable opportunity to receive feedback on your reasoning skills.</p>
+</section>
+<section id="formulas-given" class="level2">
+<h2 class="anchored" data-anchor-id="formulas-given">Formulas given</h2>
+<p><span class="math inline">\(\text{Silhouette coefficient} = \frac{b-a}{max(a,b)}\)</span> <span class="math inline">\(\text{Euclidean distance} = \sqrt{(x_2 - x_1)^2+ (y_2 - y_1)^2}\)</span></p>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->
