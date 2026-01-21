@@ -60,14 +60,14 @@
     "href": "05-TREE/std-TREE.html#alg-tree",
     "title": "Machine Learning",
     "section": "ALG-TREE",
-    "text": "ALG-TREE\nYou should be able to:"
+    "text": "ALG-TREE\nYou should be able to:\n\nDescribe how the decision tree algorithm works\nDefine what the terms entropy, gini, uncertainty, decision boundary, region means in the context of this algorithm\nDraw and interpret the output of a decision tree and graph its associated regions"
   },
   {
     "objectID": "05-TREE/std-TREE.html#train-tree",
     "href": "05-TREE/std-TREE.html#train-tree",
     "title": "Machine Learning",
     "section": "TRAIN-TREE",
-    "text": "TRAIN-TREE\nYou should be able to:"
+    "text": "TRAIN-TREE\nYou should be able to:\n\nExplain overfitting and underfitting in the context of this algorithm\nInterpret results from a decision tree model\nGive suggestions for improving the decision tree model"
   },
   {
     "objectID": "05-TREE/std-TREE.html#study-tips",
