@@ -934,7 +934,7 @@
     "href": "course_information/schedule.html#week-2-jan-12---16",
     "title": "Machine Learning",
     "section": "Week 2 (Jan 12 - 16)",
-    "text": "Week 2 (Jan 12 - 16)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 12\n📖 readings\nCLS\n👩🏻‍🏫CLS1 👩🏻‍🏫CLS3 📝HW:CLS 🍽️ QUIZ EVL\n\n\nT\nJan 13\n📓CLS standards\nCLS\n👩🏻‍🏫CLS3 ☑️PC3 🍽️ 💻Lab:CLS QUIZ  RETAKES  EDA + EVL 😵‍💫 TA help  7:00-8:00\n\n\nW\nJan 14\n📖 readings\nDATA\n👩🏻‍🏫DATA1 👩🏻‍🏫DATA2 📝HW:DATA 🍽️ Worktime:  PC or Lab\n\n\nTh\nJan 15\n📓DATA standards\nDATA\n💻Lab:DATA🍽️👩🏻‍🏫TREE1 TREEWS QUIZ CLS 😵‍💫 TA help  7:00-8:00\n\n\nF\nJan 16\n📖 readings\nTREE\n👩🏻‍🏫TREE2 👩🏻‍🏫TREE3 📝HW:TREE 🍽️ QUIZ DATA ☑️PC4\n\n\n\nOver the weekend, complete an article review",
+    "text": "Week 2 (Jan 12 - 16)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 12\n📖 readings\nCLS\n👩🏻‍🏫CLS1 👩🏻‍🏫CLS3 📝HW:CLS 🍽️ QUIZ EVL\n\n\nT\nJan 13\n📓CLS standards\nCLS\n👩🏻‍🏫CLS3 ☑️PC3 🍽️ 💻Lab:CLS QUIZ  RETAKES  EDA + EVL 😵‍💫 TA help  7:00-8:00\n\n\nW\nJan 14\n📖 readings\nDATA\n👩🏻‍🏫DATA1 👩🏻‍🏫DATA2 📝HW:DATA 🍽️ Worktime:  PC or Lab\n\n\nTh\nJan 15\n📓DATA standards\nDATA\n💻Lab:DATA🍽️👩🏻‍🏫TREE1 TREEWS QUIZ CLS 😵‍💫 TA help  7:00-8:00\n\n\nF\nJan 16\n📖 readings\nTREE\n👩🏻‍🏫TREE2 👩🏻‍🏫TREE3 📝HW:TREE 🍽️ QUIZ DATA ☑️PC4",
     "crumbs": [
       "Course Information",
       "Schedule"
@@ -956,7 +956,7 @@
     "href": "course_information/schedule.html#week-4-jan-26---30",
     "title": "Machine Learning",
     "section": "Week 4 (Jan 26 - 30)",
-    "text": "Week 4 (Jan 26 - 30)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 26\n\nESB\n👩🏻‍🏫ESB3 MODWS ☑️PC7 ☑️PC8 🍽️ 💻Lab:MOD Part 2\n\n\nT\nJan 27\n📓ESB standards\nNN\n👩🏻‍🏫NN1 👩🏻‍🏫NN2📝 HW:NN 🍽️ QUIZ ENS QUIZ  RETAKES  TREE+LIN\n\n\nW\nJan 28\n📖 readings\nDL\n👩🏻‍🏫NN3 ☑️PC9🍽️ 💻Lab:NN 😵‍💫 TA help  8:00-9:00\n\n\nTh\nJan 29\n📓NN + DL standards\nDL\nLast Day! 👩🏻‍🏫DL1 👩🏻‍🏫DL2 🍽️ QUIZ NN+DL QUIZ  RETAKES  ENS+NN+DL\n\n\nF\nJan 30\nsubmitpresentation\nFinal\nPresentation Day! ☑️PREZ 🍽️ Quiz Retakes ANY",
+    "text": "Week 4 (Jan 26 - 30)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 26\n\nESB\n👩🏻‍🏫ESB3 MODWS ☑️PC7 ☑️PC8 🍽️ 💻Lab:MOD Part 2\n\n\nT\nJan 27\n📓ESB standards\nNN\n👩🏻‍🏫NN1 👩🏻‍🏫NN2📝 HW:NN 🍽️ QUIZ ENS QUIZ  RETAKES  TREE+LIN\n\n\nW\nJan 28\n📖 readings 📓NN + DL standards\nNN\n👩🏻‍🏫NN3 ☑️PC9🍽️ 👩🏻‍🏫STORY😵‍💫 TA help  7:00-8:00\n\n\nTh\nJan 29\n\nFinal Day\nQUIZ (group)NN+DL QUIZ  RETAKES  ANY 🍽️ ☑️PREZ\n\n\nF\nJan 30\nsubmitpresentation\nNo Class",
     "crumbs": [
       "Course Information",
       "Schedule"
@@ -967,18 +967,18 @@
     "href": "articles.html",
     "title": "Machine Learning",
     "section": "",
-    "text": "You will complete three (3) reviews of articles related to machine learning. Each review is worth 5 points.\nThese assignments are designed to help you:\nEach review should demonstrate that you have read and understood the article, and thoughtfully reflected on its content. Most importantly, I should be able to get to know you personally through your writing of the review.",
+    "text": "You will complete one (1) review of an article related to machine learning. The review is worth 5 points.\nThese assignments are designed to help you:\nThe review should demonstrate that you have read and understood the article, and thoughtfully reflected on its content. Most importantly, I should be able to get to know you personally through your writing of the review.",
     "crumbs": [
       "Materials",
       "Article Reviews"
     ]
   },
   {
-    "objectID": "articles.html#finding-articles",
-    "href": "articles.html#finding-articles",
+    "objectID": "articles.html#finding-an-article",
+    "href": "articles.html#finding-an-article",
     "title": "Machine Learning",
-    "section": "Finding Articles",
-    "text": "Finding Articles\nYou are encouraged to find articles from reputable sources. Some suggestions include:\n\nThe New York Times (free access through our library)\n\nThe Pudding has data-driven storytelling examples\nYouTube channels like 3Blue1Brown or Veritasium\n\nOther sources such as academic blogs, news outlets, Medium posts, or scientific publications\n\nTip: Pick articles that genuinely interest you. You will write better reflections if the topic captures your attention.",
+    "section": "Finding an Article",
+    "text": "Finding an Article\nYou are encouraged to find an article from reputable sources. Some suggestions include:\n\nThe New York Times (free access through our library)\n\nThe Pudding has data-driven storytelling examples\nYouTube channels like 3Blue1Brown or Veritasium\n\nOther sources such as academic blogs, news outlets, Medium posts, or scientific publications\n\nAny chapter from Weapons of Math Destruction by Cathy O’Neil\n\nTip: Pick n article that genuinely interest you. You will write better reflections if the topic captures your attention.",
     "crumbs": [
       "Materials",
       "Article Reviews"
@@ -989,7 +989,7 @@
     "href": "articles.html#article-review-instructions",
     "title": "Machine Learning",
     "section": "Article Review Instructions",
-    "text": "Article Review Instructions\nFor each article, provide clear and complete answers to the following questions.\nWrite in your own words. I do not want to read summarized slop from LLMs (these will receive 0 points).\n\nArticle Information: title of the article, author(s), publication month and year, link to the article\nIn your own words, summarize what the article covers. Focus on the key points and main ideas.\nIdentify any surprising facts, unique approaches, or compelling examples mentioned in the article.\nDiscuss how the ideas or technologies presented could affect society. Consider both positive and negative implications.\nReflect on how the article’s ideas might influence your own life, studies, or career.\nWhat would you ask the author to clarify, expand upon, or explain further?\nWhat question could you pose to readers or viewers to spark discussion?\nReflect on the article as a whole. What did you like or dislike? What did you agree or disagree with? Did it change your perspective on machine learning in any way? Would you recommend this article?",
+    "text": "Article Review Instructions\nFor the article, provide clear and complete answers to the following questions.\nWrite in your own words. I do not want to read summarized slop from LLMs (these will receive 0 points).\n\nArticle Information: title of the article, author(s), publication month and year, link to the article\nIn your own words, summarize what the article covers. Focus on the key points and main ideas.\nIdentify any surprising facts, unique approaches, or compelling examples mentioned in the article.\nDiscuss how the ideas or technologies presented could affect society. Consider both positive and negative implications.\nReflect on how the article’s ideas might influence your own life, studies, or career.\nWhat would you ask the author to clarify, expand upon, or explain further?\nWhat question could you pose to readers or viewers to spark discussion?\nReflect on the article as a whole. What did you like or dislike? What did you agree or disagree with? Did it change your perspective on machine learning in any way? Would you recommend this article?",
     "crumbs": [
       "Materials",
       "Article Reviews"
@@ -1000,7 +1000,7 @@
     "href": "articles.html#submission-guidelines",
     "title": "Machine Learning",
     "section": "Submission Guidelines",
-    "text": "Submission Guidelines\n\nSubmit each review as pdf to Moodle\nEach review should be about a page or so in length.\nIt’s okay if your grammar is less than perfect.\n\nAll three are due before the final exam day, though it is encouraged to complete them early.",
+    "text": "Submission Guidelines\n\nSubmit the article review as pdf to Moodle\nThe review should be about a page or so in length.\nIt’s okay if your grammar is less than perfect.\n\nThe review is due by the last day of class, though it is encouraged to complete them early.",
     "crumbs": [
       "Materials",
       "Article Reviews"
