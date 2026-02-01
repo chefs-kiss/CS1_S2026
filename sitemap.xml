@@ -1,151 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/02-EVL/rr-EVL.html</loc>
-    <lastmod>2026-02-01T21:38:40.787Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/02-EVL/hw-EVL.html</loc>
-    <lastmod>2026-02-01T21:38:40.787Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/08-ESB/hw-ESB.html</loc>
-    <lastmod>2026-02-01T21:38:40.800Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/labs.html</loc>
-    <lastmod>2026-02-01T21:38:41.291Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/04-DATA/rr-DATA.html</loc>
-    <lastmod>2026-02-01T21:38:40.788Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/09-NN/std-NN.html</loc>
-    <lastmod>2026-02-01T21:38:40.801Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/05-TREE/WS-TREE.html</loc>
-    <lastmod>2026-02-01T21:38:40.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/05-TREE/rr-TREE.html</loc>
-    <lastmod>2026-02-01T21:38:40.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/07-MOD/rr-MODELS.html</loc>
-    <lastmod>2026-02-01T21:38:40.800Z</lastmod>
+    <loc>https://chefs-kiss.github.io/CS1_S2026/reading.html</loc>
+    <lastmod>2026-02-01T23:56:49.644Z</lastmod>
   </url>
   <url>
     <loc>https://chefs-kiss.github.io/CS1_S2026/homework.html</loc>
-    <lastmod>2026-02-01T21:38:41.291Z</lastmod>
+    <lastmod>2026-02-01T23:56:49.644Z</lastmod>
   </url>
   <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/articles.html</loc>
-    <lastmod>2026-02-01T21:38:40.851Z</lastmod>
+    <loc>https://chefs-kiss.github.io/CS1_S2026/labs/lab3_FOR.html</loc>
+    <lastmod>2026-02-01T23:56:49.644Z</lastmod>
   </url>
   <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/course_information/schedule.html</loc>
-    <lastmod>2026-02-01T21:38:40.851Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/course_information/project_rubric.html</loc>
-    <lastmod>2026-02-01T21:38:40.851Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/01-EDA/std-EDA.html</loc>
-    <lastmod>2026-02-01T21:38:40.786Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/01-EDA/hw-EDA.html</loc>
-    <lastmod>2026-02-01T21:38:40.786Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/06-LIN/rr-LIN.html</loc>
-    <lastmod>2026-02-01T21:38:40.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/06-LIN/std-LIN.html</loc>
-    <lastmod>2026-02-01T21:38:40.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/03-CLS/rr-CLS.html</loc>
-    <lastmod>2026-02-01T21:38:40.788Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/slides.html</loc>
-    <lastmod>2026-02-01T21:38:41.291Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/03-CLS/hw-CLS.html</loc>
-    <lastmod>2026-02-01T21:38:40.787Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/03-CLS/std-CLS.html</loc>
-    <lastmod>2026-02-01T21:38:40.788Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/06-LIN/hw-LIN.html</loc>
-    <lastmod>2026-02-01T21:38:40.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/01-EDA/stats_resource.html</loc>
-    <lastmod>2026-02-01T21:38:40.786Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/01-EDA/rr-EDA.html</loc>
-    <lastmod>2026-02-01T21:38:40.786Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/course_information/github_tricks.html</loc>
-    <lastmod>2026-02-01T21:38:40.851Z</lastmod>
+    <loc>https://chefs-kiss.github.io/CS1_S2026/labs/lab1_IO.html</loc>
+    <lastmod>2026-02-01T23:56:49.644Z</lastmod>
   </url>
   <url>
     <loc>https://chefs-kiss.github.io/CS1_S2026/course_information/syllabus.html</loc>
-    <lastmod>2026-02-01T21:38:40.852Z</lastmod>
+    <lastmod>2026-02-01T23:56:49.644Z</lastmod>
+  </url>
+  <url>
+    <loc>https://chefs-kiss.github.io/CS1_S2026/course_information/idle.html</loc>
+    <lastmod>2026-02-01T23:56:49.643Z</lastmod>
+  </url>
+  <url>
+    <loc>https://chefs-kiss.github.io/CS1_S2026/slides.html</loc>
+    <lastmod>2026-02-01T23:56:49.644Z</lastmod>
+  </url>
+  <url>
+    <loc>https://chefs-kiss.github.io/CS1_S2026/course_information/runestone.html</loc>
+    <lastmod>2026-02-01T23:56:49.643Z</lastmod>
+  </url>
+  <url>
+    <loc>https://chefs-kiss.github.io/CS1_S2026/course_information/schedule.html</loc>
+    <lastmod>2026-02-01T23:56:49.643Z</lastmod>
+  </url>
+  <url>
+    <loc>https://chefs-kiss.github.io/CS1_S2026/labs/lab2_T.html</loc>
+    <lastmod>2026-02-01T23:56:49.644Z</lastmod>
   </url>
   <url>
     <loc>https://chefs-kiss.github.io/CS1_S2026/index.html</loc>
-    <lastmod>2026-02-01T21:38:41.291Z</lastmod>
+    <lastmod>2026-02-01T23:56:49.644Z</lastmod>
   </url>
   <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/project.html</loc>
-    <lastmod>2026-02-01T21:38:41.291Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/07-MOD/WS-MOD.html</loc>
-    <lastmod>2026-02-01T21:38:40.800Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/05-TREE/std-TREE.html</loc>
-    <lastmod>2026-02-01T21:38:40.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/05-TREE/hw-TREE.html</loc>
-    <lastmod>2026-02-01T21:38:40.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/09-NN/hw-NN.html</loc>
-    <lastmod>2026-02-01T21:38:40.801Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/04-DATA/std-DATA.html</loc>
-    <lastmod>2026-02-01T21:38:40.788Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/04-DATA/hw-DATA.html</loc>
-    <lastmod>2026-02-01T21:38:40.788Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/08-ESB/std-ESB.html</loc>
-    <lastmod>2026-02-01T21:38:40.800Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/08-ESB/rr-ESB.html</loc>
-    <lastmod>2026-02-01T21:38:40.800Z</lastmod>
-  </url>
-  <url>
-    <loc>https://chefs-kiss.github.io/CS1_S2026/02-EVL/std-EVL.html</loc>
-    <lastmod>2026-02-01T21:38:40.787Z</lastmod>
+    <loc>https://chefs-kiss.github.io/CS1_S2026/labs.html</loc>
+    <lastmod>2026-02-01T23:56:49.644Z</lastmod>
   </url>
 </urlset>
